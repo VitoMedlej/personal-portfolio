@@ -1,0 +1,389 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif !important;
+}
+
+* h1,
+a,
+button,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+label,
+p,
+select,
+span,
+textarea {
+  font-family: "Inter", sans-serif !important;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.emailinput {
+  min-width: 200px;
+  padding: 1em;
+  border: 1px solid #c0c0c0;
+}
+.emailinput:focus {
+  outline: none;
+}
+
+.op0 {
+  opacity: 0;
+}
+
+.y1 {
+  transform: translateY(12px);
+}
+
+.swiper-slide,
+.swiper-slide-active {
+  margin-right: 0 !important;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.color3 {
+  color: #84a545 !important;
+}
+
+.topd {
+  -o-object-position: top;
+     object-position: top;
+}
+
+.leftd {
+  -o-object-position: left;
+     object-position: left;
+}
+
+.centerd {
+  -o-object-position: center;
+     object-position: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+.c50 {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.fixed {
+  position: fixed;
+}
+
+.p0 {
+  padding: 0 !important;
+}
+
+.img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.img .contain {
+  -o-object-fit: contain !important;
+     object-fit: contain !important;
+}
+
+.bg2 {
+  background: #84a545 !important;
+}
+
+.borderColor {
+  border-color: #060918 !important;
+}
+
+.borderColor2 {
+  border-color: #550df4 !important;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.color2 {
+  color: #550df4 !important;
+}
+
+.color {
+  color: #060918 !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0px, rgba(27, 31, 35, 0.15) 0 0 0 1px;
+}
+
+.limited {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.carthover:hover {
+  background: #286538 !important;
+}
+
+.carthover2:hover {
+  background: #84a545 !important;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.hovereffect {
+  text-decoration: none;
+}
+.hovereffect h1 {
+  transition: 0.3s all;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+}
+.hovereffect h1:hover {
+  border-bottom: 2px solid #84a545 !important;
+}
+
+.hover-shadow:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+
+.trans {
+  transition: all 0.1s ease-in;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.touch-none {
+  pointer-events: none;
+}
+
+.cent {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.row {
+  flex-direction: row;
+}
+
+.bg {
+  background: #060918 !important;
+}
+
+.bg3 {
+  background: #550df4 !important;
+}
+
+.border3 {
+  border-color: #550df4 !important;
+}
+
+.white {
+  color: white !important;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gap1 {
+  gap: 0.25em;
+}
+
+.gap2 {
+  gap: 0.5em;
+}
+
+.gap4 {
+  gap: 1em;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.button {
+  text-transform: uppercase !important;
+}
+.button p {
+  text-transform: uppercase !important;
+}
+
+.black {
+  color: black;
+}
+
+button:disabled,
+button[disabled] {
+  opacity: 0.56;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #286538 !important;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.cap {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clr {
+  color: #060918 !important;
+}
+
+.clr2 {
+  color: #550df4 !important;
+}
+
+.auto {
+  margin: 0 auto;
+}
+
+.decor-none {
+  text-decoration: none;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.catecard {
+  padding: 10% 2em;
+  color: white;
+  height: 100%;
+  display: flex;
+  padding-bottom: 0;
+  flex-direction: column;
+}
+
+.carditem {
+  overflow: hidden;
+}
+.carditem .cateimg {
+  transition: all 0.4s ease-in;
+}
+.carditem:hover .cateimg {
+  transform: scale(1.16);
+}
+
+.swiper {
+  width: 100%;
+}
+
+.mySwiper {
+  width: 100%;
+  max-height: 600px;
+}
+
+.swiper-wrapper {
+  width: 99vw;
+}
+
+.gray {
+  color: rgb(63, 63, 63);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.grad {
+  background: rgb(6, 6, 74);
+}
+
+.trans1 {
+  transition: all 5s ease;
+}
+
+.grad1 {
+  background: radial-gradient(circle, rgb(6, 6, 74) 0%, rgb(0, 0, 47) 63%, rgb(0, 0, 57) 100%);
+}
+
+.mySwiper {
+  width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: rgb(245, 245, 245) !important;
+  border: 1px solid;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  background: #550df4;
+  border: 1px solid #550df4;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 2em !important;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #550df4 !important;
+  filter: blur(1);
+}/*# sourceMappingURL=styles.css.map */
