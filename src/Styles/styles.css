@@ -386,4 +386,57 @@ button[disabled] {
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background: #550df4 !important;
   filter: blur(1);
+}
+
+.custom-br {
+  width: 90%;
+  opacity: 0.6;
+  height: 1px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #550df4, rgba(255, 255, 255, 0));
+  position: relative;
+  margin: 0.5em auto;
+}
+
+.custom-br::before,
+.custom-br::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.custom-br::before {
+  border-width: 1px 0 0 1px;
+  left: -1px;
+}
+
+.custom-br::after {
+  border-width: 1px 1px 0 0;
+  right: -1px;
+}
+
+@media (min-width: 576px) {
+  .custom-br {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .custom-br {
+    width: 70%;
+  }
+}
+.tech-item {
+  background-color: rgba(25, 23, 43, 0);
+  background-image: linear-gradient(110deg, #19172b, rgba(25, 23, 43, 0.58) 71%);
+  border: 1px solid #19172b;
+  width: auto;
+  min-height: 0;
+  margin-bottom: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 5px 20px;
+  border-radius: 500px;
 }/*# sourceMappingURL=styles.css.map */

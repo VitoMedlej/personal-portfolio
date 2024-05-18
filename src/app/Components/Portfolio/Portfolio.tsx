@@ -2,25 +2,37 @@
 import { Grid, Box, Typography } from '@mui/material'
 import React from 'react'
 import ProjectSwiper from './ProjectSwiper'
+import Btn2 from '../Btn/Btn2'
+import Btn3 from '../Btn/Btn3'
 
 const Portfolio = () => {
   return (
     <Grid container className='flex  auto' sx={{
         zIndex:'10',
         // minHeight:'100vh',
-        py:14,
+        pb:4,
+        pt:6,
         px:1,
         background:'black'
         
         }}>
-            <Box sx={{
-                minWidth:{xs:'80vw'}, 
+            <Box 
+            className='auto col flex center'
+            sx={{
+              width:'100%',
+                // minWidth:{xs:'80vw'}, 
                 py:4}}>
-            <Typography className='white' sx={{fontWeight:700,fontSize:{xs:'3em',sm:'2.5em',md:'3em'},pb:.42}}>
-Few of my masterpiece work
+            <Typography className='white text-center auto' sx={{pb:1,fontWeight:700,
+              fontSize:{xs:'3em',sm:'3em',md:'4em'}}}>
+Few Of My Masterpiece Work
 
 </Typography>
-      
+<Typography
+className='white text-center w100'
+sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
+
+I am Kilian, a passionate freelancer from Hamburg
+          </Typography>
             </Box>
         <Box sx={{
             
@@ -28,6 +40,33 @@ Few of my masterpiece work
              className='white auto center w100 justify-center h100 flex col'>
             <ProjectSwiper/>
           </Box>
+
+          <Box sx={{
+          pt:4,gap:2}} className='flex  w100 center items-center justify-center auto'>
+
+        
+        <Btn3 className='flex gap gap2 '
+        
+        styles={{background:'black',
+        
+        fontWeight:'300'}}>
+        <>
+        {`View More`}
+       
+
+        <img src="https://cdn-icons-png.flaticon.com/128/2722/2722998.png" style={{
+          padding:1,
+          filter:`invert(1)`,
+          width:'20px',
+          // background:'white',
+          borderRadius:'50%',
+        
+      }} alt="" className="img" />
+        </>
+
+        </Btn3>
+       
+        </Box>
         </Grid>
   )
 }

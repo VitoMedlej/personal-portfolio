@@ -6,6 +6,7 @@ import Btn2 from './Components/Btn/Btn2'
 import Hero from './Components/Hero/Hero'
 import ReviewSection from './Components/Reviews/ReviewSection'
 import Portfolio from './Components/Portfolio/Portfolio'
+import Skills from './Components/Skills/Skills'
 
 const Index = () => {
   let [gradientStop,setGradientStop] = useState(63)
@@ -32,6 +33,7 @@ const Index = () => {
 
     <Grid container className='flex  auto' sx={{
       zIndex:'10',
+      pt:18,
       // minHeight:'100vh',
       // height:'1500px',
 
@@ -55,21 +57,60 @@ const Index = () => {
       </Grid>
       <Grid sx={{px:1}} item xs={12} md={5.5} >
 
-        <Box sx={{maxWidth:{sm:'90%',md:'95%',lg:'600px'}}} className='white auto center  justify-center h100 flex col'>
-<Typography sx={{fontWeight:700,fontSize:{xs:'3em',sm:'2.5em',md:'3em'},pb:.42}}>
+        <Box sx={{maxWidth:{sm:'90%',md:'95%',lg:'600px'}}}
+        
+        className='white auto center  justify-center h100 flex col'>
+<Typography sx={{
+  textAlign:{xs:'center',md:'left'},
+  fontWeight:700,fontSize:{xs:'3em',sm:'2.5em',md:'3em'},pb:.42}}>
 Problem solver
 
 </Typography>
-          <Typography sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
+          <Typography sx={{
+  textAlign:{xs:'center',md:'left'},
+            
+            fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 
 I am Kilian, a passionate freelancer from Hamburg, Germany and the founder of LOKKEE STUDIOS, bringing you web development and design from the future. My expertise is developing next-level websites and web applications including full frontend design.
           </Typography>
         </Box>
       </Grid>
     </Grid>
-
+    <Box sx={{
+          backgroundColor: 'black',
+           zIndex:'10',
+          pt:8,
+          pb:4,
+          }}>
+        <div className="custom-br">
+      <div className="left-edge"></div>
+      <div className="right-edge"></div>
+    </div>
+        </Box>
 {/* <hr /> */}
     <Portfolio/>
+        <Box sx={{
+          backgroundColor: 'black',
+           zIndex:'10',
+          py:4}}>
+        <div className="custom-br">
+      <div className="left-edge"></div>
+      <div className="right-edge"></div>
+    </div>
+        </Box>
+
+
+        <Skills/>
+
+        <Box sx={{
+          backgroundColor: 'black',
+           zIndex:'10',
+          py:8}}>
+        <div className="custom-br">
+      <div className="left-edge"></div>
+      <div className="right-edge"></div>
+    </div>
+        </Box>
     </Box>
   )
 }

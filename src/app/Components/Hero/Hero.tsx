@@ -58,7 +58,7 @@ const Hero = () => {
 
         </Btn2>
           <Typography className='white' sx={{fontWeight:200,fontSize:'1.15em'}}>
-          <span style={{fontWeight:700,color:'#550df4'}}>
+          <span style={{fontWeight:700,color:'#ebebeb'}}>
 
           +40
           {' '}
