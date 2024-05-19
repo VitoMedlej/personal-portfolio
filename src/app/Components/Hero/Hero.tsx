@@ -12,6 +12,7 @@ const Hero = () => {
       position: `sticky`,
       top: 0,
       py:4,minHeight:'100vh'}}>
+        
       <ReviewSection data={[{title:'"$20,000 using the resources from Pait Pro. 🤑"'},
       
       

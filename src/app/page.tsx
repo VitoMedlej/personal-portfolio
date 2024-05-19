@@ -7,6 +7,11 @@ import Hero from './Components/Hero/Hero'
 import ReviewSection from './Components/Reviews/ReviewSection'
 import Portfolio from './Components/Portfolio/Portfolio'
 import Skills from './Components/Skills/Skills'
+import Pricing from './Components/Pricing/Pricing'
+import Testimonials from './Components/Testimonials/Testimonials'
+import Contact from './Components/Contact/Contact'
+import Footer from './Components/Footer/Footer'
+
 
 const Index = () => {
   let [gradientStop,setGradientStop] = useState(63)
@@ -17,6 +22,8 @@ const Index = () => {
 
 
   return (
+    <>
+    
     <Box
     onMouseMove={handleMouseMove}
     className='trans1 col flex ' sx={{
@@ -28,7 +35,7 @@ const Index = () => {
     }}>
           <Hero/>
 
-        <Divider sx={{border:'1px solid #ffffff0a'}} className='w100 white'></Divider>
+        {/* <Divider sx={{border:'1px solid #ffffff0a'}} className='w100 white'></Divider> */}
 
 
     <Grid container className='flex  auto' sx={{
@@ -87,12 +94,14 @@ I am Kilian, a passionate freelancer from Hamburg, Germany and the founder of LO
       <div className="right-edge"></div>
     </div>
         </Box>
-{/* <hr /> */}
+
+
+
     <Portfolio/>
         <Box sx={{
           backgroundColor: 'black',
            zIndex:'10',
-          py:4}}>
+          pt:6}}>
         <div className="custom-br">
       <div className="left-edge"></div>
       <div className="right-edge"></div>
@@ -100,18 +109,98 @@ I am Kilian, a passionate freelancer from Hamburg, Germany and the founder of LO
         </Box>
 
 
+          <Box sx={{
+            background: `rgb(85,13,244), radial-gradient(circle, rgba(85,13,244,1) 0%, rgba(15,2,45,1) 0%, rgba(24,8,57,1) 15%, rgba(25,13,52,1) 33%, rgba(0,0,0,1) 100%)`,
+          
+            zIndex:12,
+          }}>
+
         <Skills/>
+
+      
+          </Box>
+
+
+
+          
+        </Box>
+        <Box 
+        className='auto flex center justify-center'
+        sx={{
+          backgroundColor: 'black',
+           zIndex:'10',
+          pt:0,
+          margin:0
+          }}>
+        <div className="custom-br">
+      <div className="left-edge"></div>
+      <div className="right-edge"></div>
+    </div>
+        </Box>
+
+          <Pricing/>
+          <Box 
+        className='auto flex center justify-center'
+        sx={{
+          backgroundColor: 'black',
+           zIndex:'10',
+          pt:0,
+          margin:0
+          }}>
+        <div className="custom-br">
+      <div className="left-edge"></div>
+      <div className="right-edge"></div>
+    </div>
+        </Box>
+        
+        
+        <Testimonials/>
+        <Box 
+        className='auto flex center justify-center'
+        sx={{
+          backgroundColor: 'black',
+           zIndex:'10',
+          pt:0,
+          margin:0
+          }}>
+        <div className="custom-br">
+      <div className="left-edge"></div>
+      <div className="right-edge"></div>
+    </div>
+        </Box>
+
+        <Contact/>
+
 
         <Box sx={{
           backgroundColor: 'black',
            zIndex:'10',
-          py:8}}>
+          pt:4,
+          pb:2,
+          }}>
         <div className="custom-br">
       <div className="left-edge"></div>
       <div className="right-edge"></div>
     </div>
         </Box>
-    </Box>
+
+        <Grid container className='flex  center auto' sx={{
+        // zIndex:'10',
+        px:2,
+        backgroundImage:'radial-gradient(circle at 50% 00%, rgba(17, 24, 65, 43.55), #000 0%)',
+        background:'radial-gradient(circle at 50% 0%, rgba(17, 24, 65, 33.55), #000 0%)',
+        // background:'#090d22 !Important',
+      // backgroundImage:'radial-gradient(circle at 50% 50%, rgba(17, 24, 65, 43.55), #000 90%)',
+        
+        }}>
+
+
+        <Footer/>
+        </Grid>
+
+          </>
+
+
   )
 }
 

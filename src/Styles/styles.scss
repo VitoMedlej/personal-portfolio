@@ -6,10 +6,26 @@ body {
   // box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif!important;
+  font-family: "Inter", sans-serif !important;
+    scrollbar-color: #cf5151 #1a1a1a !important;
   // font-family: "Manrope", sans-serif !important;
   // background: $color;
 }
+
+
+::-webkit-scrollbar {
+  background: rgb(22, 22, 22);
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+  background: rgb(65, 65, 65);
+}
+::-webkit-scrollbar-track {
+  background: rgb(34, 34, 34);
+}
+
 * h1,
 a,
 button,
@@ -356,7 +372,9 @@ color: rgb(245, 245, 245) !important;
   border-style: solid;
   border-color: rgba(255,255,255,0);
 }
-
+.gray2 {
+  color:rgb(150 161 192 );
+}
 .custom-br::before {
   border-width: 1px 0 0 1px;
   left: -1px;
@@ -369,19 +387,19 @@ color: rgb(245, 245, 245) !important;
 
 @media (min-width: 576px) {
   .custom-br {
-    width: 80%;
+    width: 70%;
   }
 }
 
 @media (min-width: 992px) {
   .custom-br {
-    width: 70%;
+    width: 60%;
   }
 }
 .tech-item {
-  background-color: rgba(25, 23, 43, 0);
-  background-image: linear-gradient(110deg, #19172b, rgba(25, 23, 43, .58) 71%);
-  border: 1px solid #19172b;
+  // background-color: rgba(25, 23, 43, 0);
+  // background-image: linear-gradient(110deg, #19172b, rgba(25, 23, 43, .58) 71%);
+  // border: 1px solid #19172b;
   width: auto;
   min-height: 0;
   margin-bottom: 10px;

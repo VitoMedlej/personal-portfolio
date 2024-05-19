@@ -1,15 +1,19 @@
 "use client"
-import { Box, Container } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import React from 'react'
 import Btn from '../Btn/Btn'
 import Btn2 from '../Btn/Btn2'
+import Btn3 from '../Btn/Btn3'
 
 const Navbar = () => {
   return (
-    <Container className={`flex fixed center c50 between row justify-between items-center ${false ? 'bg' : ''}`} sx={{
+    <Container
+    
+    className={`flex absolute center c50 between row justify-between items-center ${false ? 'bg' : ''}`} 
+    sx={{
       
       maxWidth:{xs:'100%',md:'1200px'},
-      
+      zIndex:12467,
       // border:'1px solid white',
     mt:2,
     py:1,
@@ -23,7 +27,18 @@ const Navbar = () => {
         </Box>
 
         <Box>
-          <Btn>Hit me up</Btn>
+        <Btn className="" sx={{
+            ':hover':{color:'red !Important'},
+            gap: 1, px:2 }}>
+            <Typography sx={{
+                
+                fontSize: '.7em' }}>
+              Hit me up
+            </Typography>
+            <Box sx={{ width: '20px', height: '20px' }} className="invert">
+              <img src="https://cdn-icons-png.flaticon.com/128/9314/9314363.png" alt="" className="img" />
+            </Box>
+          </Btn>
         </Box>
     </Container>
   )

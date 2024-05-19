@@ -4,12 +4,16 @@ import React from 'react'
 import './Btn.css'
 
 
-const Btn = ({children} : any) => {
+const Btn = ({children,sx} : any) => {
   return (
-    <Button sx={{
+    <Button
+    className='cursor pointer'
+    sx={{
         color:'white',
+        zIndex:234,
         border:'1px solid white',
         borderRadius:'900px',
+        ...sx
     }}>{children}</Button>
   )
 }

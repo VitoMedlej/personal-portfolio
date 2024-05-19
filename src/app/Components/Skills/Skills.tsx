@@ -28,21 +28,23 @@ const Portfolio = () => {
     <Grid container className='flex  auto' sx={{
         zIndex:'10',
         // minHeight:'100vh',
-        pb:4,
-        pt:6,
+        backgroundImage:'radial-gradient(circle at 50% 50%, rgba(17, 24, 65, 43.55), #000 35%)',
+        background:'radial-gradient(circle at 50% 50%, rgba(17, 24, 65, 33.55), #000 45%)',
+
+        pb:13,
+        pt:12,
         px:1,
-        background:'black'
         
         }}>
             <Box 
             className='auto col flex center'
             sx={{
-              width:'100%',
+              // width:'100%',
                 // minWidth:{xs:'80vw'}, 
                 py:4}}>
             <Typography className='white text-center auto' sx={{pb:1,fontWeight:700,
               fontSize:{xs:'3em',sm:'3em',md:'4em'}}}>
-Few Of My Masterpiece Work
+Few Of My Masterp iece Work
 
 </Typography>
 <Typography
@@ -59,7 +61,12 @@ I am Kilian, a passionate freelancer from Hamburg
           </Box>
             <Box sx={{maxWidth:'md'}} className='flex row gap2 auto wrap center'>
                 {skills.map(i=>{
-                    return <Box className='flex row   tech-item' sx={{gap:1}}>
+                    return <Box
+                    key={i?.name}
+                    className='flex row tech-item  ' sx={{
+                      border: '1px solid #ffffff21 ',
+                      backgroundColor: '#0c1021 !Important',
+                      gap:1}}>
                         <Box sx={{width:{xs:'20px'}}}>
                             <img src="https://cdn-icons-png.flaticon.com/128/875/875209.png" alt="" className="img" />
                         </Box>
