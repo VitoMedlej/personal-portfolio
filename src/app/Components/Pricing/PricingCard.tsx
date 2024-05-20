@@ -90,7 +90,7 @@ export default function Card({sx}: {sx?:any}) {
          
          
           <Btn className="pointer cursor" sx={{
-            ':hover':{color:'red !Important'},
+            ':hover':{color:'#550df4 !Important'},
             gap: 1, border: '1px solid transparent !important' }}>
             <Typography sx={{
                 

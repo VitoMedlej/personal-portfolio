@@ -108,13 +108,37 @@ font-family: "Inter", sans-serif!important;
 .p0 {
   padding: 0 !important;
 }
+.cover {
+  object-fit: cover;
+}
 .img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  .contain {
-      object-fit: contain !important;
+}
+.overflowed {
+  position: absolute;
+  width: 100vw;
+  z-index: 1222;
+  height: 100vh;
+  background: rgba(36, 36, 36, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  .nav-menu {
+    // justify-content: center;
+    position: absolute;
+    border-bottom: 1px solid gray;
+   
+    padding: .5em;
+    // text-align: center;
+    // align-items: center;
+    display: flex;
+    width: 99%;
+    // margin: 0 auto;
   }
+}
+.contain {
+    object-fit: contain !important;
 }
 .bg2 {
   background: $color3;
@@ -187,6 +211,9 @@ font-family: "Inter", sans-serif!important;
 }
 .trans {
   transition: all 0.1s ease-in;
+}
+.no-scroll {
+  overflow: hidden;
 }
 .cursor {
   cursor: pointer;

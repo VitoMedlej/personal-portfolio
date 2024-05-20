@@ -52,12 +52,12 @@ const Index = () => {
         <Box 
         sx={{
           py:{xs:0,sm:0},
-          height:'100%',
+          height:{xs:'100%',sm:'500px'},
           // width:{xs:'90%',sm:'48%'}
         }}
           >
       <img 
-      src='https://assets-global.website-files.com/62d88eed5c7a8f350b8f904b/65ff94e16aa0de9555e24a90_Group%201057-p-800.png'
+      src='https://elvito.netlify.app/_ipx/w_1080,q_75/https%3A%2F%2Fucarecdn.com%2F150b60a1-4ef3-4ec8-8f1a-d90a7ea26c85%2F-%2Fcrop%2F1129x1256%2F0%2C194%2F-%2Fpreview%2F3000x3000%2F?url=https%3A%2F%2Fucarecdn.com%2F150b60a1-4ef3-4ec8-8f1a-d90a7ea26c85%2F-%2Fcrop%2F1129x1256%2F0%2C194%2F-%2Fpreview%2F3000x3000%2F&w=1080&q=75'
       // src="https://ucarecdn.com/9da2ff49-00f9-49b5-ae97-737b37046d0b/ane1edited.jpg"
       alt="" className="img contain" />
         </Box>
@@ -69,6 +69,7 @@ const Index = () => {
         className='white auto center  justify-center h100 flex col'>
 <Typography sx={{
   textAlign:{xs:'center',md:'left'},
+  pt:{xs:2,sm:2,md:0},
   fontWeight:700,fontSize:{xs:'3em',sm:'2.5em',md:'3em'},pb:.42}}>
 Problem solver
 

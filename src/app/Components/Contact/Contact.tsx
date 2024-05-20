@@ -144,6 +144,12 @@ I am Kilian, a passionate freelancer from Hamburg
         </Btn3>
        
         </Box>
+        <Box className="w100 auto center flex" sx={{pt:2}}>
+
+        <a href='/' className='clr2' target='_blank'>
+          Vito.medlej@gmail.com
+        </a>
+        </Box>
 
           </Box>
            
