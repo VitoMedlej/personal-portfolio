@@ -47,7 +47,13 @@ const Index = () => {
       background:'black'
       
       }}>
-        <Grid item xs={12} md={6}>
+     
+     
+   
+
+
+     
+        {/* <Grid item xs={12} md={6}>
 
         <Box 
         sx={{
@@ -61,7 +67,9 @@ const Index = () => {
       // src="https://ucarecdn.com/9da2ff49-00f9-49b5-ae97-737b37046d0b/ane1edited.jpg"
       alt="" className="img contain" />
         </Box>
-      </Grid>
+      </Grid> */}
+
+
       <Grid sx={{px:1}} item xs={12} md={5.5} >
 
         <Box sx={{maxWidth:{sm:'90%',md:'95%',lg:'600px'}}}
@@ -71,18 +79,162 @@ const Index = () => {
   textAlign:{xs:'center',md:'left'},
   pt:{xs:2,sm:2,md:0},
   fontWeight:700,fontSize:{xs:'3em',sm:'2.5em',md:'3em'},pb:.42}}>
-Problem solver
+{`A Bit About Me: I'm Vito Medlej`}
 
 </Typography>
           <Typography sx={{
   textAlign:{xs:'center',md:'left'},
             
             fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
+              {
+                `
+                Coding isn't just a job for me, it's the thing I'd do even if I had all the money in the world.
 
-I am Kilian, a passionate freelancer from Hamburg, Germany and the founder of LOKKEE STUDIOS, bringing you web development and design from the future. My expertise is developing next-level websites and web applications including full frontend design.
+                `
+              }
+          </Typography>
+          <Typography sx={{
+  textAlign:{xs:'center',md:'left'},
+              pt:.5,
+            fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
+              {
+                `
+                I have over 3 years experience with building fullstack apps,
+                 primarily for Lebanon-based businesses
+                
+                using the best & latest technologies like Typescript + Nextjs to 
+                deliver top level software solutions.
+
+                 
+                `
+              }
           </Typography>
         </Box>
       </Grid>
+
+
+      <Grid
+                    sx={{
+                    my: {
+                        xs: '3.5em',
+                        sm: '4em',
+                        lg: '1em'
+                    },
+                    pt: {
+                        sm: '1em',
+                        md: '2em',
+                        lg: '0em'
+                    },
+                    display: 'flex',
+                    alignItems: 'baseline',
+                    
+                    justifyContent: {xs:'center',md:'flex-end'}
+                }}
+                    item
+                    xs={12} md={6}
+                    // xs={12}
+                    // sm={12}
+                    // md={12}
+                    // lg={5}
+                    
+                    >
+                    <Box
+                        sx={{
+                        borderRadius: '6px',
+                        width: {
+                            xs: '100%',
+                            sm: '350px',
+                            md: '400px'
+                        }
+                    }}>
+                        <Box
+                            className='mainBox'
+                            sx={{
+                            opacity: 1,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            position: 'relative',
+                            height: '460px',
+                            boxShadow: {
+                                xs: '.5em 3em 0 #0c1021 ',
+                                sm: '2em 3em 0px #0c1021'
+                            }
+                        }}>
+
+                            <img
+
+                            
+                            // layout='fill'
+
+                                style={{
+                                opacity: 1,
+                                borderRadius: '6px',
+                                zIndex: '2'
+                            }}
+                                className='img cover'
+                                src={`https://ucarecdn.com/150b60a1-4ef3-4ec8-8f1a-d90a7ea26c85/-/crop/1129x1256/0,194/-/preview/3000x3000/`}
+                                alt="Personal Image"/>
+                            <Box
+                                className='gradientBg'
+                                sx={{
+                                width: '100px',
+                                height: '100px',
+                                zIndex: '0',
+                                position: 'absolute',
+                                right: {
+                                    xs: '-1%',
+                                    sm: '-5%'
+                                },
+                                opacity: 1,
+                                bottom: '-5%',
+                                background: 'transparent',
+                                backgroundImage: 'radial-gradient(white 2px, transparent 0)',
+                                backgroundSize: '15px 13px'
+                            }}></Box>
+                            <Box
+                                className='quoteBox '
+                                sx={{
+                                zIndex: '2',
+                                border: '1px solid #ffffff21 ',
+                                backgroundColor: '#550df4 !Important',
+                                position: 'absolute',
+                                bottom: {
+                                    xs: '0%',
+                                    lg: '-5%'
+                                },
+                                width: '100%',
+                                height: 'fit-content',
+
+                                right: {
+                                    sm: '25%'
+                                },
+                                top: {xs:'81%',sm:'89%',lg:'83%'},
+                                overflow: 'hidden',
+                                opacity: 1,
+                                background: '#0092ff'
+                            }}>
+                                <Typography
+
+                                component='h1'
+                                    sx={{
+                                      color:'white',
+                                      fontWeight: '300',
+                                    fontSize: '.85em',
+                                    padding: '1em'
+                                }}>
+{`"Many ideas grow better when transplanted into another mind than the one where they sprang up."
+
+– Oliver Wendell Holmes`}
+                                </Typography>
+
+                            </Box>
+
+                        </Box>
+
+                    </Box>
+                {/* </Grid> */}
+
+            </Grid>
     </Grid>
     <Box sx={{
           backgroundColor: 'black',

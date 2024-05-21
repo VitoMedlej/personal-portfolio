@@ -11,7 +11,7 @@ const Hero = () => {
     <Container className='center  items-center flex col align-center ' sx={{
       position: `sticky`,
       top: 0,
-      py:4,minHeight:'100vh'}}>
+      py:6,minHeight:'100vh'}}>
         
       <ReviewSection data={[{title:'"$20,000 using the resources from Pait Pro. 🤑"'},
       
@@ -20,20 +20,24 @@ const Hero = () => {
 
         <Typography sx={{
         maxWidth:'800px',
-        pt:{xs:6,sm:6},
+        pt:{xs:6,sm:6,md:6},
         fontSize:{xs:'2.1em',sm:'3em',md:'3em',lg:'3.5em'},fontWeight:'600'}} 
         component='h1'
         className='white  center auto text-center'>
-          Give your design business an unfair advantage
+          {/* I build Web & Mobile apps that give your business an unfair advantage */}
+        Web & Mobile apps for an unfair business advantage
+          {/* Give your business an unfair advantage */}
         </Typography>
-
-
         <Typography sx={{maxWidth:'650px',
         py:2,
         fontSize:{xs:'.95em',sm:'1em',md:'1em',lg:'1.15em'},fontWeight:'100'}} 
         component='p'
         className='white center auto text-center'>
-          The #1 place to learn profitable skills like finding clients, automating your business, creating recurring revenue and more!
+          {/* The #1 place to learn profitable skills like finding clients, automating your business, creating recurring revenue and more! */}
+          {/* I build complex web & mobile apps that empower businesses  */}
+          {
+            `Your go-to developer for creating incredibly powerful fullstack applications.`
+          }
         </Typography>
 
         <Box sx={{
