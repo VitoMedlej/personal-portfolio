@@ -31,7 +31,7 @@ className='white text-center w100'
 sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 
 
-You're a click away from turning your concept to code. Your vision is expertly engineered.
+{`You're a click away from turning your concept to code. Your vision is expertly engineered.`}
 
           </Typography>
             </Box>

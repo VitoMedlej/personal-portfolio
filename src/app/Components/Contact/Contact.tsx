@@ -33,7 +33,7 @@ const Portfolio = () => {
 className='white text-center w100'
 sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 
-              Send me a message, I'll be sure to reply!
+              Send me a message, I&apos;ll be sure to reply!
           </Typography>
             </Box>
         <Box sx={{
