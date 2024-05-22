@@ -7,7 +7,7 @@ import PricingCard from './PricingCard'
 
 const Portfolio = () => {
   return (
-    <Grid container className='flex  auto' sx={{
+    <Grid id='Services' container className='flex  auto' sx={{
         zIndex:'10',
         // minHeight:'100vh',
         py:12,
@@ -24,7 +24,7 @@ const Portfolio = () => {
             <Typography className='white text-center auto' sx={{pb:1,fontWeight:700,
               fontSize:{xs:'3em',sm:'3em',md:'4em'}}}>
 {/* My Creative Software Solution Suite */}
-              Prices and offers
+              Prices and Services
 </Typography>
 <Typography
 className='white text-center w100'

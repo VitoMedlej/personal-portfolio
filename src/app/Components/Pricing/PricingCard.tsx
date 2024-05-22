@@ -96,8 +96,9 @@ export default function Card({sx, miniTitle, title, text, perks, href}:any) {
          
          
           <Btn className="pointer cursor" sx={{
-            ':hover':{color:'#550df4 !Important'},
-            gap: 1, border: '1px solid transparent !important' }}>
+            border:'1px solid #ffffff21',
+            ':hover':{border:'1px solid #ffffff21 !Important'},
+            gap: 1 }}>
             <Typography sx={{
                 
                 fontSize: '.7em' }}>

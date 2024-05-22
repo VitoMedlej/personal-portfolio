@@ -3,11 +3,13 @@ import React from 'react'
 import './Btn.css'
 import { Button, Typography } from '@mui/material'
 
-const Btn2 = ({children,className,styles}:{children:any,className?:string,styles:any}) => {
+const Btn2 = ({children,className,styles,onClick}:{onClick?:any,children:any,className?:string,styles:any}) => {
   return (
     
     
-    <a href={'href'} 
+    <a 
+    onClick={onClick}
+    // href={'href'} 
     style={{...styles}}
     className={`btn btn-1  text-center justify-center center flex items-center ${className}`}>
     <svg>

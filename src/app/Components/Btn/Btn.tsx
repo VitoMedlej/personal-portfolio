@@ -4,9 +4,10 @@ import React from 'react'
 import './Btn.css'
 
 
-const Btn = ({children,sx} : any) => {
+const Btn = ({children,sx,onClick} : any) => {
   return (
     <Button
+    onClick={onClick}
     className='cursor pointer'
     sx={{
         color:'white',

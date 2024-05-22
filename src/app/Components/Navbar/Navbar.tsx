@@ -5,8 +5,10 @@ import Btn from '../Btn/Btn'
 import Btn2 from '../Btn/Btn2'
 import Btn3 from '../Btn/Btn3'
 import Link from 'next/link'
-import {gsap} from 'gsap';
 import SMicons from '../SMicons/SMicons'
+import { useRouter } from 'next/navigation'
+import {gsap } from 'gsap';
+
 
 const Navbar = () => {
   const [isOpen,setOpen] = useState(false)
@@ -57,6 +59,13 @@ const Navbar = () => {
   // document.body.classList.add('no-scroll');
 
     }, []);
+    const router = useRouter()
+
+    const ScrollToFn = () =>{
+      closeMenu();
+      gsap.to(window, {duration:2.5, scrollTo: "#contact"});
+      console.log('1: ', 1);
+    }
   return (
     <>
        <Box 
@@ -68,28 +77,73 @@ const Navbar = () => {
        }}
        className='overflowed  '>
 
-        <Box sx={{ top: '16%'}} className='white cursor pointer nav-menu'>
+        <Box onClick={()=>{closeMenu(); router.push('/#hero')}} sx={{ top: '16%'}} className='white cursor pointer nav-menu'>
           <Link className='decor-none white' href='/'>
           <Typography sx={{fontSize:'1.2em'}}>
-            Hello wolrd  
+           Home
           </Typography>
           </Link>
         </Box>
-        <Box sx={{ top: '24%'}} className='white nav-menu'>
+
+
+        <Box onClick={()=>{closeMenu(); 
+   gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#portfolio"});
+
+        }} sx={{ top: '24%'}} className='white cursor pointer nav-menu'>
           <Link className='decor-none white' href='/'>
           <Typography sx={{fontSize:'1.2em'}}>
-            Hello wolrd  
+          Portfolio
           </Typography>
           </Link>
         </Box>
-        <Box sx={{ top: '32%'}} className='white nav-menu'>
+
+        <Box onClick={()=>{closeMenu(); 
+   gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#Skills"});
+
+        }} sx={{ top: '32%'}} className='white cursor pointer nav-menu'>
           <Link className='decor-none white' href='/'>
           <Typography sx={{fontSize:'1.2em'}}>
-            Hello wolrd  
+          Skills
           </Typography>
           </Link>
         </Box>
-        <Box sx={{ px:1,top: '40%'}} className='absolute'>
+
+        <Box onClick={()=>{closeMenu(); 
+   gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#Services"});
+
+        }} sx={{ top: '40%'}} className='white cursor pointer nav-menu'>
+          <Link className='decor-none white' href='/'>
+          <Typography sx={{fontSize:'1.2em'}}>
+          Services
+          </Typography>
+          </Link>
+        </Box>
+
+        <Box onClick={()=>{closeMenu(); 
+   gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#Testimonials"});
+
+        }} sx={{ top: '48%'}} className='white cursor pointer nav-menu'>
+          <Link className='decor-none white' href='/'>
+          <Typography sx={{fontSize:'1.2em'}}>
+          Testimonials
+          </Typography>
+          </Link>
+        </Box>
+
+        <Box onClick={()=>{closeMenu(); 
+   gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#Contact"});
+
+        }} sx={{ top: '56%'}} className='white cursor pointer nav-menu'>
+          <Link className='decor-none white' href='/'>
+          <Typography sx={{fontSize:'1.2em'}}>
+          Contact
+          </Typography>
+          </Link>
+        </Box>
+
+
+        
+        <Box sx={{ px:1,top: '64%'}} className='absolute'>
 
         <SMicons/>
         </Box>
@@ -126,23 +180,34 @@ const Navbar = () => {
       
         
 
-        <Box className='cent cursor pointer' sx={{height:'50px'}}>
+        <Box 
+        onClick={()=>router.push('/')}
+        className='cent cursor pointer' sx={{height:'50px'}}>
           <img  src="https://ucarecdn.com/882f100e-18b8-451c-9c53-5f75cd0c7a47/vm.png" alt="" className="img invert" />
         </Box>
-
         <Box>
-        <Btn className="" sx={{
+
+        <Btn 
+          onClick={()=>
+            ScrollToFn()}
+
+        className="" sx={{
             ':hover':{color:'#550df4 !Important'},
             gap: 1, px:2 }}>
+
             <Typography sx={{
                 display:{xs:'none',sm:'flex'},  
                 fontSize: '.7em' }}>
               Hit me up
             </Typography>
-            <Box sx={{ width: '20px', height: '20px' }} className="invert">
+            <Box
+
+            
+            sx={{ width: '20px', height: '20px' }} className="invert">
               <img src="https://cdn-icons-png.flaticon.com/128/9314/9314363.png" alt="" className="img" />
             </Box>
           </Btn>
+
         </Box>
     </Container>
   

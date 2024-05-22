@@ -50,7 +50,7 @@ const Hero = () => {
         <Typography sx={{
         maxWidth:'800px',
         pt:{xs:6,sm:6,md:6},
-        fontSize:{xs:'2.1em',sm:'3em',md:'3em',lg:'3.5em'},fontWeight:'600'}} 
+        fontSize:{xs:'2.4em',sm:'3em',md:'3em',lg:'3.5em'},fontWeight:'600'}} 
         component='h1'
         className='white  center auto text-center'>
           {/* I build Web & Mobile apps that give your business an unfair advantage */}
@@ -74,7 +74,13 @@ const Hero = () => {
           pt:4,gap:2}} className='flex  w100 center items-center justify-center auto'>
 
         
-        <Btn2 className='flex gap gap2 bg3'
+        <Btn2
+        onClick={(e : any)=>{
+          e.preventDefault();
+          gsap.to(window, {duration:1.5, scrollTo: "#portfolio"});
+
+        }}
+        className='flex gap gap2 bg3'
         
         styles={{background:'black',fontWeight:'300'}}>
         <>

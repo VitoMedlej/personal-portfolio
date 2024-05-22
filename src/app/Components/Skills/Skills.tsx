@@ -25,7 +25,7 @@ const skills = [
   ];
 const Portfolio = () => {
   return (
-    <Grid container className='flex  auto' sx={{
+    <Grid container id='Skills' className='flex  auto' sx={{
         zIndex:'10',
         // minHeight:'100vh',
         backgroundImage:'radial-gradient(circle at 50% 50%, rgba(17, 24, 65, 43.55), #000 35%)',

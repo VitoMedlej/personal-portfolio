@@ -11,9 +11,13 @@ import Pricing from './Components/Pricing/Pricing'
 import Testimonials from './Components/Testimonials/Testimonials'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import {gsap } from 'gsap';
 
 
 const Index = () => {
+gsap.registerPlugin(ScrollToPlugin);
+
   let [gradientStop,setGradientStop] = useState(63)
   let handleMouseMove = (event : any) => {
     let gradientStop = 70 + (event.clientX + event.clientY) / (window.innerWidth + window.innerHeight) * 30;
@@ -28,7 +32,7 @@ const Index = () => {
     onMouseMove={handleMouseMove}
     className='trans1 col flex ' sx={{
 
-      backgroundImage:{xs:'radial-gradient(circle at 50% 0%, rgba(17, 24, 65, 43.55), #000 19%)',
+      backgroundImage:{xs:'radial-gradient(circle at 50% 21%, rgba(17, 24, 65, 43.55), #000 30%)',
       sm:'radial-gradient(circle at 50% -15%, rgba(17, 24, 65, 43.55), #000 65%)',
       md:'radial-gradient(circle at 50% -23%, rgba(17, 24, 65, 43.55), #000 65%)'},
       // backgroundImage: `radial-gradient(circle at 50% -1%, rgba(30, 4, 88, .55), #000 7%)`
