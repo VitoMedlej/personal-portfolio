@@ -534,7 +534,7 @@ button[disabled] {
 
 .hero {
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateY(20px);
 }
 
 .navbar {

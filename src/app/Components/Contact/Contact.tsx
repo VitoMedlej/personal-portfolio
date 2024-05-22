@@ -1,12 +1,42 @@
 "use client"
 import { Grid, Box, Typography, Rating, TextField } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import Btn2 from '../Btn/Btn2'
 import Btn3 from '../Btn/Btn3'
 
 
 
 const Portfolio = () => {
+  const [info,setInfo] = useState({Fname:'',email:'',message:''})
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const submitMessage = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/send-email`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({message:info}),
+      });
+  
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+    } catch (e : any) {
+      setError(e.message);
+    } finally {
+      setLoading(false);
+    }
+  }
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInfo({
+      ...info,
+      [e.target.name]: e.target.value
+    });
+  };
   return (
     <Grid 
     id='Contact'
@@ -49,7 +79,10 @@ sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
   variant='outlined'
   label='Full Name'
   placeholder='Full Name'
-  name='fullName'
+  name='Fname'
+ 
+value={info.Fname}
+onChange={handleInputChange}
   sx={{
     color: 'black',
     backgroundColor: 'white',
@@ -66,10 +99,12 @@ sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 />
 
 <TextField
+name='email'
+value={info.email}
+onChange={handleInputChange}
   variant='outlined'
   label='Email Address'
   placeholder='Email Address'
-  name='Email'
   
   type='email'
   sx={{
@@ -97,10 +132,13 @@ sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 />
 
 <TextField
+name='message'
+value={info.message}
+onChange={handleInputChange}
   variant='outlined'
   label='Your Message'
   placeholder='Your Message'
-  name='Message'
+
   type='text'
   rows={3}
 
@@ -125,7 +163,12 @@ sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
           pt:4,gap:2}} className='flex  w100 center items-center justify-center auto'>
 
         
-        <Btn3 className='flex gap gap2 '
+        <Btn3 
+           onClick={(e : any)=>{
+            e.preventDefault();
+            submitMessage()
+          }}
+        className='flex gap gap2 '
         
         styles={{background:'black',
         width:'200px',
@@ -148,7 +191,7 @@ sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
         </Box>
         <Box className="w100 auto center flex" sx={{pt:2}}>
 
-        <a href='/' className='clr2' target='_blank'>
+        <a href='mailto:hello@vito-medlej.com' className='clr2' target='_blank'>
           Vito.medlej@gmail.com
         </a>
         </Box>

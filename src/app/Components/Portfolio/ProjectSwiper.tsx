@@ -127,9 +127,20 @@ export default function App() {
                           <Typography className='text-center ' sx={{px:1,fontWeight:600,fontSize:'1.5em'}}>
                         {i?.title}
                           </Typography>
+
+                          <a href={i?.link ? i?.link : i.href} 
+                          target='_blank'
+                          className="white flex row center items-center  decor-none">
+
                           <Typography className='cursor pointer' sx={{pt:.5,fontSize:'.8em'}}>
                         {i?.link ? i?.link : i.href  }
                           </Typography>
+                          <Box sx={{width:'15px',height:'15px',ml:.35}}>
+                            <img src="https://cdn-icons-png.flaticon.com/128/2990/2990159.png"
+                             alt="" className="img invert contain" />
+                          </Box>
+                          </a>
+
                         </Box>
                       </Box>
 

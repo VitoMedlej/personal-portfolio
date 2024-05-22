@@ -88,17 +88,7 @@ gsap.registerPlugin(ScrollToPlugin);
 {`A Bit About Me: I'm Vito Medlej`}
 
 </Typography>
-          <Typography sx={{
-  textAlign:{xs:'center',md:'left'},
-            
-            fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
-              {
-                `
-                Coding isn't just a job for me, it's the thing I'd do even if I had all the money in the world.
-
-                `
-              }
-          </Typography>
+      
           <Typography sx={{
   textAlign:{xs:'center',md:'left'},
               pt:.5,
@@ -112,6 +102,18 @@ gsap.registerPlugin(ScrollToPlugin);
                 deliver top level software solutions.
 
                  
+                `
+              }
+          </Typography>
+
+          <Typography sx={{
+  textAlign:{xs:'center',md:'left'},
+            
+            fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
+              {
+                `
+                Coding gives me sense of purpose and not just a job for me, it's the thing I'd do even if I had all the money in the world.
+
                 `
               }
           </Typography>

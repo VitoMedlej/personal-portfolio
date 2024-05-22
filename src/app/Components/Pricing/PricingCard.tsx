@@ -3,6 +3,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
 import Btn from '../Btn/Btn';
+import {gsap } from 'gsap';
 
 export default function Card({sx, miniTitle, title, text, perks, href}:any) {
   const [position, setPosition] = React.useState({ x: 0, y: 0 });
@@ -77,7 +78,8 @@ export default function Card({sx, miniTitle, title, text, perks, href}:any) {
                 <img src="https://cdn-icons-png.flaticon.com/128/992/992651.png" alt="" className="img invert" />
               </Box>
             :  <Box sx={{ width: '20px', height: '20px' }} className="">
-            <img src="https://cdn-icons-png.flaticon.com/128/4315/4315445.png" alt="" className="img" />
+            <img src="https://cdn-icons-png.flaticon.com/128/4315/4315445.png" alt="" 
+            className="img contain" />
           </Box>
             }
               <Typography sx={{ 
@@ -95,14 +97,20 @@ export default function Card({sx, miniTitle, title, text, perks, href}:any) {
         <Box className="flex end" sx={{ justifyContent: 'end', mt: 4, alignItems: 'flex-end' }}>
          
          
-          <Btn className="pointer cursor" sx={{
+          <Btn
+                onClick={(e : any)=>{
+                  e.preventDefault();
+                  gsap.to(window, {duration:1, scrollTo: "#Contact"});
+          
+                }}
+          className="pointer cursor" sx={{
             border:'1px solid #ffffff21',
             ':hover':{border:'1px solid #ffffff21 !Important'},
             gap: 1 }}>
             <Typography sx={{
                 
                 fontSize: '.7em' }}>
-              Secure Your Package
+              Get Started
             </Typography>
             <Box sx={{ width: '20px', height: '20px' }} className="invert">
               <img src="https://cdn-icons-png.flaticon.com/128/13554/13554816.png" alt="" className="img" />

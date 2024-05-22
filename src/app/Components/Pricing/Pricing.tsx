@@ -4,6 +4,9 @@ import React from 'react'
 import Btn2 from '../Btn/Btn2'
 import Btn3 from '../Btn/Btn3'
 import PricingCard from './PricingCard'
+import {gsap } from 'gsap';
+
+
 
 const Portfolio = () => {
   return (
@@ -66,6 +69,7 @@ text={`
              title={'500-5000$'}
              perks={[
               "Strong UI/UX that displays brand identity",
+              'Secure User authentication systems',
               "Trust & Security Features",
               "Easy-to-scale & highly reliable code",
               "Intelligent searchability and navigation systems",
@@ -85,8 +89,8 @@ text={`
                 text={`Looking for something else? A system for your business? A mobile app? Worry not, 
                       Let us discuss further based on the scale of your vision!
                 `}
-                 miniTitle={'Custom Applications'}
-                 title={'Individual Price'}
+                 miniTitle={'Other Applications'}
+                 title={'Custom Price'}
                  perks={[
                   "Strong UI/UX that displays brand identity",
                   "Trust & Security Features",
@@ -97,7 +101,7 @@ text={`
 
                   "Fast loading speed on mobile and desktop",
                   "24/7 support and maintenance, never breaks unexpectedly",
-                  "Fast and secure database setup + backup",
+                  "Fast and secure database design + backup",
                   // "Global payment gateway",
                   // {optional: true, text: "Multi-language support"},
                   {optional: true, text: "Additional Pages (if applicable)"},
@@ -112,13 +116,19 @@ text={`
           pt:4,gap:2}} className='flex  w100 center items-center justify-center auto'>
 
         
-        <Btn3 className='flex gap gap2 '
+        <Btn3 
+         onClick={(e : any)=>{
+          e.preventDefault();
+          gsap.to(window, {duration:1, scrollTo: "#Contact"});
+  
+        }}
+        className='flex gap gap2 '
         
         styles={{background:'black',
         
         fontWeight:'300'}}>
         <>
-        {`View More`}
+        {`Get quote`}
        
 
         <img src="https://cdn-icons-png.flaticon.com/128/2722/2722998.png" style={{

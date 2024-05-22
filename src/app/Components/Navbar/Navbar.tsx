@@ -46,10 +46,13 @@ const Navbar = () => {
 
   useEffect(() => {
       
-    gsap.to('.navbar', { opacity: 1, y: 0 , x: '50%', duration: 0.5, 
-    ease: "ease",
-
-    delay: 0.015, onComplete: () => {
+    gsap.to('.navbar', { opacity: 1, y: 0 , x: '50%', duration: 1, 
+    ease: "none",
+    stagger: {
+      each: 0.5,
+      from: "center"
+    },
+    delay: 0.45, onComplete: () => {
       // gsap.set('.hero', { display: 'none', delay:.35 });
       // setAnimating(false);
     }});
@@ -62,9 +65,8 @@ const Navbar = () => {
     const router = useRouter()
 
     const ScrollToFn = () =>{
+      gsap.to(window, {duration:2.5, scrollTo: "#Contact"});
       closeMenu();
-      gsap.to(window, {duration:2.5, scrollTo: "#contact"});
-      console.log('1: ', 1);
     }
   return (
     <>

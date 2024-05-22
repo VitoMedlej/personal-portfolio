@@ -14,8 +14,8 @@ const Hero = () => {
 
   useEffect(() => {
       
-    gsap.to('.hero', { opacity: 1, y: 0, duration: 0.5, 
-        ease: "ease",
+    gsap.to('.hero', { opacity: 1, y: 0, duration: 1, 
+        ease: "none",
       
       delay: 0.25, onComplete: () => {
       // gsap.set('.hero', { display: 'none', delay:.35 });
@@ -106,7 +106,7 @@ const Hero = () => {
           </span>
           <span className='white'>
 
-           Projects
+           Happy Clients
           </span>
           </Typography>
         </Box>

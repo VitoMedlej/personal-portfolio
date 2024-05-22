@@ -4,6 +4,8 @@ import React from 'react'
 import ProjectSwiper from './ProjectSwiper'
 import Btn2 from '../Btn/Btn2'
 import Btn3 from '../Btn/Btn3'
+import {gsap } from 'gsap';
+
 
 const Portfolio = () => {
   return (
@@ -25,7 +27,8 @@ const Portfolio = () => {
             <Typography className='white text-center auto' sx={{pb:1,fontWeight:700,
               fontSize:{xs:'3em',sm:'3em',md:'4em'}}}>
 {/* Crafted with Passion: My Projects */}
-            My Latest Projects 
+            {/* My Latest Projects  */}
+            Latest Successful Projects 
 </Typography>
 <Typography
 className='white text-center w100'
@@ -45,13 +48,19 @@ Below are my latest real-world projects delivered to actual businesses
           pt:4,gap:2}} className='flex  w100 center items-center justify-center auto'>
 
         
-        <Btn3 className='flex gap gap2 '
+        <Btn3 
+      onClick={(e : any)=>{
+        e.preventDefault();
+        gsap.to(window, {duration:1, scrollTo: "#Contact"});
+
+      }}
+        className='flex gap gap2 '
         
         styles={{background:'black',
         
         fontWeight:'300'}}>
         <>
-        {`View More`}
+        {`Get yours`}
        
 
         <img src="https://cdn-icons-png.flaticon.com/128/2722/2722998.png" style={{

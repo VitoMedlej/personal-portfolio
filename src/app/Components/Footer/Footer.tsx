@@ -20,16 +20,22 @@ const Footer = () => {
                         <Box
         onClick={()=>router.push('/')}
                         
-                        className=' ' sx={{width:'100px'}}>
+                        className='cursor pointer ' sx={{width:'100px'}}>
                             <img
                             
                             src="https://ucarecdn.com/882f100e-18b8-451c-9c53-5f75cd0c7a47/vm.png"
                             
                             alt="" className="img invert" />                        
                     </Box> 
+                    <a 
+                    target="_blank"
+                    href="mailto:hello@vito-medlej.com"
+                    
+                    className="decor-none white">
                                 <Typography className='white'>
-                                    Hello@vitomedlej.com
+                                    Hello@vito-medlej.com
                                 </Typography>
+                    </a>
                         </Box>
         </Box>
     </footer>
