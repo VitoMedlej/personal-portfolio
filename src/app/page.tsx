@@ -42,7 +42,7 @@ const Index = () => {
 
     <Grid container className='flex  auto' sx={{
       zIndex:'10',
-      pt:18,
+      pt:{xs:15},
       // minHeight:'100vh',
       // height:'1500px',
 
@@ -177,15 +177,16 @@ const Index = () => {
                                 src={`https://ucarecdn.com/150b60a1-4ef3-4ec8-8f1a-d90a7ea26c85/-/crop/1129x1256/0,194/-/preview/3000x3000/`}
                                 alt="Personal Image"/>
                             <Box
-                                className='gradientBg'
+                                className='gradientBg absolute'
                                 sx={{
                                 width: '100px',
                                 height: '100px',
                                 zIndex: '0',
                                 position: 'absolute',
                                 right: {
-                                    xs: '-1%',
-                                    sm: '-5%'
+                                    xs: '0%',
+                                    sm: '-5%',
+                                    md:'-8%'
                                 },
                                 opacity: 1,
                                 bottom: '-5%',
@@ -204,7 +205,7 @@ const Index = () => {
                                     xs: '0%',
                                     lg: '-5%'
                                 },
-                                width: '100%',
+                                width: {sm:'100%'},
                                 height: 'fit-content',
 
                                 right: {

@@ -23,8 +23,8 @@ const Portfolio = () => {
                 py:4}}>
             <Typography className='white text-center auto' sx={{pb:1,fontWeight:700,
               fontSize:{xs:'3em',sm:'3em',md:'4em'}}}>
-My Creative Software Solution Suite
-
+{/* My Creative Software Solution Suite */}
+              Prices and offers
 </Typography>
 <Typography
 className='white text-center w100'

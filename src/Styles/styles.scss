@@ -373,9 +373,9 @@ button[disabled] {
 
 color: rgb(245, 245, 245) !important;
     border: 1px solid;
-    width: 40px;
+    width: 40px !important;
     border-radius: 50%;
-    height: 40px;
+    height: 40px !important;
     border: 1px solid #ffffff21 ;
   background: #0c1021 ;
     // background: #550df4; 
@@ -463,4 +463,40 @@ color: rgb(245, 245, 245) !important;
   margin-right: 4px;
   padding: 5px 20px;
   border-radius: 500px;
+}
+
+
+
+.fullscreen-cover {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 124124124124;
+  background-image: radial-gradient(circle at 50% 0%, rgba(17, 24, 65, 43.55), #000 100%);
+  
+  .main-logo {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      .img {
+          object-fit: contain;
+          filter: invert(1);
+      }
+  }
+}
+.hero {
+  opacity: 0;
+  transform: translateY(10px);
+}
+.navbar {
+  opacity: 0;
+  transform: translate(50%, 10px);
+
 }

@@ -14,7 +14,7 @@ const Footer = () => {
         <Box className='w100'>
         <Divider sx={{background:"gray",width:'100%',opacity:0.5}}></Divider>
                         <Box sx={{py:2}} className='w100 flex justify-between items-center'>
-                        <Box className=' ' sx={{width:'50px'}}>
+                        <Box className=' ' sx={{width:'100px'}}>
                             <img
                             
                             src="https://ucarecdn.com/882f100e-18b8-451c-9c53-5f75cd0c7a47/vm.png"

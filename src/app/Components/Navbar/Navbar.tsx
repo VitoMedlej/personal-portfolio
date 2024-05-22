@@ -42,7 +42,21 @@ const Navbar = () => {
   //   }
   // }, [isOpen]);
 
+  useEffect(() => {
+      
+    gsap.to('.navbar', { opacity: 1, y: 0 , x: '50%', duration: 0.5, 
+    ease: "ease",
 
+    delay: 0.015, onComplete: () => {
+      // gsap.set('.hero', { display: 'none', delay:.35 });
+      // setAnimating(false);
+    }});
+    
+  document.body.classList.remove('no-scroll'); 
+
+  // document.body.classList.add('no-scroll');
+
+    }, []);
   return (
     <>
        <Box 
@@ -52,7 +66,7 @@ const Navbar = () => {
       display:'none',
       opacity:0,
        }}
-       className='overflowed '>
+       className='overflowed  '>
 
         <Box sx={{ top: '16%'}} className='white cursor pointer nav-menu'>
           <Link className='decor-none white' href='/'>
@@ -84,7 +98,7 @@ const Navbar = () => {
 
     <Container
     
-    className={`flex absolute center c50 between row justify-between items-center ${false ? 'bg' : ''}`} 
+    className={`flex navbar absolute center c50 between row justify-between items-center ${false ? 'bg' : ''}`} 
     sx={{
       
       maxWidth:{xs:'98%',sm:'97%',lg:'1150px'},

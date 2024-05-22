@@ -78,8 +78,8 @@ const Portfolio = () => {
               fontSize:{xs:'3em',sm:'3em',md:'4em'},
               maxWidth:'md',
               }}>
-Voices of success from beloved clients
-
+{/* Voices of success from beloved clients */}
+            {`Client's reviews`}
 </Typography>
 <Typography
 className='white text-center w100'

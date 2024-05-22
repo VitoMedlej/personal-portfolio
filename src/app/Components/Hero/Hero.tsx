@@ -1,15 +1,41 @@
 "use client"
 import { Box, Container, Divider, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Btn2 from '../Btn/Btn2'
 import Btn from '../Btn/Btn'
 import Btn3 from '../Btn/Btn3'
 import ReviewSection from '../Reviews/ReviewSection'
 import { testimonials } from '../Testimonials/Testimonials'
+import SMicons from '../SMicons/SMicons'
+import {gsap} from 'gsap';
+
 
 const Hero = () => {
+
+  useEffect(() => {
+      
+    gsap.to('.hero', { opacity: 1, y: 0, duration: 0.5, 
+        ease: "ease",
+      
+      delay: 0.25, onComplete: () => {
+      // gsap.set('.hero', { display: 'none', delay:.35 });
+      // setAnimating(false);
+    }});
+      // gsap.to('.main-logo', {
+      //   scale: 1.2,
+      //   repeat: -1,
+        
+      //   yoyo: true,
+      //   duration: 1,
+      //   ease: "ease"
+      // });
+  document.body.classList.remove('no-scroll'); 
+
+  // document.body.classList.add('no-scroll');
+
+    }, []);
   return (
-    <Container className='center  items-center flex col align-center ' sx={{
+    <Container className='center hero items-center flex col align-center ' sx={{
       position: `sticky`,
       top: 0,
       py:6,minHeight:'100vh'}}>
@@ -28,8 +54,8 @@ const Hero = () => {
         component='h1'
         className='white  center auto text-center'>
           {/* I build Web & Mobile apps that give your business an unfair advantage */}
-        Web & Mobile apps for an unfair business advantage
-          {/* Give your business an unfair advantage */}
+        {/* Web & Mobile apps for an unfair business advantage */}
+          Give your business an unfair advantage
         </Typography>
         <Typography sx={{maxWidth:'650px',
         py:2,
@@ -39,7 +65,8 @@ const Hero = () => {
           {/* The #1 place to learn profitable skills like finding clients, automating your business, creating recurring revenue and more! */}
           {/* I build complex web & mobile apps that empower businesses  */}
           {
-            `Your go-to developer for creating incredibly powerful fullstack applications.`
+            `Hello friend! My name is Vito Medlej, and I build incredibly powerful Web & Mobile applications.`
+            // `Your go-to developer for creating incredibly powerful Web & Mobile applications.`
           }
         </Typography>
 
@@ -77,6 +104,7 @@ const Hero = () => {
           </span>
           </Typography>
         </Box>
+      
         {/* <Btn3>View Work</Btn3> */}
     </Container>
   )

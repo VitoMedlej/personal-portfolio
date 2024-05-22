@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 import "../Styles/styles.css";
 import Navbar from "./Components/Navbar/Navbar";
+import FullscreenCover from "./Components/FullscreenCover/FullscreenCover";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +23,17 @@ export default function RootLayout({
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
       </head>
-      <body >
+      <body className='relative no-scroll' >
+
+
+      {/* <div className="fullscreen-cover absolute flex items-center">
+   
+    <div className="auto main-logo flex center items-center">
+        <img src="https://ucarecdn.com/882f100e-18b8-451c-9c53-5f75cd0c7a47/vm.png" alt="" className="img invert contain" />
+    </div>
+</div> */}
+
+        <FullscreenCover/>
         <Navbar/>
         
         {children}

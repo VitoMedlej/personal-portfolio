@@ -11,7 +11,7 @@ export interface MyComponentProps {
 
 const MyComponent: React.FC<MyComponentProps> = ({ data }) => {
   return (
-    <Box sx={{mt:{xs:4,sm:6},maxWidth:'lg'}} className='flex row wrap w100 '>
+    <Box sx={{mt:{xs:0,sm:6},maxWidth:'lg'}} className='flex row wrap w100 '>
      <Box className='justify-evenly w100' sx={{display:{xs:'none',md:'flex'}}}>
 
       {data.map((item, index) => (

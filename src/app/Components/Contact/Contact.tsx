@@ -27,7 +27,8 @@ const Portfolio = () => {
                 py:4}}>
             <Typography className='white text-center auto' sx={{pb:1,fontWeight:700,
               fontSize:{xs:'3em',sm:'3em',md:'4em'}}}>
-                Got something to tell me?
+                {/* Got something to tell me? */}
+                  Get in touch
 </Typography>
 <Typography
 className='white text-center w100'
