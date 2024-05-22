@@ -136,7 +136,7 @@ textarea {
   width: 100vw;
   z-index: 1222;
   height: 100vh;
-  background: rgba(36, 36, 36, 0.1);
+  background: rgba(0, 0, 0, 0.5098039216);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -146,6 +146,9 @@ textarea {
   padding: 0.5em;
   display: flex;
   width: 95%;
+}
+.overflowed .nav-menu:hover {
+  background: rgba(204, 204, 204, 0.2117647059);
 }
 
 .contain {

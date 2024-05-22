@@ -121,7 +121,7 @@ font-family: "Inter", sans-serif!important;
   width: 100vw;
   z-index: 1222;
   height: 100vh;
-  background: rgba(36, 36, 36, 0.1);
+  background: #00000082;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   .nav-menu {
@@ -134,6 +134,9 @@ font-family: "Inter", sans-serif!important;
     // align-items: center;
     display: flex;
     width: 95%;
+    &:hover {
+      background: #cccccc36;
+    }
     // margin: 0 auto;
   }
 }

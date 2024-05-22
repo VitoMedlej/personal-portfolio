@@ -6,6 +6,7 @@ import Btn2 from '../Btn/Btn2'
 import Btn3 from '../Btn/Btn3'
 import Link from 'next/link'
 import {gsap} from 'gsap';
+import SMicons from '../SMicons/SMicons'
 
 const Navbar = () => {
   const [isOpen,setOpen] = useState(false)
@@ -53,7 +54,7 @@ const Navbar = () => {
        }}
        className='overflowed '>
 
-        <Box sx={{ top: '16%'}} className='white nav-menu'>
+        <Box sx={{ top: '16%'}} className='white cursor pointer nav-menu'>
           <Link className='decor-none white' href='/'>
           <Typography sx={{fontSize:'1.2em'}}>
             Hello wolrd  
@@ -74,6 +75,11 @@ const Navbar = () => {
           </Typography>
           </Link>
         </Box>
+        <Box sx={{ px:1,top: '40%'}} className='absolute'>
+
+        <SMicons/>
+        </Box>
+
 </Box>
 
     <Container
@@ -106,8 +112,8 @@ const Navbar = () => {
       
         
 
-        <Box className='cent' sx={{height:'50px'}}>
-          <img  src="https://cdn-icons-png.flaticon.com/128/6415/6415824.png" alt="" className="img invert" />
+        <Box className='cent cursor pointer' sx={{height:'50px'}}>
+          <img  src="https://ucarecdn.com/882f100e-18b8-451c-9c53-5f75cd0c7a47/vm.png" alt="" className="img invert" />
         </Box>
 
         <Box>
@@ -115,7 +121,7 @@ const Navbar = () => {
             ':hover':{color:'#550df4 !Important'},
             gap: 1, px:2 }}>
             <Typography sx={{
-                
+                display:{xs:'none',sm:'flex'},  
                 fontSize: '.7em' }}>
               Hit me up
             </Typography>

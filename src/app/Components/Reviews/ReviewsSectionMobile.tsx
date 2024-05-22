@@ -15,13 +15,13 @@ const MySwiperComponent: React.FC<MyComponentProps> = ({data}) => {
   return (
     <Swiper
     className=''
-      spaceBetween={10}
+      spaceBetween={0}
       loop
       speed={500}
       
       slidesPerView={1}
       autoplay={{
-        delay: 1500,
+        delay: 222200,
         disableOnInteraction: false,
       }}
     >
@@ -29,11 +29,11 @@ const MySwiperComponent: React.FC<MyComponentProps> = ({data}) => {
          {data.map((item, index) => {
 
          
-      return <SwiperSlide key={item?.title}>
+      return <SwiperSlide className='review-mobile w100' key={item?.title}>
 
         <Box className='flex touch-none center col items-center justify-center' key={item?.title}>
           <Rating sx={{fontSize:'.8em'}} name="simple-controlled" value={5} readOnly />
-          <Typography sx={{fontWeight:200}} className='center text-center white' variant="body1" gutterBottom>
+          <Typography sx={{fontWeight:200,fontSize:'.8em'}} className='center gray2 text-center white'  gutterBottom>
             {`"${item.title}"`}
           </Typography>
         </Box>

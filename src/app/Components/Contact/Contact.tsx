@@ -27,14 +27,13 @@ const Portfolio = () => {
                 py:4}}>
             <Typography className='white text-center auto' sx={{pb:1,fontWeight:700,
               fontSize:{xs:'3em',sm:'3em',md:'4em'}}}>
-Few Of My Master piece Work
-
+                Got something to tell me?
 </Typography>
 <Typography
 className='white text-center w100'
 sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 
-I am Kilian, a passionate freelancer from Hamburg
+              Send me a message, I'll be sure to reply!
           </Typography>
             </Box>
         <Box sx={{

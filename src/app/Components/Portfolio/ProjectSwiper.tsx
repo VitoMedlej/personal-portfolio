@@ -86,6 +86,12 @@ export default function App() {
                   href : `https://number1bycarla.com/`
                 },
                 {
+                  img:`https://images.pexels.com/photos/10984997/pexels-photo-10984997.jpeg?auto=compress&cs=tinysrgb&w=700`,
+                  title:'DIY Crafts Diamond Paintings Shop',
+                  href: 'diycraftsdiamond.com'
+                },
+
+                {
                   img:`https://ucarecdn.com/4a7e0e1c-47b7-4196-bfa7-b474365da6c8/WhatsAppImage20240428at125445_21f13c27.jpg
                   `,
                   title: `Prospecs For Capacity Development Trainings`,

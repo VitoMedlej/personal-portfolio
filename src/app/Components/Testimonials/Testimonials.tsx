@@ -5,18 +5,56 @@ import Btn2 from '../Btn/Btn2'
 import Btn3 from '../Btn/Btn3'
 
 
-const testimonials = [
-    { name: 'John Doe', text: 'onbeirut transformed our website with their exceptional HTML skills.' },
-    { name: 'Jane Smith', text: 'The React application developed by onbeirut was top-notch.' },
-    { name: 'Alice Johnson', text: 'onbeirut\'s mastery of Scss made our website look stunning.' },
-    { name: 'Bob Williams', text: 'The Next.js project delivered by onbeirut exceeded our expectations.' },
-    { name: 'Charlie Brown', text: 'onbeirut handled our MongoDB database efficiently.' },
-    { name: 'Emily Davis', text: 'The JavaScript code written by onbeirut was clean and efficient.' },
-    { name: 'Frank Miller', text: 'onbeirut\'s use of Typescript in our project improved its stability.' },
-    { name: 'Grace Wilson', text: 'The Express.js backend developed by onbeirut was robust and secure.' },
-    { name: 'Harry Moore', text: 'onbeirut managed our MySQL databases effectively.' },
-  
+export const testimonials = [
+    {
+        title: 'Deserves a 5 stars rating and more.',
+        name:'“(Omar, Founder/CEO/Lead Interior Architect )',
+        text : `Very professional and understanding. Prompt reply and fast delivery. Vito deserves a 5 stars rating and more.`
+    },
+    {
+        title:'Professional work, Affordable prices ✔️✔️✔️',
+        name:'Carla Kiwan',
+        text:`Professional work
+        Affordable prices
+        Great effort
+        ✔️✔️✔️
+        `
+    }
+    ,
+    {
+        title: 'Amazing assistance and fast delivery with customization',
+        name:'“(Rudy Bounafeh, Pet Business Owner)',
+        text : `Amazing assistance and fast delivery with customization, Vito's always ready to help as soon as possible in case of any bug`
+    },
+   
+    {
+        title :`I knew I made the right choice - `,
+        name:`”(Yehya, Founder of Teentops)`,
+        text : `I was so impressed with the shop he built for me - it was so easy 
+        to use! And when he built my 
+        Android app, I knew I made the right choice. No regrets at all.
+        `
+    },
+    
+    
+    {
+        title :`They made it work perfectly - `,
+        name:`”(Powerhouse’s Owner)`,
+        text : `Vito really came through for me. I was worried that my huge inventory 
+        would be too much for the site to handle, 
+        but he made it work perfectly. I’m grateful.`
+    },
+    {
+        title : `I just love it! -`,
+        name:`“(Zekra Advertising Specialist)`,
+        text : `We’re a local business and most of our clients are 
+        Lebanese. What I love about
+         the site is that it supports both arabic and english at the same time.`
+    },
+   
 ];
+
+
 const Portfolio = () => {
   return (
     <Grid container className='flex  auto' sx={{
@@ -37,7 +75,9 @@ const Portfolio = () => {
                 // minWidth:{xs:'80vw'}, 
                 py:4}}>
             <Typography className='white text-center auto' sx={{pb:1,fontWeight:700,
-              fontSize:{xs:'3em',sm:'3em',md:'4em'}}}>
+              fontSize:{xs:'3em',sm:'3em',md:'4em'},
+              maxWidth:'md',
+              }}>
 Voices of success from beloved clients
 
 </Typography>
@@ -70,12 +110,13 @@ Real stories from satisfied clients who I had the honour to work with.
                             <img src="https://cdn-icons-png.flaticon.com/128/875/875209.png" alt="" className="img" />
                         </Box> */}
                         <Box sx={{py:1,px:1}}>
-                            <Rating sx={{fontSize:'1em'}} readOnly value={5}/>
-                            <Typography sx={{color:'white',pb:.5}}>
-                        {i?.name}
-                            </Typography>
-                            <Typography className='gray2' sx={{fontSize:'.8em',}}>
+                            <Rating sx={{fontSize:'1.2em'}} readOnly value={5}/>
+                         
+                            <Typography  sx={{color:'#ffffffe6',fontSize:'1em',}}>
                         {i?.text}
+                            </Typography>
+                            <Typography className='gray2' sx={{fontSize:'.8em',py:.5}}>
+                        {i?.name}
                             </Typography>
                         </Box>
                     </Box>

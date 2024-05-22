@@ -5,6 +5,7 @@ import Btn2 from '../Btn/Btn2'
 import Btn from '../Btn/Btn'
 import Btn3 from '../Btn/Btn3'
 import ReviewSection from '../Reviews/ReviewSection'
+import { testimonials } from '../Testimonials/Testimonials'
 
 const Hero = () => {
   return (
@@ -13,10 +14,12 @@ const Hero = () => {
       top: 0,
       py:6,minHeight:'100vh'}}>
         
-      <ReviewSection data={[{title:'"$20,000 using the resources from Pait Pro. 🤑"'},
+      <ReviewSection data={
+        
+        testimonials.slice(0,3)
       
       
-      {title:"I'm charging 3X more for my websites! 🥳"},{title:"Helped me close 5 clients in the last month!"}]}/>
+      }/>
 
         <Typography sx={{
         maxWidth:'800px',

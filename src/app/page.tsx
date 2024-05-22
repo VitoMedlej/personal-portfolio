@@ -28,7 +28,9 @@ const Index = () => {
     onMouseMove={handleMouseMove}
     className='trans1 col flex ' sx={{
 
-      backgroundImage:'radial-gradient(circle at 50% -23%, rgba(17, 24, 65, 43.55), #000 65%)',
+      backgroundImage:{xs:'radial-gradient(circle at 50% 0%, rgba(17, 24, 65, 43.55), #000 19%)',
+      sm:'radial-gradient(circle at 50% -15%, rgba(17, 24, 65, 43.55), #000 65%)',
+      md:'radial-gradient(circle at 50% -23%, rgba(17, 24, 65, 43.55), #000 65%)'},
       // backgroundImage: `radial-gradient(circle at 50% -1%, rgba(30, 4, 88, .55), #000 7%)`
       // background: 'rgb(6,6,74)',
       // background: `radial-gradient(circle, rgba(6,6,74,1) 0%, rgba(0,0,47,1) ${gradientStop}%, rgba(0,0,57,1) 100%)`

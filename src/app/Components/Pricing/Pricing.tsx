@@ -39,10 +39,72 @@ You're a click away from turning your concept to code. Your vision is expertly e
             
             maxWidth:{sm:'100%',md:'95%',lg:'lg'},gap:{xs:1.5,sm:1}}}
              className='white auto  w100  justify-between h100 flex row wrap'>
-        
-            <PricingCard sx={{width:{xs:'100%',md:'39%'}}}/>
-            <PricingCard sx={{mt:{xs:1.5,sm:2,md:0},width:{xs:'100%',md:'59%'}}}/>
-            <PricingCard sx={{mt:{xs:1.5,sm:1,md:1},width:{xs:'100%',md:'100%'}}}/>
+            
+            <PricingCard 
+            miniTitle={'Business Website'}
+            title={'300-1500$'}
+            perks={[
+              `Exclusive & unique custom design of your choice`,
+              `Super-fast site performance`,
+              `.com Domain + Free Hosting Forever`,
+              `SEO-optimized`,
+              `Elegant animations that suit the design`,
+              `Full backend solution included`,
+              `24/7 support and maintenance, never breaks down`,
+              {optional: true, text: `Multi language support `},
+              {optional: true, text: `Additional Pages`},
+              {optional: true, text: `Google Analytics`},
+            ]}
+            sx={{width:{xs:'100%',md:'39%'}}}/>
+
+
+            <PricingCard
+
+text={`
+`}
+             miniTitle={'Ecommerce Solution'}
+             title={'500-5000$'}
+             perks={[
+              "Strong UI/UX that displays brand identity",
+              "Trust & Security Features",
+              "Easy-to-scale & highly reliable code",
+              "Intelligent searchability and navigation systems",
+              "SEO-optimized for search engines",
+              "Full mobile responsiveness & optimizations",
+              "Fast loading speed on mobile and desktop",
+              "24/7 support and maintenance, never breaks unexpectedly",
+              "Fast and secure database setup + backup",
+              "Global payment gateway",
+              {optional: true, text: "Multi-language support"},
+              {optional: true, text: "Additional Pages"},
+              {optional: true, text: "Google Analytics"},
+            ]}
+            
+            sx={{mt:{xs:1.5,sm:2,md:0},width:{xs:'100%',md:'59%'}}}/>
+            <PricingCard
+                text={`Looking for something else? A system for your business? A mobile app? Worry not, 
+                      Let us discuss further based on the scale of your vision!
+                `}
+                 miniTitle={'Custom Applications'}
+                 title={'Individual Price'}
+                 perks={[
+                  "Strong UI/UX that displays brand identity",
+                  "Trust & Security Features",
+                  "Easy-to-scale & highly reliable code",
+                  // "Intelligent searchability and navigation systems",
+                  "SEO-optimized for search engines (if applicable)",
+                  "Full mobile responsiveness & optimizations",
+
+                  "Fast loading speed on mobile and desktop",
+                  "24/7 support and maintenance, never breaks unexpectedly",
+                  "Fast and secure database setup + backup",
+                  // "Global payment gateway",
+                  // {optional: true, text: "Multi-language support"},
+                  {optional: true, text: "Additional Pages (if applicable)"},
+                  {optional: true, text: "Google Analytics (if applicable)"},
+                ]}
+            
+            sx={{mt:{xs:1.5,sm:1,md:1},width:{xs:'100%',md:'100%'}}}/>
         
           </Box>
 

@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
 import Btn from '../Btn/Btn';
 
-export default function Card({sx}: {sx?:any}) {
+export default function Card({sx, miniTitle, title, text, perks, href}:any) {
   const [position, setPosition] = React.useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = React.useState(false);
 
@@ -55,33 +55,39 @@ export default function Card({sx}: {sx?:any}) {
       <Box sx={{ position: 'relative', zIndex: 2, p: 3 }}>
         <Typography sx={{
           pointerEvents: 'none',
-            
             fontWeight: 500 }} className="clr2">
-          Mini Title
+          {miniTitle}
         </Typography>
         <Typography className="white" sx={{
           pointerEvents: 'none',
             
-            fontSize: '2em', fontWeight: 700 }}>
-          Mini Title
+            fontSize: {xs:'2em',sm:'2.4em'}, fontWeight: 700 }}>
+          {title}
         </Typography>
         <Typography className="gray2" sx={{
           pointerEvents: 'none',
-            
+            maxWidth:'700px',
             fontSize: '.8em', fontWeight: 300 }}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste ea nisi id quasi placeat autem?
+              {text}
         </Typography>
-        <Box sx={{ mt: 2.5 }}>
-          {[1, 2, 3].map((perk, index) => (
-            <Box key={index} sx={{ gap: 1, my: 1.2 }} className="flex row items-center">
-              <Box sx={{ width: '20px', height: '20px' }} className="">
-                <img src="https://cdn-icons-png.flaticon.com/128/4315/4315445.png" alt="" className="img" />
+        <Box sx={{ mt: 3 }}>
+          {perks && perks.map((perk : {optional: boolean, text: string } | string, index : number) => (
+            <Box key={index} sx={{ gap: 1, my: 1.5 }} className="flex row items-center">
+             {typeof perk !== 'string' && perk?.optional === true ? <Box sx={{ width: '20px', height: '20px' }} className="">
+                <img src="https://cdn-icons-png.flaticon.com/128/992/992651.png" alt="" className="img invert" />
               </Box>
+            :  <Box sx={{ width: '20px', height: '20px' }} className="">
+            <img src="https://cdn-icons-png.flaticon.com/128/4315/4315445.png" alt="" className="img" />
+          </Box>
+            }
               <Typography sx={{ 
           pointerEvents: 'none',
-                
                 fontSize: '.8em' }}>
-                Lorem ipsum dolor sit amet.
+              {
+              typeof perk !== 'string' && perk?.optional === true ? 
+              perk.text :
+              `${perk}`
+            }
               </Typography>
             </Box>
           ))}

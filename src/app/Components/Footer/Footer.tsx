@@ -1,49 +1,14 @@
 "use client"
 import { Box, Container, Divider, Typography } from '@mui/material'
 import React from 'react'
+import SMicons from '../SMicons/SMicons'
 
 const Footer = () => {
   return (
     <footer className='w100'>
         <Container sx={{pb:4,pt:2}} className='center col auto w100 flex'>
                  
-                    <Box sx={{my:2,gap:2}} className='flex row center'>
-                        {
-
-                            [
-                                {
-                                    img:`https://cdn-icons-png.flaticon.com/128/3670/3670274.png`
-                                    ,href:``
-                                },
-                                {
-                                    img:`https://cdn-icons-png.flaticon.com/128/2111/2111432.png`
-                                    ,href:``
-                                },
-                                {
-                                    img:`https://cdn-icons-png.flaticon.com/128/1384/1384014.png`
-                                    ,href:``
-                                },
-                                {
-                                    img:`https://cdn-icons-png.flaticon.com/128/6244/6244710.png`
-                                    ,href:``
-                                },
-                                
-                                {
-                                    img:`https://cdn-icons-png.flaticon.com/128/909/909263.png`
-                                    ,href:``
-                                },
-                                
-
-                            ].map(link=>{
-                                return <a key={link.img} href={``}>
-
-                                <Box sx={{width:'30px'}}>
-                                    <img src={link?.img} alt="" className="img invert" />
-                                </Box>
-                                </a> 
-                            })
-                        }
-                        </Box> 
+                   <SMicons/>
                           
         </Container>
         <Box className='w100'>
@@ -52,7 +17,7 @@ const Footer = () => {
                         <Box className=' ' sx={{width:'50px'}}>
                             <img
                             
-                            src="https://cdn-icons-png.flaticon.com/128/6415/6415824.png"
+                            src="https://ucarecdn.com/882f100e-18b8-451c-9c53-5f75cd0c7a47/vm.png"
                             
                             alt="" className="img invert" />                        
                     </Box> 
