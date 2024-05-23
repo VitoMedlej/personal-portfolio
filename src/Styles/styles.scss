@@ -500,3 +500,16 @@ color: rgb(245, 245, 245) !important;
   transform: translate(50%, 10px);
 
 }
+.mask {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+  width: 100%;
+}
+.y10 {
+} 
+.op0 {
+  opacity: 0;
+}

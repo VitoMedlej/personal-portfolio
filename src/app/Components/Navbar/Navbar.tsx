@@ -46,16 +46,22 @@ const Navbar = () => {
 
   useEffect(() => {
       
-    gsap.to('.navbar', { opacity: 1, y: 0 , x: '50%', duration: 1, 
+    gsap.to('.navbar', {y: 0 , x: '50%', duration: .5, 
     ease: "none",
     stagger: {
       each: 0.5,
       from: "center"
     },
-    delay: 0.45, onComplete: () => {
+    delay: 0.35, onComplete: () => {
       // gsap.set('.hero', { display: 'none', delay:.35 });
       // setAnimating(false);
     }});
+
+    gsap.to('.navbar', { opacity: 1, y: 0 , x: '50%', duration: 1, 
+    ease: "none",
+   
+    delay: 0.4
+  });
     
   document.body.classList.remove('no-scroll'); 
 

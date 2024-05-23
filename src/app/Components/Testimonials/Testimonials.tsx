@@ -1,8 +1,9 @@
 "use client"
 import { Grid, Box, Typography, Rating } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Btn2 from '../Btn/Btn2'
 import Btn3 from '../Btn/Btn3'
+import {gsap} from 'gsap';
 
 
 export const testimonials = [
@@ -56,6 +57,43 @@ export const testimonials = [
 
 
 const Portfolio = () => {
+
+    const animateTestimonials = () => {
+        const testimonialsTL = gsap.timeline({
+          scrollTrigger: {
+            trigger: ".testimonial-subtitle",
+            start: "top 80%",
+          }
+        });
+      
+        testimonialsTL.to('.testimonial-title', {
+            y: 0,
+          opacity: 1,
+          duration: .35,
+        
+        });
+      
+        testimonialsTL.to('.testimonial-subtitle', {
+            y: 0,
+          opacity: 1,
+          duration: .25,
+          delay:.15
+        });
+      
+        testimonialsTL.to('.testimonial-item', {
+            y: 0,
+          opacity: 1,
+          duration: .5,
+          stagger: 0.2,
+        
+        });
+      };
+      
+      useEffect(() => {
+      animateTestimonials();
+       
+      }, [])
+      
   return (
     <Grid id='Testimonials' container className='flex  auto' sx={{
         zIndex:'10',
@@ -74,7 +112,7 @@ const Portfolio = () => {
               width:'100%',
                 // minWidth:{xs:'80vw'}, 
                 py:4}}>
-            <Typography className='white text-center auto' sx={{pb:1,fontWeight:700,
+            <Typography className='white y10 op0  testimonial-title text-center auto' sx={{pb:1,fontWeight:700,
               fontSize:{xs:'3em',sm:'3em',md:'4em'},
               maxWidth:'md',
               }}>
@@ -82,7 +120,7 @@ const Portfolio = () => {
             {`Client's reviews`}
 </Typography>
 <Typography
-className='white text-center w100'
+className='white y10 op0 testimonial-subtitle text-center w100'
 sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 
 Real stories from satisfied clients who I had the honour to work with.
@@ -98,7 +136,7 @@ Real stories from satisfied clients who I had the honour to work with.
                     return <Box 
                     key={i.name}
                     
-                    className='flex center text-center  row tech-item  ' sx={{
+                    className='flex y10 op0 testimonial-item center text-center  row tech-item  ' sx={{
                       border: '1px solid #ffffff21 !Important',maxWidth:'300px',
 
                       borderRadius:'4px !important',

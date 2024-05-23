@@ -540,4 +540,17 @@ button[disabled] {
 .navbar {
   opacity: 0;
   transform: translate(50%, 10px);
+}
+
+.mask {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+  width: 100%;
+}
+
+.op0 {
+  opacity: 0;
 }/*# sourceMappingURL=styles.css.map */

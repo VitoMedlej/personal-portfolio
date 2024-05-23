@@ -13,11 +13,13 @@ import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import {gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 
 const Index = () => {
 gsap.registerPlugin(ScrollToPlugin);
-
+gsap.registerPlugin(ScrollTrigger);
   let [gradientStop,setGradientStop] = useState(63)
   let handleMouseMove = (event : any) => {
     let gradientStop = 70 + (event.clientX + event.clientY) / (window.innerWidth + window.innerHeight) * 30;

@@ -14,13 +14,13 @@ const Hero = () => {
 
   useEffect(() => {
       
-    gsap.to('.hero', { opacity: 1, y: 0, duration: 1, 
+    gsap.to('.hero', {  y: 0, duration: .5, 
         ease: "none",
-      
-      delay: 0.25, onComplete: () => {
-      // gsap.set('.hero', { display: 'none', delay:.35 });
-      // setAnimating(false);
-    }});
+      delay: 0.25});
+
+    gsap.to('.hero', { opacity: 1, delay:.3, duration: 1, 
+      ease: "none",
+    });
       // gsap.to('.main-logo', {
       //   scale: 1.2,
       //   repeat: -1,
