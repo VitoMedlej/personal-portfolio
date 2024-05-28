@@ -1,14 +1,53 @@
 "use client"
 import { Grid, Box, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Btn2 from '../Btn/Btn2'
 import Btn3 from '../Btn/Btn3'
 import PricingCard from './PricingCard'
-import {gsap } from 'gsap';
+import {gsap} from 'gsap';
 
 
 
 const Portfolio = () => {
+
+
+  const animatePricing = () => {
+    const testimonialsTL = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".testimonial-subtitle",
+        start: "top 80%",
+      }
+    });
+  
+    testimonialsTL.to('.testimonial-title', {
+        y: 0,
+      opacity: 1,
+      duration: .35,
+    
+    });
+  
+    testimonialsTL.to('.testimonial-subtitle', {
+        y: 0,
+      opacity: 1,
+      duration: .25,
+      delay:.15
+    });
+  
+    testimonialsTL.to('.testimonial-item', {
+        y: 0,
+      opacity: 1,
+      duration: .5,
+      stagger: 0.2,
+    
+    });
+  };
+  
+  useEffect(() => {
+  animatePricing();
+   
+  }, [])
+
+
   return (
     <Grid id='Services' container className='flex  auto' sx={{
         zIndex:'10',
@@ -97,10 +136,10 @@ text={`
                   "Easy-to-scale & highly reliable code",
                   // "Intelligent searchability and navigation systems",
                   "SEO-optimized for search engines (if applicable)",
-                  "Full mobile responsiveness & optimizations",
-
+                  "Full mobile responsiveness & optimizations (if applicable)",
                   "Fast loading speed on mobile and desktop",
                   "24/7 support and maintenance, never breaks unexpectedly",
+                  "Documentation and guidance on using the app",
                   "Fast and secure database design + backup",
                   // "Global payment gateway",
                   // {optional: true, text: "Multi-language support"},

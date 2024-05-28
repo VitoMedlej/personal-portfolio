@@ -283,6 +283,7 @@ button[disabled] {
 .swiper-button-next,
 .swiper-button-prev {
   // color: #286538 !important;
+  opacity: 0;
   border: 1px solid #ffffff21 ;
   background: #0c1021 ;
   color: #0c1021 ;
@@ -510,6 +511,9 @@ color: rgb(245, 245, 245) !important;
 }
 .y10 {
 } 
+.y20 {
+  transform: translateY(10px);
+}
 .op0 {
   opacity: 0;
 }

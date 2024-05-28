@@ -1,8 +1,7 @@
 "use client"
 import { Grid, Box, Typography } from '@mui/material'
-import React from 'react'
-import Btn2 from '../Btn/Btn2'
-import Btn3 from '../Btn/Btn3'
+import React, { useEffect } from 'react'
+import {gsap } from 'gsap';
 
 
 const skills = [
@@ -24,6 +23,46 @@ const skills = [
 
   ];
 const Portfolio = () => {
+
+
+
+  const animateSkills = () => {
+    const testimonialsTL = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".skills-subtitle",
+        start: "top 80%",
+      }
+    });
+  
+    testimonialsTL.to('.skills-title', {
+        y: 0,
+      opacity: 1,
+      duration: .35,
+    
+    });
+  
+    testimonialsTL.to('.skills-subtitle', {
+        y: 0,
+      opacity: 1,
+      duration: .25,
+      delay:.15
+    });
+  
+    testimonialsTL.to('.skill-item', {
+        y: 0,
+      opacity: 1,
+      duration: .25,
+      stagger: 0.2,
+    
+    });
+  };
+  
+  useEffect(() => {
+  animateSkills();
+  }, [])
+  
+
+
   return (
     <Grid container id='Skills' className='flex  auto' sx={{
         zIndex:'10',
@@ -42,14 +81,14 @@ const Portfolio = () => {
               // width:'100%',
                 // minWidth:{xs:'80vw'}, 
                 py:4}}>
-            <Typography className='white text-center auto' sx={{pb:1,fontWeight:700,
+            <Typography className='white text-center auto skills-title op0 y20' sx={{pb:1,fontWeight:700,
               fontSize:{xs:'3em',sm:'3em',md:'4em'}}}>
                 {/* My Expertise and Abilities */}
                 My Technical Skills
 
 </Typography>
 <Typography
-className='white text-center w100'
+className='white text-center w100 skills-subtitle op0 y20'
 sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 
 My Expertise and technical abilities that I have acquired over the years 
@@ -64,7 +103,7 @@ My Expertise and technical abilities that I have acquired over the years
                 {skills.map(i=>{
                     return <Box
                     key={i?.name}
-                    className='flex row tech-item  ' sx={{
+                    className='flex row tech-item skill-item op0 y20  ' sx={{
                       border: '1px solid #ffffff21 ',
                       backgroundColor: '#0c1021 !Important',
                       gap:1}}>

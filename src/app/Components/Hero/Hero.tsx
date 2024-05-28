@@ -50,7 +50,7 @@ const Hero = () => {
         <Typography sx={{
         maxWidth:'800px',
         pt:{xs:6,sm:6,md:6},
-        fontSize:{xs:'2.4em',sm:'3em',md:'3em',lg:'3.5em'},fontWeight:'600'}} 
+        fontSize:{xs:'2.6em',sm:'3em',md:'3em',lg:'3.5em'},fontWeight:'800'}} 
         component='h1'
         className='white  center auto text-center'>
           {/* I build Web & Mobile apps that give your business an unfair advantage */}

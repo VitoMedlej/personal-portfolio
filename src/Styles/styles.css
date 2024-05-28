@@ -317,6 +317,7 @@ button[disabled] {
 
 .swiper-button-next,
 .swiper-button-prev {
+  opacity: 0;
   border: 1px solid rgba(255, 255, 255, 0.1294117647);
   background: #0c1021;
   color: #0c1021;
@@ -549,6 +550,10 @@ button[disabled] {
   right: 0;
   background: red;
   width: 100%;
+}
+
+.y20 {
+  transform: translateY(10px);
 }
 
 .op0 {

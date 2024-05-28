@@ -21,16 +21,20 @@ export default function App() {
             // when window width is >= 640px
             340: {
               slidesPerView: 1,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             540: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 10,
               },
             // when window width is >= 768px
             768: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 10,
+            },
+            868: {
+              slidesPerView: 3,
+              spaceBetween: 10,
             },
             // when window width is >= 1024px
             1024: {
@@ -113,15 +117,18 @@ export default function App() {
 
                 
             ].map(i=>{
-                return <SwiperSlide key={i.img}>
+                return <SwiperSlide  key={i.img}>
                     <Box 
                     
                     
-                    className='relative project-card' sx={{height:{xs:'440px',sm:'440px'},
+                    className='relative project-item op0 y20 project-card' sx={{height:{xs:'440px',sm:'440px'},
                      border: '1px solid #ffffff21 ',
                      backgroundColor: '#0c1021 !Important',
                       borderRadius:'9px',
-                    width:{xs:'97%',md:'300px',lg:'320px'}}}>
+                    width:{xs:'97%',md:'auto',lg:'auto'}}}>
+
+
+
                       <Box className="decoy">
                         <Box className='center col auto w100 justify-center flex h100 items-center'>
                           <Typography className='text-center ' sx={{px:1,fontWeight:600,fontSize:'1.5em'}}>
