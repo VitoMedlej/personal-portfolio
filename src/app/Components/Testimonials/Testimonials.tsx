@@ -7,6 +7,7 @@ import {gsap} from 'gsap';
 
 
 export const testimonials = [
+
     {
         title: 'Deserves a 5 stars rating and more.',
         name:'“(Omar, Founder/CEO/Lead Interior Architect )',
@@ -26,6 +27,11 @@ export const testimonials = [
         title: 'Amazing assistance and fast delivery with customization',
         name:'“(Rudy Bounafeh, Pet Business Owner)',
         text : `Amazing assistance and fast delivery with customization, Vito's always ready to help as soon as possible in case of any bug`
+    },
+    {
+      name:'“(Fady, Ecommerce owner)',
+      title: 'Very professional and responsive. Highly recommended!',
+      text: `Excellent service! My eCommerce site looks fantastic and works perfectly. Vito is very professional and responsive. Highly recommended!`
     },
    
     {
