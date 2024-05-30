@@ -81,7 +81,6 @@ delay:.45,
 scrollTrigger: {
   trigger: ".get-urs",
   start: "top 100%",
-  markers:true,
 }
 });
 

@@ -34,7 +34,7 @@ export default function App() {
             },
             868: {
               slidesPerView: 3,
-              spaceBetween: 10,
+              spaceBetween: 20,
             },
             // when window width is >= 1024px
             1024: {

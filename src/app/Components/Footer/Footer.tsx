@@ -29,11 +29,11 @@ const Footer = () => {
                     </Box> 
                     <a 
                     target="_blank"
-                    href="mailto:hello@vito-medlej.com"
+                    href="mailto:contact@vito-medlej.com"
                     
                     className="decor-none white">
                                 <Typography className='white'>
-                                    Hello@vito-medlej.com
+                                    contact@vito-medlej.com
                                 </Typography>
                     </a>
                         </Box>

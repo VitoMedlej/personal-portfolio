@@ -10,7 +10,7 @@ const SMicons = () => {
         [
             {
                 img:`https://cdn-icons-png.flaticon.com/128/3670/3670274.png`
-                ,href:`https://www.instagram.com/vito_mdlj/`
+                ,href:`https://www.instagram.com/onbeirut/`
             },
             {
                 img:`https://cdn-icons-png.flaticon.com/128/2111/2111432.png`
@@ -18,16 +18,16 @@ const SMicons = () => {
             },
             {
                 img:`https://cdn-icons-png.flaticon.com/128/1384/1384014.png`
-                ,href:``
+                ,href:`https://www.linkedin.com/in/vitomedlej/`
             },
             {
                 img:`https://cdn-icons-png.flaticon.com/128/6244/6244710.png`
-                ,href:`mailto:hello@vito-medlej.com`
+                ,href:`mailto:contact@vito-medlej.com`
             },
             
             {
                 img:`https://cdn-icons-png.flaticon.com/128/909/909263.png`
-                ,href:``
+                ,href:`https://drive.google.com/file/d/1BDpAt5j4bsQkzpMiQ2g6QRHy-y1nOT5v/view?usp=sharing`
             },
             
 

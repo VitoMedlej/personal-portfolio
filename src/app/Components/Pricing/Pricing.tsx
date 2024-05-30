@@ -14,32 +14,66 @@ const Portfolio = () => {
   const animatePricing = () => {
     const testimonialsTL = gsap.timeline({
       scrollTrigger: {
-        trigger: ".testimonial-subtitle",
+        trigger: ".pricing-title",
         start: "top 80%",
       }
     });
   
-    testimonialsTL.to('.testimonial-title', {
+    testimonialsTL.to('.pricing-title', {
         y: 0,
       opacity: 1,
       duration: .35,
     
     });
+    testimonialsTL.to('.pricing-subtitle', {
+      y: 0,
+    opacity: 1,
+    delay:.1,
+    duration: .35,
   
-    testimonialsTL.to('.testimonial-subtitle', {
-        y: 0,
-      opacity: 1,
-      duration: .25,
-      delay:.15
-    });
+  });
   
-    testimonialsTL.to('.testimonial-item', {
+    gsap.to('.pricing-card1', {
         y: 0,
       opacity: 1,
       duration: .5,
-      stagger: 0.2,
-    
+      delay:.15,
+      scrollTrigger:{
+        trigger:'pricing-card1',
+        start: "top 50%",
+
+      }
     });
+    gsap.to('.pricing-card2', {
+      y: 0,
+    opacity: 1,
+    duration: .5,
+    delay:.15,
+    scrollTrigger:{
+      trigger:'pricing-card2',
+      start: "top 80%",
+
+    }
+  });
+  gsap.to('.pricing-card3', {
+    y: 0,
+  opacity: 1,
+  duration: .5,
+  delay:.15,
+  scrollTrigger:{
+    trigger:'pricing-card3',
+    start: "top 80%",
+
+  }
+});
+  
+    // testimonialsTL.to('.testimonial-item', {
+    //     y: 0,
+    //   opacity: 1,
+    //   duration: .5,
+    //   stagger: 0.2,
+    
+    // });
   };
   
   useEffect(() => {
@@ -63,13 +97,13 @@ const Portfolio = () => {
               width:'100%',
                 // minWidth:{xs:'80vw'}, 
                 py:4}}>
-            <Typography className='white text-center auto' sx={{pb:1,fontWeight:700,
+            <Typography className='white text-center auto pricing-title op0 y10' sx={{pb:1,fontWeight:700,
               fontSize:{xs:'3em',sm:'3em',md:'4em'}}}>
 {/* My Creative Software Solution Suite */}
               Prices and Services
 </Typography>
 <Typography
-className='white text-center w100'
+className='white text-center w100 op0 y10 pricing-subtitle'
 sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 
 
@@ -83,6 +117,7 @@ sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
              className='white auto  w100  justify-between h100 flex row wrap'>
             
             <PricingCard 
+            id={1}
             miniTitle={'Business Website'}
             title={'300-1500$'}
             perks={[
@@ -101,6 +136,8 @@ sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 
 
             <PricingCard
+            id={2}
+
 
 text={`
 `}
@@ -125,6 +162,8 @@ text={`
             
             sx={{mt:{xs:1.5,sm:2,md:0},width:{xs:'100%',md:'59%'}}}/>
             <PricingCard
+            id={3}
+
                 text={`Looking for something else? A system for your business? A mobile app? Worry not, 
                       Let us discuss further based on the scale of your vision!
                 `}

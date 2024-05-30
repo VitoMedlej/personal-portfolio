@@ -76,8 +76,8 @@ async function sendOrderConfirmationEmail(formState: any): Promise<boolean> {
 </html>`;
 
   const options = {
-      from: '"vito-medlej.com" <hello@vito-medlej.com>',
-      to: 'hello@vito-medlej.com',
+      from: '"vito-medlej.com" <contact@vito-medlej.com>',
+      to: 'contact@vito-medlej.com',
       subject: "New Message Through The Website!",
       html: htmlContent,
   };

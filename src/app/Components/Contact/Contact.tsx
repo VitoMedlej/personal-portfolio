@@ -191,8 +191,8 @@ onChange={handleInputChange}
         </Box>
         <Box className="w100 auto center flex" sx={{pt:2}}>
 
-        <a href='mailto:hello@vito-medlej.com' className='clr2' target='_blank'>
-          Vito.medlej@gmail.com
+        <a href='mailto:contact@vito-medlej.com' className='clr2' target='_blank'>
+          Contact@vito-medlej.com
         </a>
         </Box>
 

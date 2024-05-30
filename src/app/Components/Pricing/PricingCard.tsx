@@ -5,7 +5,7 @@ import { Typography } from '@mui/material';
 import Btn from '../Btn/Btn';
 import {gsap } from 'gsap';
 
-export default function Card({sx, miniTitle, title, text, perks, href}:any) {
+export default function Card({sx, id , miniTitle, title, text, perks, href}:any) {
   const [position, setPosition] = React.useState({ x: 0, y: 0 });
   const [isHovered, setIsHovered] = React.useState(false);
 
@@ -27,6 +27,7 @@ export default function Card({sx, miniTitle, title, text, perks, href}:any) {
 
   return (
     <Box
+    className={`pricing-card${id} op0 y10`}
       sx={{
         border: '1px solid #ffffff21',
         backgroundColor: 'rgb(12, 16, 33)',
