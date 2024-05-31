@@ -101,7 +101,7 @@ const Hero = () => {
           <Typography className='white' sx={{fontWeight:200,fontSize:'1.15em'}}>
           <span style={{fontWeight:700,color:'#ebebeb'}}>
 
-          +40
+          +28
           {' '}
           </span>
           <span className='white'>
