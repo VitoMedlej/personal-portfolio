@@ -42,7 +42,7 @@ const Hero = () => {
         
       <ReviewSection data={
         
-        testimonials.slice(0,3)
+        testimonials
       
       
       }/>

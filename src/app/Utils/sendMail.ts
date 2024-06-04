@@ -11,12 +11,12 @@ interface EmailOptions {
 export async function sendEmail(options: EmailOptions): Promise<boolean> {
     try {
         const transporter = nodemailer.createTransport({
-            host: "mail.smtp2go.com",
-            port: 8465 ,
+            host: process.env.NEXT_PUBLIC_HOST,
+            port: Number(process.env.NEXT_PUBLIC_PORT) ,
             secure: true,
             auth: {
-                user: "vitomedlej.com",
-                pass: "vitomedlej",
+                user: process.env.NEXT_PUBLIC_USER,
+                pass: process.env.NEXT_PUBLIC_PASS,
             },
         });
 

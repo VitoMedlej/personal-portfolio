@@ -21,7 +21,7 @@ const MySwiperComponent: React.FC<MyComponentProps> = ({data}) => {
       
       slidesPerView={1}
       autoplay={{
-        delay: 222200,
+        delay: 2000,
         disableOnInteraction: false,
       }}
     >

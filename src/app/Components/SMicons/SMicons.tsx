@@ -14,7 +14,7 @@ const SMicons = () => {
             },
             {
                 img:`https://cdn-icons-png.flaticon.com/128/2111/2111432.png`
-                ,href:`https://github.com/VitoMedlej?tab=overview&from=2024-05-01&to=2024-05-21`
+                ,href:`https://github.com/VitoMedlej?tab=overview&from=2024-06-4`
             },
             {
                 img:`https://cdn-icons-png.flaticon.com/128/1384/1384014.png`

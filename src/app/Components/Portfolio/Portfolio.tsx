@@ -42,7 +42,7 @@ const Portfolio = () => {
       delay:.25,
 
       scrollTrigger: {
-        trigger: ".title-proj1",
+        trigger: ".project-item",
         start: "top 80%",
       }
     });

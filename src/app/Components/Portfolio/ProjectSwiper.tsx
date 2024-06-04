@@ -55,7 +55,7 @@ export default function App() {
                 {
                   img:`https://images.pexels.com/photos/10923286/pexels-photo-10923286.jpeg?auto=compress&cs=tinysrgb&w=700&lazy=load`,
                   title: `Conceptual Clothing Brand`,
-                  href : `conceptual-wic.com`
+                  href : `https://conceptual-wic.com`
                 },
                 {
                   img:`https://ucarecdn.com/20fdd745-f27d-4fcc-810a-b1579112422f/-/resize/700x700/`,
@@ -92,7 +92,7 @@ export default function App() {
                 {
                   img:`https://images.pexels.com/photos/10984997/pexels-photo-10984997.jpeg?auto=compress&cs=tinysrgb&w=700`,
                   title:'DIY Crafts Diamond Paintings Shop',
-                  href: 'diycraftsdiamond.com'
+                  href: 'https://diycraftsdiamond.com'
                 },
 
                 {
@@ -121,11 +121,11 @@ export default function App() {
                     <Box 
                     
                     
-                    className='relative project-item op0 y20 project-card' sx={{height:{xs:'440px',sm:'440px'},
+                    className='relative  project-item op0 y20 project-card' sx={{height:{xs:'440px',sm:'440px'},
                      border: '1px solid #ffffff21 ',
                      backgroundColor: '#0c1021 !Important',
                       borderRadius:'9px',
-                    width:{xs:'97%',md:'auto',lg:'auto'}}}>
+                    width:{xs:'97%',md:'98%',lg:'95%'}}}>
 
 
 

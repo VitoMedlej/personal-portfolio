@@ -15,7 +15,7 @@ export const testimonials = [
     },
     {
         title:'Professional work, Affordable prices ✔️✔️✔️',
-        name:'Carla Kiwan',
+        name:'“(Carla Kiwan, Beauty Brand Founder)',
         text:`Professional work
         Affordable prices
         Great effort
@@ -29,7 +29,7 @@ export const testimonials = [
         text : `Amazing assistance and fast delivery with customization, Vito's always ready to help as soon as possible in case of any bug`
     },
     {
-      name:'“(Fady, Ecommerce owner)',
+      name:'“(Fady, Electronics Relatiler)',
       title: 'Very professional and responsive. Highly recommended!',
       text: `Excellent service! My eCommerce site looks fantastic and works perfectly. Vito is very professional and responsive. Highly recommended!`
     },
@@ -51,13 +51,13 @@ export const testimonials = [
         would be too much for the site to handle, 
         but he made it work perfectly. I’m grateful.`
     },
-    {
-        title : `I just love it! -`,
-        name:`“(Zekra Advertising Specialist)`,
-        text : `We’re a local business and most of our clients are 
-        Lebanese. What I love about
-         the site is that it supports both arabic and english at the same time.`
-    },
+    // {
+    //     title : `I just love it! -`,
+    //     name:`“(Zekra Advertising Specialist)`,
+    //     text : `We’re a local business and most of our clients are 
+    //     Lebanese. What I love about
+    //      the site is that it supports both arabic and english at the same time.`
+    // },
    
 ];
 
@@ -144,11 +144,12 @@ Real stories from satisfied clients who I had the honour to work with.
                     
                     className='flex y10 op0 testimonial-item center text-center  row tech-item  ' sx={{
                       border: '1px solid #ffffff21 !Important',maxWidth:'300px',
-
+                      // background: '#0c102178',
+                      
                       borderRadius:'4px !important',
                       px:2,
                       py:2,
-                      backgroundColor: '#0c1021 !Important',
+                      // backgroundColor: '#0c1021 !Important',
                       gap:1}}>
                         {/* <Box sx={{width:{xs:'20px'}}}>
                             <img src="https://cdn-icons-png.flaticon.com/128/875/875209.png" alt="" className="img" />

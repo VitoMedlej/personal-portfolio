@@ -14,7 +14,7 @@ const MyComponent: React.FC<MyComponentProps> = ({ data }) => {
     <Box sx={{mt:{xs:0,sm:6},maxWidth:'lg'}} className='flex row wrap w100 '>
      <Box className='justify-evenly w100' sx={{display:{xs:'none',md:'flex'}}}>
 
-      {data.map((item, index) => (
+      {data.slice(0,3).map((item, index) => (
         <Box 
         className='flex center col items-center justify-center' key={item?.title}>
           <Rating sx={{fontSize:'.8em'}} name="simple-controlled" value={5} readOnly />
@@ -26,7 +26,7 @@ const MyComponent: React.FC<MyComponentProps> = ({ data }) => {
       </Box>
 
      <Box className='w100' sx={{display:{xs:'',md:'none'}}}>
-     <ReviewsSectionMobile data={data}/>
+     <ReviewsSectionMobile data={data.slice(0,6)}/>
      </Box>
 
 

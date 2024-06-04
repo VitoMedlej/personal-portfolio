@@ -33,39 +33,19 @@ const Portfolio = () => {
   
   });
   
-    gsap.to('.pricing-card1', {
+    gsap.to('.myitem', {
         y: 0,
       opacity: 1,
       duration: .5,
       delay:.15,
+      stagger:.15,
       scrollTrigger:{
-        trigger:'pricing-card1',
+        trigger:'.myitem',
         start: "top 50%",
 
       }
     });
-    gsap.to('.pricing-card2', {
-      y: 0,
-    opacity: 1,
-    duration: .5,
-    delay:.15,
-    scrollTrigger:{
-      trigger:'pricing-card2',
-      start: "top 80%",
 
-    }
-  });
-  gsap.to('.pricing-card3', {
-    y: 0,
-  opacity: 1,
-  duration: .5,
-  delay:.15,
-  scrollTrigger:{
-    trigger:'pricing-card3',
-    start: "top 80%",
-
-  }
-});
   
     // testimonialsTL.to('.testimonial-item', {
     //     y: 0,
@@ -111,13 +91,15 @@ sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 
           </Typography>
             </Box>
+
         <Box sx={{
             
             maxWidth:{sm:'100%',md:'95%',lg:'lg'},gap:{xs:1.5,sm:1}}}
-             className='white auto  w100  justify-between h100 flex row wrap'>
+             className='white auto   w100  justify-between h100 flex row wrap'>
             
             <PricingCard 
-            id={1}
+
+            className={'myitem'}
             miniTitle={'Business Website'}
             title={'300-1500$'}
             perks={[
@@ -138,6 +120,7 @@ sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
             <PricingCard
             id={2}
 
+            className={'myitem'}
 
 text={`
 `}
@@ -162,6 +145,8 @@ text={`
             
             sx={{mt:{xs:1.5,sm:2,md:0},width:{xs:'100%',md:'59%'}}}/>
             <PricingCard
+            className={'myitem'}
+
             id={3}
 
                 text={`Looking for something else? A system for your business? A mobile app? Worry not, 

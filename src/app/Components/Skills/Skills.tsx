@@ -51,7 +51,7 @@ const Portfolio = () => {
     testimonialsTL.to('.skill-item', {
         y: 0,
       opacity: 1,
-      duration: .25,
+      duration: .15,
       stagger: 0.2,
     
     });
@@ -76,7 +76,7 @@ const Portfolio = () => {
         
         }}>
             <Box 
-            className='auto col flex center'
+            className='auto col w100 flex center'
             sx={{
               // width:'100%',
                 // minWidth:{xs:'80vw'}, 
@@ -94,18 +94,23 @@ sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 My Expertise and technical abilities that I have acquired over the years 
           </Typography>
             </Box>
+
+
         <Box sx={{
-            
+            flex:1,
             maxWidth:{sm:'95%',md:'95%',lg:'lg'}}}
-             className='white auto center w100 justify-center h100 flex col'>
+             className='white w100 auto center w100 justify-center h100 flex col'>
           </Box>
+
+
             <Box sx={{maxWidth:'md'}} className='flex row gap2 auto wrap center'>
                 {skills.map(i=>{
                     return <Box
                     key={i?.name}
                     className='flex row tech-item skill-item op0 y20  ' sx={{
                       border: '1px solid #ffffff21 ',
-                      backgroundColor: '#0c1021 !Important',
+                      background: '#0c102178',
+                      // backgroundColor: '#0c1021 !Important',
                       gap:1}}>
                         <Box sx={{width:{xs:'20px'}}}>
                             <img src={i.img} alt="" className="img contain" />
