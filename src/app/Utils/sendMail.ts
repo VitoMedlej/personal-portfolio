@@ -15,8 +15,8 @@ export async function sendEmail(options: EmailOptions): Promise<boolean> {
             port: Number(process.env.NEXT_PUBLIC_PORT) ,
             secure: true,
             auth: {
-                user: process.env.NEXT_PUBLIC_USER,
-                pass: process.env.NEXT_PUBLIC_PASS,
+                user: `${process.env.NEXT_PUBLIC_USER}`,
+                pass: `${process.env.NEXT_PUBLIC_PASS}`,
             },
         });
 
