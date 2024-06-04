@@ -191,7 +191,10 @@ const Navbar = () => {
         <Box 
         onClick={()=>router.push('/')}
         className='cent cursor pointer' sx={{height:'50px'}}>
-          <img  src="https://ucarecdn.com/882f100e-18b8-451c-9c53-5f75cd0c7a47/vm.png" alt="" className="img invert" />
+          <img 
+           src="https://ucarecdn.com/882f100e-18b8-451c-9c53-5f75cd0c7a47/vm.png"
+           
+           alt="Vito Medlej Logo" className="img invert" />
         </Box>
         <Box>
 
