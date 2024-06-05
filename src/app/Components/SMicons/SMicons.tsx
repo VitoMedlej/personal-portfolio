@@ -27,7 +27,7 @@ const SMicons = () => {
             
             {
                 img:`https://cdn-icons-png.flaticon.com/128/909/909263.png`
-                ,href:`https://drive.google.com/file/d/1BDpAt5j4bsQkzpMiQ2g6QRHy-y1nOT5v/view?usp=sharing`
+                ,href:`https://drive.google.com/file/d/1zk2vHH386pY5ONDaYMcSuiOsj0IkFe1f/view?usp=sharing`
             },
             
 
