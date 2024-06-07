@@ -75,7 +75,7 @@ const Portfolio = () => {
         testimonialsTL.to('.testimonial-title', {
             y: 0,
           opacity: 1,
-          duration: .35,
+          duration: .3,
         
         });
       
@@ -89,8 +89,8 @@ const Portfolio = () => {
         testimonialsTL.to('.testimonial-item', {
             y: 0,
           opacity: 1,
-          duration: .5,
-          stagger: 0.2,
+          duration: .45,
+          stagger: 0.15,
         
         });
       };
