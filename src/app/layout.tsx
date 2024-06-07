@@ -31,6 +31,8 @@ export default function RootLayout({
       <link rel="icon" href="https://res.cloudinary.com/dwcu3wcol/image/upload/v1657099811/log_nkmcys.jpg"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+      
+<meta property='og:image' content='https://res.cloudinary.com/dwcu3wcol/image/upload/v1657099811/log_nkmcys.jpg'/>
       </head>
       <body className='relative no-scroll'>
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MTBZKLQVS6"></Script>
