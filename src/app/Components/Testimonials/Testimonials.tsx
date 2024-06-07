@@ -105,7 +105,12 @@ const Portfolio = () => {
         zIndex:'10',
         // minHeight:'100vh',
         backgroundImage:'radial-gradient(circle at 50% 50%, rgba(17, 24, 65, 43.55), #000 35%)',
-        background:'radial-gradient(circle at 50% 50%, rgba(17, 24, 65, 33.55), #000 45%)',
+        background : {xs:
+          'radial-gradient(circle at 50% 50%, rgba(17, 24, 65, 33.55), #000 45%)',
+xl:'radial-gradient(circle at 50% 50%, rgba(17, 24, 65, 33.55), #000 35%)',
+
+
+        },
 
         pb:13,
         pt:12,
