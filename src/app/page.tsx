@@ -48,7 +48,7 @@ gsap.registerPlugin(ScrollTrigger);
 
     <Grid container className='flex  auto' sx={{
       zIndex:'10',
-      maxWidth:'lg',
+      // maxWidth:'lg',
       pt:{xs:15},
       // minHeight:'100vh',
       // height:'1500px',

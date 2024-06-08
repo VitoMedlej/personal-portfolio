@@ -123,7 +123,7 @@ scrollTrigger: {
 className='white text-center w100 title-proj2 op0 y20'
 sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 
-Below are my latest real-world projects delivered to actual businesses
+Below are few of my favourite projects delivered to amazing clients.
           </Typography>
             </Box>
         <Box sx={{
