@@ -111,7 +111,7 @@ export default function App() {
                 {
                   img:`https://images.pexels.com/photos/1646953/pexels-photo-1646953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`,
                   title: `The Craft Room Ecommerce`,
-                  href : `https://thecraftroom.com`
+                  href : `https://thecraftroom-lb.com`
                 },
                 
 
