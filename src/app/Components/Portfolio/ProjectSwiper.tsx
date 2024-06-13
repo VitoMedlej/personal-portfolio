@@ -99,7 +99,7 @@ export default function App() {
                   img:`https://ucarecdn.com/4a7e0e1c-47b7-4196-bfa7-b474365da6c8/WhatsAppImage20240428at125445_21f13c27.jpg
                   `,
                   title: `Prospecs For Capacity Development Trainings`,
-                  href : `https://number1bycarla.com`
+                  href : `https://prospecs.me`
                 },
                 {
                   img:`https://ucarecdn.com/1a95afe1-0e8e-41fb-a4fa-00ef857ef23a/418621867_1412854806328214_6415211719117463606_n.jpg`,
