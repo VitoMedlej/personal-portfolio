@@ -68,6 +68,11 @@ export default function App() {
                   href : `https://number1bycarla.com`
                 },
                 {
+                  img:`https://ucarecdn.com/300c7d35-6c52-428b-8d2e-b31681e983a4/pexelsphoto4099350.jpeg`,
+                  title: `Ghanem General Trading`,
+                  href : `https://ghanemtrading.com`
+                },
+                {
                   img:`https://images.pexels.com/photos/162031/dubai-tower-arab-khalifa-162031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`,
                   title: `Millionairebia Club `,
                   href : `https://millionairebia.com`
