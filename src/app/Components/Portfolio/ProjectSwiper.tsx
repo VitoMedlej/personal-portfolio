@@ -72,11 +72,11 @@ export default function App() {
                   title: `Ghanem General Trading`,
                   href : `https://ghanemtrading.com`
                 },
-                {
-                  img:`https://images.pexels.com/photos/162031/dubai-tower-arab-khalifa-162031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`,
-                  title: `Millionairebia Club `,
-                  href : `https://millionairebia.com`
-                },
+                // {
+                //   img:`https://images.pexels.com/photos/162031/dubai-tower-arab-khalifa-162031.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`,
+                //   title: `Millionairebia Club `,
+                //   href : `https://millionairebia.com`
+                // },
                 {
                   img:`https://ucarecdn.com/2cdd8343-8083-47c3-ba65-727d06ec4486/tp2.PNG`,
                   title: `Teentops mobile app`,
