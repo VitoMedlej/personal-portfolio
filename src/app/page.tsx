@@ -56,12 +56,7 @@ gsap.registerPlugin(ScrollTrigger);
       background:'black'
       
       }}>
-     
-     
-   
 
-
-     
         {/* <Grid item xs={12} md={6}>
 
         <Box 

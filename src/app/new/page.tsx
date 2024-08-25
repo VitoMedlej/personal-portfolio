@@ -15,22 +15,31 @@ import Footer from '../Components/Footer/Footer'
 
 
 const Page = () => {
+  
   useEffect(() => {
+    const isMobile = window.innerWidth <= 768; // Check if it's mobile based on width
+    const damping = isMobile ? 0.55 : 1;
     const doc : any = document.querySelector('#my-scrollbar')
     const scrollbar = Scrollbar.init(doc, {
-      damping: 1,
+      damping,
+      thumbMinSize:20,
+      renderByPixels:true,
+      // alwaysShowTracks: true,
+      continuousScrolling: true,
     });
 
     return () => {
       scrollbar.destroy();
     };
   }, []);
+
+
   return (
     <Box id='my-scrollbar'    className='bg' 
     sx={{
-
+      
       height: '100vh',
-        overflow: 'hidden',
+        overflowX: 'hidden',
     }}
     
     >
@@ -75,7 +84,7 @@ const Page = () => {
 
             <Grid  className='relative ' sx={{height:{xs:'100%',md:'100vh'}}} item xs={12} md={6} lg={7}>
               <Box className='h100' sx={{px:{xs:2,md:0}}}>
-                <img src="https://miller.bslthemes.com/pixy-demo/img/home-2/2.jpg" alt="" className="img" />
+                <img src="https://ucarecdn.com/61b4c768-9ec5-4b0c-9ae0-ebe7ab381f1d/anebike.jpg" alt="" className="img" />
               </Box>
               <Box className='flex bg4 items-center center absolute' sx={{
                   display:{xs:'none',md:'flex'},
@@ -196,8 +205,8 @@ const Page = () => {
 
         
         <Testimonials/>
-
-        <Box  sx={{height:{xs:'100%',md:'700px'},mt:8,mx:'auto',py:{xs:16,md:4}}}
+        <Box sx={{ overflowX: 'hidden' }}>
+        <Box  sx={{height:{xs:'100%',md:'700px'},mt:8,mx:'auto',px:0,py:{xs:16,md:4}}}
         
         className='bg4 relative flex center text-center  items-center col'>
 
@@ -270,6 +279,7 @@ const Page = () => {
                 </Box>
                 </Box>
 
+                </Box>
 
 
                 <Footer/>
