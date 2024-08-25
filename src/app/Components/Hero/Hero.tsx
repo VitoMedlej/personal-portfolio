@@ -29,7 +29,7 @@ const Hero = () => {
       //   duration: 1,
       //   ease: "ease"
       // });
-  document.body.classList.remove('no-scroll'); 
+
 
   // document.body.classList.add('no-scroll');
 

@@ -2,9 +2,9 @@
 import { Box } from '@mui/material'
 import React from 'react'
 
-const SMicons = () => {
+const SMicons = ({sx,invert}:{sx?:any,invert?:boolean}) => {
   return (
-    <Box sx={{my:2,gap:2}} className='flex row center'>
+    <Box sx={{my:2,gap:2, ...sx}} className='flex row center'>
     {
 
         [
@@ -38,7 +38,7 @@ const SMicons = () => {
             key={link.img} href={`${link.href}`}>
 
             <Box sx={{width:'30px'}}>
-                <img src={link?.img} alt="" className="img invert" />
+                <img src={link?.img} alt="" className={invert ? "img  invert" : 'img'} />
             </Box>
             </a> 
         })

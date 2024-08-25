@@ -10,10 +10,10 @@ const Btn = ({children,sx,onClick} : any) => {
     onClick={onClick}
     className='cursor pointer'
     sx={{
-        color:'white',
+        // color:'white',
         zIndex:234,
-        border:'1px solid white',
-        borderRadius:'900px',
+        border:'1px solid #353639',
+        borderRadius:'0px',
         ...sx
     }}>{children}</Button>
   )

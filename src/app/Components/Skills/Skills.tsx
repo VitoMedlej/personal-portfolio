@@ -26,75 +26,29 @@ const Portfolio = () => {
 
 
 
-  const animateSkills = () => {
-    const testimonialsTL = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".skills-subtitle",
-        start: "top 80%",
-      }
-    });
-  
-    testimonialsTL.to('.skills-title', {
-        y: 0,
-      opacity: 1,
-      duration: .35,
-    
-    });
-  
-    testimonialsTL.to('.skills-subtitle', {
-        y: 0,
-      opacity: 1,
-      duration: .25,
-      delay:.15
-    });
-  
-    testimonialsTL.to('.skill-item', {
-        y: 0,
-      opacity: 1,
-      duration: .15,
-      stagger: 0.2,
-    
-    });
-  };
-  
-  useEffect(() => {
-  animateSkills();
-  }, [])
-  
 
 
   return (
     <Grid container id='Skills' className='flex  auto' sx={{
         zIndex:'10',
-        // minHeight:'100vh',
-        backgroundImage:'radial-gradient(circle at 50% 50%, rgba(17, 24, 65, 43.55), #000 35%)',
-         background : {xs:
-          'radial-gradient(circle at 50% 50%, rgba(17, 24, 65, 33.55), #000 45%)',
-xl:'radial-gradient(circle at 50% 50%, rgba(17, 24, 65, 33.55), #000 35%)',
-
-
-        },
-
-        pb:13,
-        pt:12,
         px:1,
-        
+        pb:12,
         }}>
             <Box 
             className='auto col w100 flex center'
             sx={{
               // width:'100%',
                 // minWidth:{xs:'80vw'}, 
-                py:4}}>
-            <Typography className='white text-center auto skills-title op0 y20' sx={{pb:1,fontWeight:700,
+               }}>
+            <Typography className='text-center auto skills-title color2 ' sx={{fontWeight:900,
               fontSize:{xs:'3em',sm:'3em',md:'4em'}}}>
                 {/* My Expertise and Abilities */}
                 My Technical Skills
 
 </Typography>
 <Typography
-className='white text-center w100 skills-subtitle op0 y20'
-sx={{fontWeight:200,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
+className='color3 text-center w100 skills-subtitle '
+sx={{fontWeight:200,pb:4,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 
 My Expertise and technical abilities that I have acquired over the years 
           </Typography>
@@ -112,16 +66,14 @@ My Expertise and technical abilities that I have acquired over the years
                 {skills.map(i=>{
                     return <Box
                     key={i?.name}
-                    className='flex row tech-item skill-item op0 y20  ' sx={{
-                      border: '1px solid #ffffff21 ',
-                      background: '#0c102178',
-                      // backgroundColor: '#0c1021 !Important',
+                    className='flex row tech-item skill-item   ' sx={{
+                      border: '1px solid #7e7e7e ',
                       gap:1}}>
                         <Box sx={{width:{xs:'20px'}}}>
                             <img src={i.img} alt="" className="img contain" />
                         </Box>
-                        <Box sx={{}}>
-                            <Typography sx={{color:'white'}}>
+                        <Box >
+                            <Typography className='color2'>
                         {i?.name}
                             </Typography>
                         </Box>

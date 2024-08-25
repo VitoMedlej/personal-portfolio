@@ -3,41 +3,71 @@ import { Box, Container, Divider, Typography } from '@mui/material'
 import React from 'react'
 import SMicons from '../SMicons/SMicons'
 import { useRouter } from 'next/navigation'
+import Btn from '../Btn/Btn'
+import Link from 'next/link'
 
 const Footer = () => {
   const router = useRouter()
 
   return (
-    <footer className='w100'>
-        <Container sx={{pb:4,pt:2}} className='center col auto w100 flex'>
-                 
-                   <SMicons/>
-                          
-        </Container>
-        <Box className='w100'>
-        <Divider sx={{background:"gray",width:'100%',opacity:0.5}}></Divider>
-                        <Box sx={{py:2}} className='w100 flex justify-between items-center'>
-                        <Box
-        onClick={()=>router.push('/')}
-                        
-                        className='cursor pointer ' sx={{width:'100px'}}>
-                            <img
-                            
-                            src="https://ucarecdn.com/882f100e-18b8-451c-9c53-5f75cd0c7a47/vm.png"
-                            
-                            alt="" className="img invert" />                        
-                    </Box> 
-                    <a 
-                    target="_blank"
-                    href="mailto:contact@vito-medlej.com"
-                    
-                    className="decor-none white">
-                                <Typography className='white'>
-                                    contact@vito-medlej.com
-                                </Typography>
-                    </a>
-                        </Box>
-        </Box>
+    <footer style={{paddingTop:'6em'}} className='bg'>
+          <Container sx={{maxWidth:'lg'}}>
+              <Box className='flex row  items-center w100' sx={{pb:4}}>
+
+              <Typography
+              className='color2'
+              sx={{pr:4,fontWeight:900,fontSize:{xs:'3em',md:'4em'}}}>
+                LETS TALK
+              </Typography>
+                  <Btn sx={{color:'black'}}>
+                      Contact
+                      <Box sx={{width:'30px',height:'30px'}}>
+
+                      <img src="https://cdn-icons-png.flaticon.com/128/16015/16015161.png" alt="" className="img contain" />
+                      </Box>
+                  </Btn>
+              </Box>
+
+          <Box
+          sx={{py:{xs:12,md:8},borderTop:'1px solid gray'}}
+          className='flex row wrap justify-between'>
+
+              <Box 
+                className='flex  justify-between '
+
+                sx={{
+                  flexDirection:{xs:'column',md:'row'},
+                  width:{xs:'100%',md:'400px'}}}
+              >
+
+                    {[
+                      {
+                        title:'Home',
+                        link:'/',
+                      },
+                      {
+                        title:'About',
+                        link:'/about',
+                      },
+                      {
+                        title:'Contact',
+                        link:'/#contact',
+                      },
+                    ].map(link=>{
+                      return <Link
+                      key={link.title}
+                      className='color2 decor-none' href={link.link}>{link.title}</Link>
+                    })}
+
+              </Box>
+                    <SMicons  sx={{margin:{xs:'3em 0 0 0',md:'0'}}}/>
+          </Box>
+                    <Box sx={{py:4}}>
+                      <Typography className='color3' sx={{color:'white'}}>
+                      Vito Medlej ©2024. All rights reserved.
+                      </Typography>
+                    </Box>
+          </Container>
     </footer>
   )
 }

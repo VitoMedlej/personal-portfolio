@@ -3,7 +3,8 @@ import Head from 'next/head';
 import Script from 'next/script';
 import "../Styles/styles.css";
 import Navbar from "./Components/Navbar/Navbar";
-import FullscreenCover from "./Components/FullscreenCover/FullscreenCover";
+import FullscreenLoader from "./Components/FullscreenLoader/FullscreenLoader";
+import Footer from "./Components/Footer/Footer";
 
 // import { Inter } from "next/font/google";
 
@@ -33,8 +34,20 @@ export default function RootLayout({
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
       
 <meta property='og:image' content='https://res.cloudinary.com/dwcu3wcol/image/upload/v1657099811/log_nkmcys.jpg'/>
+   
+   <style>
+    {
+  ` .no-scroll {
+      .no-scroll {
+  overflow: hidden;
+}
+}
+   }`
+
+   }
+   </style>
       </head>
-      <body className='relative no-scroll'>
+      <body  className='relative no-scroll '>
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MTBZKLQVS6"></Script>
         <Script id="google-analytics">
           {`
@@ -46,7 +59,7 @@ export default function RootLayout({
           `}
         </Script>
 
-        <FullscreenCover />
+        <FullscreenLoader />
         <Navbar />
         {children}
       </body>
