@@ -234,7 +234,7 @@ const Navbar = () => {
            
            alt="Vito Medlej Logo" className="img contain invert2 " />
         </Box>
-        <Box>
+        <Box className='flex row center items-center' sx={{gap:1}}>
 
 
         <Btn

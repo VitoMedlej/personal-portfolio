@@ -2,9 +2,9 @@
 import {useEffect, useRef} from 'react';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { useLoadState } from '../../hooks/ContextWrapper';
 import MobileButtons from '../MobileButtons/MobileButtons';
-import { useLoadState } from '../Context/Context';
-import { Box } from '@mui/material';
+
 
 export default function Home() {
     const canvasRef = useRef < any > (null);
@@ -155,10 +155,10 @@ export default function Home() {
         
  
         
-        const light2 = new THREE.SpotLight('white', 1.7);
+        const light2 = new THREE.SpotLight('white', 1.17);
         light2.position.set(0, 70, 0);
         light2.decay = 0.1;
-        light2.intensity = 2;
+        light2.intensity = 1;
         light2.distance = 110;
         
         light2.angle = Math.PI / 1; 

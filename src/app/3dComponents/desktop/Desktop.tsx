@@ -1,16 +1,17 @@
 "use client";
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
 import { PointerLockControls } from "three/examples/jsm/controls/PointerLockControls.js";
 // import MobileButtons from "../MobileButtons/MobileButtons";
 import { GLTFLoader } from "three-stdlib";
+import { useFullscreen, useLoadState } from "../../hooks/ContextWrapper";
 // import Stats from 'stats.js';
-import { useFullscreen, useLoadState } from "../Context/Context";
+
 
 
 const ThreeScene: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const { isfullscreen, setFullScreen } = useFullscreen();
+  const { setFullScreen } = useFullscreen();
   const {isLoaded, setLoaded} = useLoadState()
   
 
@@ -27,16 +28,16 @@ const ThreeScene: React.FC = () => {
     const onKeyDown = (event: KeyboardEvent | any) => {
       switch (event.key) {
         case "w":
-          velocity.z = -0.4;
+          velocity.z = -0.37;
           break;
         case "a":
-          velocity.x = -0.4;
+          velocity.x = -0.37;
           break;
         case "s":
-          velocity.z = 0.4;
+          velocity.z = 0.37;
           break;
         case "d":
-          velocity.x = 0.4;
+          velocity.x = 0.37;
           break;
       }
     };
@@ -137,10 +138,10 @@ const texture3 = loader.load("/materials/woodfloor.jpg", function (texture : any
 });
 
 
-const light2 = new THREE.SpotLight('white', 0.4);
+const light2 = new THREE.SpotLight('white', 0.3);
 light2.position.set(0, 70, 0);
 light2.decay = 0.1;
-light2.intensity = 2;
+light2.intensity = 1;
 light2.distance = 110;
 
 light2.angle = Math.PI / 1; 

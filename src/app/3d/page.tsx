@@ -1,9 +1,9 @@
 "use client";
-import { Box, useMediaQuery } from '@mui/material';
+import { useMediaQuery } from '@mui/material';
 import React from 'react';
-import Desktop from '../3dComponents/Desktop';
-import Mobile from '../3dComponents/Mobile';
 import Starter from '../3dComponents/Starter/Starter';
+import Mobile from '../3dComponents/mobile/Mobile';
+import Desktop from '../3dComponents/desktop/Desktop';
 
 const Page = () => {
   const isSmallScreen = useMediaQuery('(max-width:690px)');
