@@ -94,12 +94,12 @@ const YourComponent = () => (
         item
         sx={item.sx}
       >
-        <Box className="image-container" sx={{ height: '100%' }}>
+        <Box className="image-container" sx={{overflow:'hidden', height: '100%' }}>
           <img
             src={item.img}
             alt=""
-            className="img"
-            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            className="img parallax-image"
+         
           />
         </Box>
       </Grid>

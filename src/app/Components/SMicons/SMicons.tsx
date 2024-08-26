@@ -2,9 +2,9 @@
 import { Box } from '@mui/material'
 import React from 'react'
 
-const SMicons = ({sx,invert}:{sx?:any,invert?:boolean}) => {
+const SMicons = ({sx,invert,className}:{sx?:any,invert?:boolean,className?:string}) => {
   return (
-    <Box sx={{my:2,gap:2, ...sx}} className='flex row center'>
+    <Box sx={{my:2,gap:2, ...sx}} className={`flex row center ${className ? className : ''}`}>
     {
 
         [

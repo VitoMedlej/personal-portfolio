@@ -76,6 +76,11 @@ const Navbar = () => {
     // const isMobile = useMediaQuery('(min-width:900px)');
     // console.log('isMobile: ', isMobile);
     
+    const navigate = (href : string) => {
+      router.push(href)
+    }
+
+
   return (
     <>
   
@@ -98,11 +103,20 @@ const Navbar = () => {
           </Link>
         </Box>
 
+        <Box onClick={()=>{closeMenu(); router.push('/3d')}} 
+        sx={{ top: '24%'}} className='white cursor pointer nav-menu'>
+          <Link className='decor-none ' style={{color:'#489fb5'}}  href='/3d'>
+          <Typography sx={{fontSize:'1.2em'}}>
+           View in 3D
+          </Typography>
+          </Link>
+        </Box>
+
 
         <Box onClick={()=>{closeMenu(); 
    gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#portfolio"});
 
-        }} sx={{ top: '24%'}} className='white cursor pointer nav-menu'>
+        }} sx={{ top: '32%'}} className='white cursor pointer nav-menu'>
           <Link className='decor-none white' href='/'>
           <Typography sx={{fontSize:'1.2em'}}>
           Portfolio
@@ -113,7 +127,7 @@ const Navbar = () => {
         <Box onClick={()=>{closeMenu(); 
    gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#Skills"});
 
-        }} sx={{ top: '32%'}} className='white cursor pointer nav-menu'>
+        }} sx={{ top: '40%'}} className='white cursor pointer nav-menu'>
           <Link className='decor-none white' href='/'>
           <Typography sx={{fontSize:'1.2em'}}>
           Skills
@@ -124,7 +138,7 @@ const Navbar = () => {
         <Box onClick={()=>{closeMenu(); 
    gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#Services"});
 
-        }} sx={{ top: '40%'}} className='white cursor pointer nav-menu'>
+        }} sx={{ top: '48%'}} className='white cursor pointer nav-menu'>
           <Link className='decor-none white' href='/'>
           <Typography sx={{fontSize:'1.2em'}}>
           Services
@@ -135,7 +149,7 @@ const Navbar = () => {
         <Box onClick={()=>{closeMenu(); 
    gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#Testimonials"});
 
-        }} sx={{ top: '48%'}} className='white cursor pointer nav-menu'>
+        }} sx={{ top: '56%'}} className='white cursor pointer nav-menu'>
           <Link className='decor-none white' href='/'>
           <Typography sx={{fontSize:'1.2em'}}>
           Testimonials
@@ -146,7 +160,7 @@ const Navbar = () => {
         <Box onClick={()=>{closeMenu(); 
    gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#Contact"});
 
-        }} sx={{ top: '56%'}} className='white cursor pointer nav-menu'>
+        }} sx={{ top: '64%'}} className='white cursor pointer nav-menu'>
           <Link className='decor-none white' href='/'>
           <Typography sx={{fontSize:'1.2em'}}>
           Contact
@@ -156,7 +170,7 @@ const Navbar = () => {
 
 
         
-        <Box sx={{ px:1,top: '64%'}} className='absolute'>
+        <Box sx={{ px:1,top: '72%'}} className='absolute'>
 
         <SMicons invert/>
         </Box>
@@ -205,7 +219,7 @@ const Navbar = () => {
           <img
             src={isOpen ? "https://cdn-icons-png.flaticon.com/128/10728/10728089.png" : "https://cdn-icons-png.flaticon.com/128/4543/4543046.png"}
             alt=""
-            className="img invert2"
+            className={`img ${isOpen ? 'red-filter' : ''}`}
           />
         </Box>
         
@@ -214,14 +228,34 @@ const Navbar = () => {
 
         <Box 
         onClick={()=>router.push('/')}
-        className='cent cursor pointer' sx={{height:'50px'}}>
+        className='cent cursor pointer' sx={{width:{xs:'100px',md:'120px'},height:'50px'}}>
           <img 
            src="https://ucarecdn.com/882f100e-18b8-451c-9c53-5f75cd0c7a47/vm.png"
            
-           alt="Vito Medlej Logo" className="img invert2" />
+           alt="Vito Medlej Logo" className="img contain invert2 " />
         </Box>
         <Box>
 
+
+        <Btn
+      
+      onClick={()=>
+        navigate('/3d')}
+
+    className="color2 bg2" sx={{
+      display:{xs:'none',sm:'flex'},
+      border:'1px solid transparent',
+        ':hover':{color:'#550df4 !Important',
+border:'1px solid #489fb5'
+
+        },
+        borderRadius:'900px',
+        gap: 0, px:`0 !important`,mx:1 }}>
+        <Box
+        sx={{ width: '20px', height: '20px' }} className="invert2">
+          <img src="https://cdn-icons-png.flaticon.com/128/2012/2012152.png" alt="" className="img" />
+        </Box>
+      </Btn>
         <Btn
       
           onClick={()=>
@@ -231,7 +265,7 @@ const Navbar = () => {
           border:'1px solid black',
             ':hover':{color:'#550df4 !Important'},
             borderRadius:'900px',
-            gap: 1, px:2 }}>
+            gap: 1, px:{xs:0,md:2} }}>
 
             <Typography className='color2' sx={{
                 display:{xs:'none',sm:'flex'},  
@@ -239,12 +273,12 @@ const Navbar = () => {
               Hit me up
             </Typography>
             <Box
-
-            
             sx={{ width: '20px', height: '20px' }} className="invert2">
               <img src="https://cdn-icons-png.flaticon.com/128/9314/9314363.png" alt="" className="img" />
             </Box>
           </Btn>
+
+       
 
         </Box>
     </Container>

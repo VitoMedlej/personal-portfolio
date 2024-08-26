@@ -1,5 +1,5 @@
 "use client"
-import { Box, Container, Divider, Typography } from '@mui/material'
+import { Box, Container, Typography } from '@mui/material'
 import React from 'react'
 import SMicons from '../SMicons/SMicons'
 import { useRouter } from 'next/navigation'
@@ -12,14 +12,14 @@ const Footer = () => {
   return (
     <footer style={{paddingTop:'6em'}} className='bg'>
           <Container sx={{maxWidth:'lg'}}>
-              <Box className='flex row  items-center w100' sx={{pb:4}}>
+              <Box className='flex row   items-center w100' sx={{pb:4}}>
 
               <Typography
               className='color2'
               sx={{pr:4,fontWeight:900,fontSize:{xs:'3em',md:'4em'}}}>
                 LETS TALK
               </Typography>
-                  <Btn sx={{color:'black'}}>
+                  <Btn  sx={{width:{xs:'140px',sm:'auto'},color:'black'}}>
                       Contact
                       <Box sx={{width:'30px',height:'30px'}}>
 
@@ -29,8 +29,8 @@ const Footer = () => {
               </Box>
 
           <Box
-          sx={{py:{xs:12,md:8},borderTop:'1px solid gray'}}
-          className='flex row wrap justify-between'>
+          sx={{pt:{xs:8,md:8},pb:4,borderTop:'1px solid gray'}}
+          className='flex row wrap justify-between '>
 
               <Box 
                 className='flex  justify-between '
@@ -60,7 +60,7 @@ const Footer = () => {
                     })}
 
               </Box>
-                    <SMicons  sx={{margin:{xs:'3em 0 0 0',md:'0'}}}/>
+                    <SMicons className=''  sx={{margin:{xs:'3em 0 0 0',md:'0'}}}/>
           </Box>
                     <Box sx={{py:4}}>
                       <Typography className='color3' sx={{color:'white'}}>

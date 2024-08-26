@@ -5,6 +5,7 @@ import "../Styles/styles.css";
 import Navbar from "./Components/Navbar/Navbar";
 import FullscreenLoader from "./Components/FullscreenLoader/FullscreenLoader";
 import Footer from "./Components/Footer/Footer";
+import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 
 // import { Inter } from "next/font/google";
 
@@ -60,7 +61,10 @@ export default function RootLayout({
         </Script>
 
         <FullscreenLoader />
+
         <Navbar />
+        <ScrollToTop />
+
         {children}
       </body>
     </html>

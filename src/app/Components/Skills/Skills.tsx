@@ -40,14 +40,14 @@ const Portfolio = () => {
               // width:'100%',
                 // minWidth:{xs:'80vw'}, 
                }}>
-            <Typography className='text-center auto skills-title color2 ' sx={{fontWeight:900,
+            <Typography className='fade-in-text text-center auto skills-title color2 ' sx={{fontWeight:900,
               fontSize:{xs:'3em',sm:'3em',md:'4em'}}}>
                 {/* My Expertise and Abilities */}
                 My Technical Skills
 
 </Typography>
 <Typography
-className='color3 text-center w100 skills-subtitle '
+className='fade-in-text color3 text-center w100 skills-subtitle  '
 sx={{fontWeight:200,pb:4,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 
 My Expertise and technical abilities that I have acquired over the years 
@@ -62,11 +62,11 @@ My Expertise and technical abilities that I have acquired over the years
           </Box>
 
 
-            <Box sx={{maxWidth:'md'}} className='flex row gap2 auto wrap center'>
+            <Box sx={{maxWidth:'md'}} className='flex row gap2 auto wrap center fade-in-text'>
                 {skills.map(i=>{
                     return <Box
                     key={i?.name}
-                    className='flex row tech-item skill-item   ' sx={{
+                    className='flex row tech-item skill-item    ' sx={{
                       border: '1px solid #7e7e7e ',
                       gap:1}}>
                         <Box sx={{width:{xs:'20px'}}}>

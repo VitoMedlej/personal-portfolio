@@ -304,6 +304,9 @@ font-family: "Inter", sans-serif!important;
 .black {
   color: black;
 }
+.red-filter {
+  filter: sepia(1) saturate(10000%) hue-rotate(0deg) brightness(100%);
+}
 button:disabled,
 button[disabled] {
   opacity: 0.56;
