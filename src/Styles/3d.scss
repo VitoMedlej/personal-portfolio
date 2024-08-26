@@ -1,0 +1,100 @@
+.main-title {
+    background: rgb(231, 231, 231);
+    color: black;
+    width: 50vw;
+    height:100vh;
+    position: absolute;
+    left: 0%;
+    transform: translateX(0%);
+    z-index: 134124 !important;
+    div {
+      padding: 1em 2em;
+    }
+    text-align: left;
+  }
+@media (max-width:690px) {
+    .main-title {
+           width: 100vw !important;
+           padding:.45em .25em !important;
+    height: auto;
+    h1 {
+      font-size: 1.5em;
+      padding:0 !important;
+
+    }
+    p {
+      font-size: .85em;
+
+    }
+    div {
+      padding:0 !important;
+
+    }
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.mobile-buttons-container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    user-select: none;
+    // display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    z-index: 214124;
+  
+    .mobile-button {
+      font-size: 1.8em;
+      width: 60px;
+      height: 60px;
+      margin: 5px 0;
+    z-index: 214124;
+
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      touch-action: manipulation;
+      
+      &:active {
+        background-color: #555;
+      }
+    }
+  
+    .horizontal-buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  
+      .mobile-button {
+        margin: 0 10px;
+      }
+    }
+  }
+  .gradient {
+    background: hsla(0, 0%, 0%, 1);
+
+    background: radial-gradient(circle, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 1) 15%, hsla(0, 0%, 5%, 1) 81%);
+    
+    background: -moz-radial-gradient(circle, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 1) 15%, hsla(0, 0%, 5%, 1) 81%);
+    
+    background: -webkit-radial-gradient(circle, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 1) 15%, hsla(0, 0%, 5%, 1) 81%);
+ .item {
+  opacity: 0;
+
+ }
+  }

@@ -12,6 +12,8 @@ import Scrollbar from 'smooth-scrollbar';
 import Footer from '../Components/Footer/Footer'
 import ScrollToTop from '../Components/ScrollToTop/ScrollToTop'
 import { useParallaxEffect } from '../hooks/useParallex'
+import FullscreenLoader from '../Components/FullscreenLoader/FullscreenLoader'
+import Navbar from '../Components/Navbar/Navbar'
 
 
 
@@ -46,6 +48,11 @@ const Page = () => {
     }}
     
     >
+
+<FullscreenLoader />
+
+<Navbar />
+<ScrollToTop />
 
         <Grid   container>
             <Grid     item xs={12} md={6} className='relative bg' lg={5} 

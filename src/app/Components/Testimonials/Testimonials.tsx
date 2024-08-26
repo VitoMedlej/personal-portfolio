@@ -41,7 +41,7 @@ export const testimonials = [
 const Portfolio = () => {
     return (
         <Grid sx={{pt:{xs:0,md:4},pb:{xs:8,sm:12},my:{xs:12,md:8}}} container>
-            <Box style={{ width: '100%', textAlign: 'center' }}>
+            <Box sx={{ width: 'fit-content', textAlign: 'center' }}>
                 <Typography className='color2 fade-in-text' sx={{ fontWeight: 900,
 
 fontSize:{xs:'3em',sm:'3em',md:'4em'}
@@ -50,7 +50,7 @@ fontSize:{xs:'3em',sm:'3em',md:'4em'}
                 </Typography>
                 <Typography
                 className='fade-in-text'
-                style={{ fontWeight: 200, fontSize: '1em' }}>
+                sx={{ px:1,fontWeight: 200, fontSize: '1em' }}>
                     Real stories from satisfied clients who I had the honour to work with.
                 </Typography>
             </Box>
@@ -59,7 +59,7 @@ fontSize:{xs:'3em',sm:'3em',md:'4em'}
                     modules={[Navigation]}
                     navigation
                     spaceBetween={30}
-                    speed={1300}
+                    speed={1100}
                     slidesPerView={1}
                     centeredSlides={true} // Center the active slide
                 >
