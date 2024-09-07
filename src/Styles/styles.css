@@ -67,6 +67,14 @@ textarea {
   width: 100%;
 }
 
+.MuiGrid-root {
+  overflow-x: hidden !important;
+}
+
+.xhid {
+  overflow-x: hidden !important;
+}
+
 .col {
   flex-direction: column;
 }
@@ -346,6 +354,14 @@ button[disabled] {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.grid-item {
+  overflow: hidden;
 }
 
 .cap {

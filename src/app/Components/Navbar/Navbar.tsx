@@ -265,7 +265,7 @@ border:'1px solid #489fb5'
           border:'1px solid black',
             ':hover':{color:'#550df4 !Important'},
             borderRadius:'900px',
-            gap: 1, px:{xs:0,md:2} }}>
+            gap: 1, px:{xs:1,sm:2} }}>
 
             <Typography className='color2' sx={{
                 display:{xs:'none',sm:'flex'},  

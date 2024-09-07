@@ -40,9 +40,9 @@ export const testimonials = [
 
 const Portfolio = () => {
     return (
-        <Grid sx={{pt:{xs:0,md:4},pb:{xs:8,sm:12},my:{xs:12,md:8}}} container>
-            <Box sx={{ width: 'fit-content', textAlign: 'center' }}>
-                <Typography className='color2 fade-in-text' sx={{ fontWeight: 900,
+        <Grid className='xhid' sx={{pt:{xs:0,md:4},pb:{xs:8,sm:12},my:{xs:12,md:8}}} container>
+            <Box className='w100' sx={{  textAlign: 'center' }}>
+                <Typography className='color2 fade-in-text' sx={{  fontWeight: 900,
 
 fontSize:{xs:'3em',sm:'3em',md:'4em'}
                  }}>

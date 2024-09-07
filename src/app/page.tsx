@@ -22,7 +22,7 @@ const Page = () => {
   
   useEffect(() => {
     const isMobile = window.innerWidth <= 768; // Check if it's mobile based on width
-    const damping = isMobile ? 0.25 : 1;
+    const damping = isMobile ? 0.4 : 1;
     const doc : any = document.querySelector('#my-scrollbar')
     const scrollbar = Scrollbar.init(doc, {
       damping,
@@ -96,9 +96,9 @@ const Page = () => {
             <Grid  className='relative ' sx={{height:{xs:'100%',md:'100vh'}}} item xs={12} md={6} lg={7}>
               <Box className='h100' sx={{px:{xs:2,md:0}}}>
               
-                <img src="https://ucarecdn.com/61b4c768-9ec5-4b0c-9ae0-ebe7ab381f1d/anebike.jpg" alt="" className="img" />
+                <img src="https://miller.bslthemes.com/pixy-demo/img/home-2/2.jpg" alt="" className="img" />
               </Box>
-              <Box className=' scale-reverse flex bg4 items-center center absolute' sx={{
+              <Box className='  flex bg4 items-center center absolute' sx={{
                   display:{xs:'none',md:'flex'},
                   bottom:0,
                   left:0,
@@ -121,13 +121,13 @@ const Page = () => {
             <Typography component='h1'
             className='color2 fade-in-text'
             sx={{py:{xs:2,md:3},fontWeight:800,fontSize:{xs:'1.5em',md:'2em'}}}>
-              Hello There Stranger
+              Hello There Stranger!
             </Typography>
             <Typography component='p' className='text-center color3 fade-in-text' 
             sx={{fontSize:{xs:'1em',md:'1.4em'},maxWidth:{xs:'500px',md:'800px'},
             px:1
             ,fontWeight:300}}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim earum iste nisi velit officiis quam repellendus quae ad. Accusantium dignissimos facilis quis ducimus, sit voluptas?
+              {`Im Vito, I can help you code complex websites and applications from design concept to a completed, polished and professional product. Including maintaining and updating it.`}
             </Typography>
           </Grid>
         </Grid>
@@ -141,11 +141,11 @@ const Page = () => {
             <Typography component='h1' className='fade-in-text text-center color2' sx={{
               lineHeight:'0.8',
             fontWeight:800,fontSize:{xs:'3.05em',md:'5em'}}}>
-             15+
+             40+
             </Typography>
             <Typography component='h1' className='fade-in-text text-center color3' 
-            sx={{fontSize:{xs:'1.1em',md:'1.4em'},maxWidth:{xs:'500px',md:'800px'},fontWeight:300}}>
-             unique customers
+            sx={{pt:.35,fontSize:{xs:'1.1em',md:'1.4em'},maxWidth:{xs:'500px',md:'800px'},fontWeight:300}}>
+             Websites & Apps
             </Typography>
             </Box>
 
@@ -153,11 +153,11 @@ const Page = () => {
             <Typography component='h1' className='fade-in-text text-center color2' sx={{
               lineHeight:'0.8',
             fontWeight:800,fontSize:{xs:'3.05em',md:'5em'}}}>
-             15+
+             39+
             </Typography>
             <Typography component='h1' className='fade-in-text text-center color3' 
-            sx={{fontSize:{xs:'1.1em',md:'1.4em'},maxWidth:{xs:'500px',md:'800px'},fontWeight:300}}>
-             unique customers
+            sx={{pt:.35,fontSize:{xs:'1.1em',md:'1.4em'},maxWidth:{xs:'500px',md:'800px'},fontWeight:300}}>
+             Unique Customers
             </Typography>
             </Box>
 
@@ -165,11 +165,11 @@ const Page = () => {
             <Typography component='h1' className='fade-in-text text-center color2' sx={{
               lineHeight:'0.8',
             fontWeight:800,fontSize:{xs:'3.05em',md:'5em'}}}>
-             15+
+             4+
             </Typography>
             <Typography component='h1' className='fade-in-text text-center color3' 
-            sx={{fontSize:{xs:'1.1em',md:'1.4em'},maxWidth:{xs:'500px',md:'800px'},fontWeight:300}}>
-             unique customers
+            sx={{pt:.35,fontSize:{xs:'1.1em',md:'1.4em'},maxWidth:{xs:'500px',md:'800px'},fontWeight:300}}>
+             Years of Experience
             </Typography>
             </Box>
 
@@ -206,7 +206,11 @@ const Page = () => {
     <Typography
     className='color3 fade-in-text'
     sx={{fontSize:'.8em',px:1}}>
-    {`We've been working for several years to build a portfolio that truly reflects our diversity.`}
+{
+  `
+  I have been growing my portfolio for the last +3 years, working on various diverse projects.
+  `
+}
     </Typography>
     
       </Box>
@@ -251,16 +255,18 @@ const Page = () => {
             <Box sx={{width:'25px',height:'25px'}}>
               <img src="https://cdn-icons-png.flaticon.com/128/102/102649.png" alt="" className="img" />
             </Box>
-              <Typography className='c'>
-                Trusted by 100% of my clients 
+              <Typography className='clr2'>
+              Trusted by 100% of my clients  
               </Typography>
           </Box>
-          <Box className='scale-reverse' sx={{px:1}} >
+          <Box className='scale-reverse' sx={{px:1,mt:.5}} >
             <Typography sx={{fontSize:{xs:'2.6em',sm:'3.5em'},fontWeight:900}}>
-              LETS MAKE AN IMPACT TODAY 
+              {`LET'S BUILD THE FUTURE TODAY `}
             </Typography>
             <Typography className='auto' sx={{maxWidth:'600px',fontSize:{xs:'.9em',sm:'1.15em'},fontWeight:300}}>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione ab tempora dolorem a, harum in?
+                  {`Looking for someone that actually listens to your requirements, 
+                  understands them, and executes efficiently and effectively? Reach Out!
+                  `}
               </Typography>
           </Box>
        

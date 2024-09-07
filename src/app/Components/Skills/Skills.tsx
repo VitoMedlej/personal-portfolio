@@ -31,11 +31,10 @@ const Portfolio = () => {
   return (
     <Grid container id='Skills' className='flex  auto' sx={{
         zIndex:'10',
-        px:1,
         pb:12,
         }}>
             <Box 
-            className='auto col w100 flex center'
+            className='auto col  flex center'
             sx={{
               // width:'100%',
                 // minWidth:{xs:'80vw'}, 
@@ -47,7 +46,7 @@ const Portfolio = () => {
 
 </Typography>
 <Typography
-className='fade-in-text color3 text-center w100 skills-subtitle  '
+className='fade-in-text color3 text-center  skills-subtitle  '
 sx={{fontWeight:200,pb:4,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 
 My Expertise and technical abilities that I have acquired over the years 
@@ -58,7 +57,7 @@ My Expertise and technical abilities that I have acquired over the years
         <Box sx={{
             flex:1,
             maxWidth:{sm:'95%',md:'95%',lg:'lg'}}}
-             className='white w100 auto center w100 justify-center h100 flex col'>
+             className='white  auto center  justify-center h100 flex col'>
           </Box>
 
 
