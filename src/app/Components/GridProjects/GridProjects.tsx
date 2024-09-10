@@ -8,18 +8,21 @@ import gsap from 'gsap';
 const items = [
   {
     id: 1,
-    title:'Amaria Beauty',
-    url :'https://amaria.beauty',
-    img: 'https://ucarecdn.com/292b15a7-c922-44b1-8a5e-5056bd02f71c/brownminimalistnewcollectionsportwearinstagrampost.png',
+    title:'Ova Skin Care',
+    url :'https://ovaskincare.net',
+    img: 'https://ucarecdn.com/035a14e6-eac1-4cbc-9a16-7f8ba4c2a3e8/brownbeautyskincareinstagrampost31.png',
     sx: {
-      height: { xs: '300px',sm:'400px', md: '715px' },
-      gridColumn: { xs: '1 / -1', md: '1 / 2' }, // Span full width on mobile, first column on desktop
-      gridRow: { md: '1 / 3' }, // Span two rows on desktop
+      height: { xs: '400px',sm:'400px', md: '715px' },
+      gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop
+      gridRow: { md: '3 / 5' }, // Span two rows on desktop
     },
   },
+ 
   {
     id: 2,
-    img: 'https://miller.bslthemes.com/pixy-demo/img/works/1/1.jpg',
+    title:'Bee-Organic',
+    url :'https://beeorganic-lb.com/',
+    img: 'https://ucarecdn.com/22a8219e-26e4-425a-bbd9-07add9ac7106/Untitleddesign3.png',
     sx: {
       height: { xs: '200px',sm:'400px', md: '350px' },
       gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop
@@ -28,34 +31,43 @@ const items = [
   },
   {
     id: 3,
-    img: 'https://miller.bslthemes.com/pixy-demo/img/works/1/1.jpg',
+    title:'E-Architecture',
+    url :'https://earchitecture-lb.com/',
+    img: 'https://ucarecdn.com/5688f814-816f-4b88-ae60-bedabc173a9c/Untitleddesign4.png',
     sx: {
-      height: { xs: '300px',sm:'400px', md: '350px' },
+      height: { xs: '400px',sm:'400px', md: '350px' },
       gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop
       gridRow: { md: '2 / 3' }, // Second row on desktop
     },
   },
   {
     id: 4,
-    img: 'https://miller.bslthemes.com/pixy-demo/img/works/1/1.jpg',
+    title:'True Nature Blend',
+    url :'https://truenatureblend.com',
+    img: 'https://ucarecdn.com/77d9e524-6884-4d7c-9e67-d64d4dfcd258/Untitleddesign9.png',
     sx: {
       height: { xs: '200px',sm:'400px', md: '350px' },
       gridColumn: { xs: '1 / -1', md: '1 / 2' }, // Full width on mobile, first column on desktop
       gridRow: { md: '3 / 4' }, // Third row on desktop
     },
   },
+ 
   {
     id: 5,
-    img: 'https://miller.bslthemes.com/pixy-demo/img/works/1/1.jpg',
+    title:'Amaria Beauty',
+    url :'https://amaria.beauty',
+    img: 'https://ucarecdn.com/292b15a7-c922-44b1-8a5e-5056bd02f71c/brownminimalistnewcollectionsportwearinstagrampost.png',
     sx: {
-      height: { xs: '300px',sm:'400px', md: '715px' },
-      gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop
-      gridRow: { md: '3 / 5' }, // Span two rows on desktop
+      height: { xs: '400px',sm:'400px', md: '715px' },
+      gridColumn: { xs: '1 / -1', md: '1 / 2' }, // Span full width on mobile, first column on desktop
+      gridRow: { md: '1 / 3' }, // Span two rows on desktop
     },
   },
   {
     id: 6,
-    img: 'https://miller.bslthemes.com/pixy-demo/img/works/1/1.jpg',
+    title:'Galaxi LB - Clothing Brand',
+    url :'https://galaxi-lb.com',
+    img: 'https://ucarecdn.com/f0faec0f-88e3-4742-8bdd-ff097cf3bdb4/Untitleddesign8.png',
     sx: {
       height: { xs: '200px',sm:'400px', md: '350px' },
       gridColumn: { xs: '1 / -1', md: '1 / 2' }, // Full width on mobile, first column on desktop
@@ -64,16 +76,20 @@ const items = [
   },
   {
     id: 7,
-    img: 'https://miller.bslthemes.com/pixy-demo/img/works/1/1.jpg',
+     title:'Mounet Dalia',
+    url :'https://mounetdalia.com',
+    img: 'https://ucarecdn.com/5b3c8690-f96c-49df-8b37-26e521c95c2b/Untitleddesign10.png',
     sx: {
-      height: { xs: '300px',sm:'400px', md: '350px' },
+      height: { xs: '400px',sm:'400px', md: '350px' },
       gridColumn: { xs: '1 / -1', md: '1 / 2' }, // Full width on mobile, first column on desktop
       gridRow: { md: '5 / 6' }, // Fifth row on desktop
     },
   },
   {
     id: 8,
-    img: 'https://miller.bslthemes.com/pixy-demo/img/works/1/1.jpg',
+        title:'TeenTops Electronics (Web + Mobile)',
+    url :'https://play.google.com/store/apps/details?id=com.teentops',
+    img: 'https://ucarecdn.com/2d4f6f80-539b-492d-8e5c-03d490ba00d7/Untitleddesign11.png',
     sx: {
       height: { xs: '200px',sm:'400px', md: '350px' },
       gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop
@@ -128,15 +144,17 @@ const YourComponent = () => {
               transform: 'translateY(40px)', // Start hidden below
             }}>
             <Typography sx={{ color: 'black', fontWeight: 700, fontSize: {sm:'1.57em'} }}>
-              My Project Name Here
+             {item.title}
             </Typography>
             <Box>
+              <a href={`${item.url}`}>
               <Btn sx={{ width: { xs: '140px', sm: 'auto' }, color: 'black' }}>
                 View Site
                 <Box sx={{ width: '30px', height: '30px' }}>
                   <img src="https://cdn-icons-png.flaticon.com/128/16015/16015161.png" alt="" className="img contain" />
                 </Box>
               </Btn>
+              </a>
             </Box>
           </Box>
           <Box className="image-container" sx={{ overflow: 'hidden', height: '100%' }}>

@@ -10,7 +10,7 @@ const Footer = () => {
   const router = useRouter()
 
   return (
-    <footer style={{paddingTop:'6em'}} className='bg'>
+    <footer style={{paddingTop:'6em'}} id='Contact' className='bg'>
           <Container sx={{maxWidth:'lg'}}>
               <Box className='flex row   items-center w100' sx={{pb:4}}>
 

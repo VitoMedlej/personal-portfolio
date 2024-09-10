@@ -67,6 +67,10 @@ textarea {
   width: 100%;
 }
 
+.fill {
+  width: -webkit-fill-available;
+}
+
 .MuiGrid-root {
   overflow-x: hidden !important;
 }

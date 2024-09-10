@@ -71,6 +71,9 @@ font-family: "Inter", sans-serif!important;
 .w100 {
   width: 100%;
 }
+.fill {
+  width: -webkit-fill-available;
+} 
 .MuiGrid-root {
   overflow-x: hidden !important;
 

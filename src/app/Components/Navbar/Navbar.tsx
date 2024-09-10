@@ -8,6 +8,7 @@ import Link from 'next/link'
 import SMicons from '../SMicons/SMicons'
 import { useRouter } from 'next/navigation'
 import {gsap } from 'gsap';
+import Scrollbar from 'smooth-scrollbar';
 
 
 const Navbar = () => {
@@ -35,13 +36,13 @@ const Navbar = () => {
     }});
   };
 
-  // useEffect(() => {
-  //   if (isOpen) {
-    
-  //   } else {
-    
-  //   }
-  // }, [isOpen]);
+  const scrollToSection = (scrollbar : any, target : any) => {
+    const targetElement = document.querySelector(target);
+    if (!targetElement) return;
+  
+    const targetOffset = targetElement.offsetTop;
+    scrollbar.scrollTo(0, targetOffset, 1500); // Scroll to target over 1.5 seconds
+  };
 
   useEffect(() => {
       
@@ -80,6 +81,7 @@ const Navbar = () => {
       router.push(href)
     }
 
+    const scrollb : any = document.querySelector('#my-scrollbar')
 
   return (
     <>
@@ -92,90 +94,108 @@ const Navbar = () => {
       opacity:0,
        }}
        className='overflowed   '>
-        <Box sx={{width:'100%'}}>
+      <Box sx={{ width: '100%' }}>
+  <Box
+    onClick={() => {
+      closeMenu();
+      const scrollbar = Scrollbar.get(scrollb);
+      scrollToSection(scrollbar, '#hero');
+    }}
+    sx={{ top: '16%' }}
+    className="white cursor pointer nav-menu"
+  >
+    <Link className="decor-none white" href="/">
+      <Typography sx={{ fontSize: '1.2em' }}>Home</Typography>
+    </Link>
+  </Box>
 
-        <Box onClick={()=>{closeMenu(); router.push('/#hero')}} 
-        sx={{ top: '16%'}} className='white cursor pointer nav-menu'>
-          <Link className='decor-none white' href='/'>
-          <Typography sx={{fontSize:'1.2em'}}>
-           Home
-          </Typography>
-          </Link>
-        </Box>
+  <Box
+    onClick={() => {
+      closeMenu();
+      router.push('/3d');
+    }}
+    sx={{ top: '24%' }}
+    className="white cursor pointer nav-menu"
+  >
+    <Link className="decor-none" style={{ color: '#489fb5' }} href="/3d">
+      <Typography sx={{ fontSize: '1.2em' }}>View in 3D</Typography>
+    </Link>
+  </Box>
 
-        <Box onClick={()=>{closeMenu(); router.push('/3d')}} 
-        sx={{ top: '24%'}} className='white cursor pointer nav-menu'>
-          <Link className='decor-none ' style={{color:'#489fb5'}}  href='/3d'>
-          <Typography sx={{fontSize:'1.2em'}}>
-           View in 3D
-          </Typography>
-          </Link>
-        </Box>
+  <Box
+    onClick={() => {
+      closeMenu();
+      const scrollbar = Scrollbar.get(scrollb);
+      scrollToSection(scrollbar, '#portfolio');
+    }}
+    sx={{ top: '32%' }}
+    className="white cursor pointer nav-menu"
+  >
+    <Link className="decor-none white" href="/#portfolio">
+      <Typography sx={{ fontSize: '1.2em' }}>Portfolio</Typography>
+    </Link>
+  </Box>
 
+  <Box
+    onClick={() => {
+      closeMenu();
+      const scrollbar = Scrollbar.get(scrollb);
+      scrollToSection(scrollbar, '#Skills');
+    }}
+    sx={{ top: '40%' }}
+    className="white cursor pointer nav-menu"
+  >
+    <Link className="decor-none white" href="/#Skills">
+      <Typography sx={{ fontSize: '1.2em' }}>Skills</Typography>
+    </Link>
+  </Box>
 
-        <Box onClick={()=>{closeMenu(); 
-   gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#portfolio"});
+  <Box
+    onClick={() => {
+      closeMenu();
+      const scrollbar = Scrollbar.get(scrollb);
+      scrollToSection(scrollbar, '#Services');
+    }}
+    sx={{ top: '48%' }}
+    className="white cursor pointer nav-menu"
+  >
+    <Link className="decor-none white" href="/#About">
+      <Typography sx={{ fontSize: '1.2em' }}>About</Typography>
+    </Link>
+  </Box>
 
-        }} sx={{ top: '32%'}} className='white cursor pointer nav-menu'>
-          <Link className='decor-none white' href='/'>
-          <Typography sx={{fontSize:'1.2em'}}>
-          Portfolio
-          </Typography>
-          </Link>
-        </Box>
+  <Box
+    onClick={() => {
+      closeMenu();
+      const scrollbar = Scrollbar.get(scrollb);
+      scrollToSection(scrollbar, '#Testimonials');
+    }}
+    sx={{ top: '56%' }}
+    className="white cursor pointer nav-menu"
+  >
+    <Link className="decor-none white" href="/">
+      <Typography sx={{ fontSize: '1.2em' }}>Testimonials</Typography>
+    </Link>
+  </Box>
 
-        <Box onClick={()=>{closeMenu(); 
-   gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#Skills"});
+  <Box
+    onClick={() => {
+      closeMenu();
+      const scrollbar = Scrollbar.get(scrollb);
+      scrollToSection(scrollbar, '#Contact');
+    }}
+    sx={{ top: '64%' }}
+    className="white cursor pointer nav-menu"
+  >
+    <Link className="decor-none white" href="/">
+      <Typography sx={{ fontSize: '1.2em' }}>Contact</Typography>
+    </Link>
+  </Box>
 
-        }} sx={{ top: '40%'}} className='white cursor pointer nav-menu'>
-          <Link className='decor-none white' href='/'>
-          <Typography sx={{fontSize:'1.2em'}}>
-          Skills
-          </Typography>
-          </Link>
-        </Box>
-
-        <Box onClick={()=>{closeMenu(); 
-   gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#Services"});
-
-        }} sx={{ top: '48%'}} className='white cursor pointer nav-menu'>
-          <Link className='decor-none white' href='/'>
-          <Typography sx={{fontSize:'1.2em'}}>
-          Services
-          </Typography>
-          </Link>
-        </Box>
-
-        <Box onClick={()=>{closeMenu(); 
-   gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#Testimonials"});
-
-        }} sx={{ top: '56%'}} className='white cursor pointer nav-menu'>
-          <Link className='decor-none white' href='/'>
-          <Typography sx={{fontSize:'1.2em'}}>
-          Testimonials
-          </Typography>
-          </Link>
-        </Box>
-
-        <Box onClick={()=>{closeMenu(); 
-   gsap.to(window, {duration:1.5, delay:.45, scrollTo: "#Contact"});
-
-        }} sx={{ top: '64%'}} className='white cursor pointer nav-menu'>
-          <Link className='decor-none white' href='/'>
-          <Typography sx={{fontSize:'1.2em'}}>
-          Contact
-          </Typography>
-          </Link>
-        </Box>
-
-
-        
-        <Box sx={{ px:1,top: '72%'}} className='absolute'>
-
-        <SMicons invert/>
-        </Box>
-
-        </Box>
+  <Box sx={{ px: 1, top: '72%' }} className="absolute">
+    <SMicons invert />
+  </Box>
+</Box>
 
 
         {/* {isMobile && <Box sx={{

@@ -111,7 +111,7 @@ const Page = () => {
         </Grid>
 
 
-        <Grid   container>
+        <Grid  id='About' container>
           <Grid item xs={12} sx={{maxWidth:'lg',py:{xs:12,md:20}}}
            className='auto white items-center w100 flex col center'>
            <Box sx={{width:'100px',height:'100px',overflow:'hidden'}} className='rounded auto center'>
@@ -277,18 +277,20 @@ const Page = () => {
                   height:{md:'100px'}}}>
                     <Box className='flex items-center' sx={{textAlign:'left',px:2,width:'50%'}}>
                   <Typography className='color4' sx={{fontSize:'.8em'}}>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                   Do not be shy to say Hi! Always glad to help out or answer questions!
                   </Typography>
                     </Box>
                     
                     <Box 
                     className='bg5 flex center items-center' 
-                    sx={{width:'20%'}}>
+                    sx={{width:'20%',px:2}}>
+                    <a href='/' className='fill'>
 
                     <Btn 
-                    sx={{width:'100%',boder:'1px solid white !important',color:'white',mx:2,height:'70px',borderRadius:'900px'}}>
+                    sx={{width:'100%',margin:0,boder:'1px solid white !important',color:'white',height:'70px',borderRadius:'900px'}}>
                       Get In Touch
                     </Btn>
+                      </a>
                     </Box>
                     <Box 
                     sx={{background:'#d8d8d8',width:'30%'}}>

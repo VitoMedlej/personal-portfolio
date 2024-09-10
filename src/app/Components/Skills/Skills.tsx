@@ -34,12 +34,12 @@ const Portfolio = () => {
         pb:12,
         }}>
             <Box 
-            className='auto col  flex center'
+            className='auto col  text-center flex center'
             sx={{
-              // width:'100%',
+              width:'100%',
                 // minWidth:{xs:'80vw'}, 
                }}>
-            <Typography className='fade-in-text text-center auto skills-title color2 ' sx={{fontWeight:900,
+            <Typography className='fade-in-text flex center text-center auto skills-title color2 ' sx={{fontWeight:900,
               fontSize:{xs:'3em',sm:'3em',md:'4em'}}}>
                 {/* My Expertise and Abilities */}
                 My Technical Skills

@@ -35,7 +35,7 @@ const Hero = () => {
 
     }, []);
   return (
-    <Container className='center hero items-center flex col align-center ' sx={{
+    <Container id='hero' className='center hero items-center flex col align-center ' sx={{
       position: `sticky`,
       top: 0,
       py:6,minHeight:'100vh'}}>
