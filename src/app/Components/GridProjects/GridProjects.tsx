@@ -117,6 +117,7 @@ const YourComponent = () => {
 
   return (
     <Grid
+    id='portfolio'
       container
       sx={{
         display: 'grid',

@@ -71,7 +71,7 @@ const Navbar = () => {
     const router = useRouter()
 
     const ScrollToFn = () =>{
-      gsap.to(window, {duration:2.5, scrollTo: "#Contact"});
+      gsap.to(window, {duration:1.5, scrollTo: "#Contact"});
       closeMenu();
     }
     // const isMobile = useMediaQuery('(min-width:900px)');
@@ -81,7 +81,12 @@ const Navbar = () => {
       router.push(href)
     }
 
-    const scrollb : any = document.querySelector('#my-scrollbar')
+    const scrollbRef : any = useRef<any>(null);
+
+    useEffect(() => {
+      scrollbRef.current = document.querySelector('#my-scrollbar');
+    }, []);
+  
 
   return (
     <>
@@ -98,7 +103,7 @@ const Navbar = () => {
   <Box
     onClick={() => {
       closeMenu();
-      const scrollbar = Scrollbar.get(scrollb);
+      const scrollbar = Scrollbar.get(scrollbRef.current);
       scrollToSection(scrollbar, '#hero');
     }}
     sx={{ top: '16%' }}
@@ -125,7 +130,7 @@ const Navbar = () => {
   <Box
     onClick={() => {
       closeMenu();
-      const scrollbar = Scrollbar.get(scrollb);
+      const scrollbar = Scrollbar.get(scrollbRef.current);
       scrollToSection(scrollbar, '#portfolio');
     }}
     sx={{ top: '32%' }}
@@ -139,7 +144,7 @@ const Navbar = () => {
   <Box
     onClick={() => {
       closeMenu();
-      const scrollbar = Scrollbar.get(scrollb);
+      const scrollbar = Scrollbar.get(scrollbRef.current);
       scrollToSection(scrollbar, '#Skills');
     }}
     sx={{ top: '40%' }}
@@ -153,7 +158,7 @@ const Navbar = () => {
   <Box
     onClick={() => {
       closeMenu();
-      const scrollbar = Scrollbar.get(scrollb);
+      const scrollbar = Scrollbar.get(scrollbRef.current);
       scrollToSection(scrollbar, '#Services');
     }}
     sx={{ top: '48%' }}
@@ -167,7 +172,7 @@ const Navbar = () => {
   <Box
     onClick={() => {
       closeMenu();
-      const scrollbar = Scrollbar.get(scrollb);
+      const scrollbar = Scrollbar.get(scrollbRef.current);
       scrollToSection(scrollbar, '#Testimonials');
     }}
     sx={{ top: '56%' }}
@@ -181,7 +186,7 @@ const Navbar = () => {
   <Box
     onClick={() => {
       closeMenu();
-      const scrollbar = Scrollbar.get(scrollb);
+      const scrollbar = Scrollbar.get(scrollbRef.current);
       scrollToSection(scrollbar, '#Contact');
     }}
     sx={{ top: '64%' }}

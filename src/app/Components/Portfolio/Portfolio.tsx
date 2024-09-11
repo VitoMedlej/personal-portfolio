@@ -94,11 +94,8 @@ scrollTrigger: {
   }, [])
 
 
-
-
-
   return (
-    <Grid id='portfolio' container className='flex  auto' sx={{
+    <Grid  container className='flex  auto' sx={{
         zIndex:'10',
         // minHeight:'100vh',
         pb:4,

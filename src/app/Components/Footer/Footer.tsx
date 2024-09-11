@@ -19,13 +19,14 @@ const Footer = () => {
               sx={{pr:4,fontWeight:900,fontSize:{xs:'3em',md:'4em'}}}>
                 LETS TALK
               </Typography>
-                  <Btn  sx={{width:{xs:'140px',sm:'auto'},color:'black'}}>
-                      Contact
-                      <Box sx={{width:'30px',height:'30px'}}>
-
-                      <img src="https://cdn-icons-png.flaticon.com/128/16015/16015161.png" alt="" className="img contain" />
-                      </Box>
-                  </Btn>
+              <a target='_blank' href='mailto:contact@vito-medlej.com'>
+  <Btn sx={{ width: { xs: '140px', sm: 'auto' }, color: 'black' }}>
+    Contact
+    <Box sx={{ width: '30px', height: '30px' }}>
+      <img src="https://cdn-icons-png.flaticon.com/128/16015/16015161.png" alt="" className="img contain" />
+    </Box>
+  </Btn>
+</a>
               </Box>
 
           <Box
@@ -43,11 +44,11 @@ const Footer = () => {
                     {[
                       {
                         title:'Home',
-                        link:'/',
+                        link:'/#hero',
                       },
                       {
                         title:'About',
-                        link:'/about',
+                        link:'/#About',
                       },
                       {
                         title:'Contact',

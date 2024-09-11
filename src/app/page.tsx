@@ -23,7 +23,7 @@ const Page = () => {
   useEffect(() => {
     const isMobile = window.innerWidth <= 768; // Check if it's mobile based on width
     const damping = isMobile ? 0.4 : 1;
-    const doc : any = document.querySelector('#my-scrollbar')
+    const doc : any = document && document?.querySelector('#my-scrollbar')
     const scrollbar = Scrollbar.init(doc, {
       damping,
       thumbMinSize:20,
@@ -93,7 +93,9 @@ const Page = () => {
                 </Box>
             </Grid>
 
-            <Grid  className='relative ' sx={{height:{xs:'100%',md:'100vh'}}} item xs={12} md={6} lg={7}>
+            <Grid  className='relative ' sx={{
+              overflow: 'hidden',
+              height:{xs:'100%',md:'100vh'}}} item xs={12} md={6} lg={7}>
               <Box className='h100' sx={{px:{xs:2,md:0}}}>
               
                 <img src="https://miller.bslthemes.com/pixy-demo/img/home-2/2.jpg" alt="" className="img" />
@@ -284,7 +286,7 @@ const Page = () => {
                     <Box 
                     className='bg5 flex center items-center' 
                     sx={{width:'20%',px:2}}>
-                    <a href='/' className='fill'>
+                    <a href='https://www.linkedin.com/in/vitomedlej/' target="_blank" className='fill'>
 
                     <Btn 
                     sx={{width:'100%',margin:0,boder:'1px solid white !important',color:'white',height:'70px',borderRadius:'900px'}}>
