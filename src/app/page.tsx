@@ -22,7 +22,7 @@ const Page = () => {
   
   useEffect(() => {
     const isMobile = window.innerWidth <= 768; // Check if it's mobile based on width
-    const damping = isMobile ? 0.4 : 1;
+    const damping = isMobile ? 0.15 : 1;
     const doc : any = document && document?.querySelector('#my-scrollbar')
     const scrollbar = Scrollbar.init(doc, {
       damping,
@@ -40,6 +40,11 @@ const Page = () => {
   useParallaxEffect();
 
   return (
+
+
+    <>
+<FullscreenLoader />
+    
     <Box id='my-scrollbar'    className='bg' 
     sx={{
       
@@ -49,7 +54,6 @@ const Page = () => {
     
     >
 
-<FullscreenLoader />
 
 <Navbar />
 <ScrollToTop />
@@ -210,7 +214,7 @@ const Page = () => {
     sx={{fontSize:'.8em',px:1}}>
 {
   `
-  I have been growing my portfolio for the last +3 years, working on various diverse projects.
+  I have been growing my portfolio for the last 3+ years, working on various projects.
   `
 }
     </Typography>
@@ -306,6 +310,10 @@ const Page = () => {
                 <Footer/>
 
     </Box>
+
+
+    </>
+
   )
 }
 

@@ -23,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Vito Medlej | Fullstack Typescript Developer Portfolio</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
         <meta name="description" content={"Full-stack Typescript Developer with 4+ years of experience in building complex web and mobile apps. Proficient in Next.js, Node.js, and MongoDB"} />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
       <link rel="icon" href="https://res.cloudinary.com/dwcu3wcol/image/upload/v1657099811/log_nkmcys.jpg"/>
