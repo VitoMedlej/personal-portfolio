@@ -20,34 +20,6 @@ import Navbar from './Components/Navbar/Navbar'
 
 const Page = () => {
   
-  useEffect(() => {
-    const isMobile = window.innerWidth <= 768; // Check if it's mobile based on width
-    const damping = isMobile ? 0.07 : 0.1; // Slightly increase damping for mobile to make it smoother
-    const maxOverscroll = isMobile ? 20 : 150; // Reduce overscroll effect on mobile
-    const overscrollEffect = isMobile ? 'none' : 'bounce'; // Disable bounce effect on mobile
-  
-    const doc: any = document && document.querySelector('#my-scrollbar');
-    
-    const scrollbar = Scrollbar.init(doc, {
-      damping,
-      thumbMinSize: 20,
-      renderByPixels: true,
-      continuousScrolling: true,
-      plugins: {
-        overscroll: {
-          enable: true,
-          effect: overscrollEffect, // Adjust based on device
-          damping: 0.2, // Keep overscroll smooth but subtle
-          maxOverscroll,
-          glowColor: '#222a2d', // Glow effect is still present on larger screens
-        },
-      },
-    });
-  
-    return () => {
-      scrollbar.destroy();
-    };
-  }, []);
   
   useParallaxEffect();
 
@@ -57,11 +29,11 @@ const Page = () => {
     <>
 <FullscreenLoader />
     
-    <Box id='my-scrollbar'    className='bg' 
+    <Box     className='bg' 
     sx={{
       
-      height: '100vh',
-        overflowX: 'hidden',
+      // height: '100vh',
+        // overflowX: 'hidden',
     }}
     
     >
@@ -70,19 +42,24 @@ const Page = () => {
 <Navbar />
 <ScrollToTop />
 
-        <Grid   container>
-            <Grid     item xs={12} md={6} className='relative bg' lg={5} 
+        <Grid sx={{maxWidth:'xl'}}   className='auto' container>
+            <Grid     item xs={12} md={6} className='relative ' lg={6} 
             
-            sx={{pt:{xs:8,md:4},height:{xs:'100%',md:'100vh'}}}>
-                <Box sx={{pt:{xs:'5em',md:'20%'},
-                pb:{xs:'5em',md:'0'},px:{xs:'.5em',md:'20%'},maxWidth:{md:'250px',lg:"300px"}}}>
+            sx={{
+              pt:{xs:8,md:4},height:{xs:'100%',lg:'100%',xl:'700px'}}}>
+
+
+                <Box sx={{
+                  
+                  pt:{xs:'5em',sm:'10%',md:'20%',lg:'10%',xl:'0%'},
+                pb:{xs:'0em',sm:'0em',md:'0'},px:{xs:'.5em',md:'20%'},maxWidth:{md:'250px',lg:"300px"}}}>
 
                 <Typography 
                 className='center color2 auto flex items-center   justify-center align-center'
                 sx={{
                   lineHeight:'1.35',
                   textAlign: {xs:'center',md:'left'},
-                  fontSize:{xs:'3.15em',md:'3.5em',lg:'4.5em'},fontWeight:900}}>
+                  fontSize:{xs:'2.95em',md:'3.15em',lg:'4.15em'},fontWeight:900}}>
                     MY NAME IS VITO MEDLEJ, WEB ENGINEER
                 </Typography>
 
@@ -109,13 +86,34 @@ const Page = () => {
                 </Box>
             </Grid>
 
-            <Grid  className='relative ' sx={{
+            <Grid  className='relative flex items-center ' sx={{
               overflow: 'hidden',
-              height:{xs:'100%',md:'100vh'}}} item xs={12} md={6} lg={7}>
-              <Box className='h100' sx={{px:{xs:2,md:0}}}>
+              height:{xs:'100%',md:'100vh',xl:'700px'}}} item xs={12} md={6} lg={6}>
+             
+             
+             <Box
+              className='center auto floating-box'
+              sx={{
+                width:{xs:'400px',sm:'500px',md:'600px',lg:'700px'},
+                height:{xs:'400px',sm:'500px',md:'600px',lg:'700px'},
+                // right:0,
+
+                // top:0,
+                // position:'absolute',
+                transform:'rotate(205deg)',
+                px:{xs:2,md:0}}}>
               
-                <img src="https://miller.bslthemes.com/pixy-demo/img/home-2/2.jpg" alt="" className="img" />
+                <img src="https://png.pngtree.com/png-vector/20240628/ourmid/pngtree-organic-chair-made-out-of-black-concrete-by-templating-multi-size-png-image_12728646.png" alt="" className="img contain" />
               </Box>
+              {/* <Box
+              className='flex center auto'
+              sx={{
+                width:'400px',
+                height:'400px',
+                px:{xs:2,md:0}}}>
+              
+                <img src="https://d2pas86kykpvmq.cloudfront.net/landings/inflatable/hero-2-p-500.png" alt="" className="img contain" />
+              </Box> */}
               <Box className='  flex bg4 items-center center absolute' sx={{
                   display:{xs:'none',md:'flex'},
                   bottom:0,

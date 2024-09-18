@@ -6,7 +6,6 @@ import Btn from '../Btn/Btn'
 import Btn3 from '../Btn/Btn3'
 import ReviewSection from '../Reviews/ReviewSection'
 import { testimonials } from '../Testimonials/Testimonials'
-import SMicons from '../SMicons/SMicons'
 import {gsap} from 'gsap';
 
 
