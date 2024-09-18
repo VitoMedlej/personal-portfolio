@@ -148,7 +148,7 @@ const YourComponent = () => {
              {item.title}
             </Typography>
             <Box>
-              <a href={`${item.url}`}>
+              <a target='_blank' href={`${item.url}`}>
               <Btn sx={{ width: { xs: '140px', sm: 'auto' }, color: 'black' }}>
                 View Site
                 <Box sx={{ width: '30px', height: '30px' }}>

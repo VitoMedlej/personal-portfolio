@@ -22,16 +22,28 @@ const Page = () => {
   
   useEffect(() => {
     const isMobile = window.innerWidth <= 768; // Check if it's mobile based on width
-    const damping = isMobile ? 0.15 : 1;
-    const doc : any = document && document?.querySelector('#my-scrollbar')
+    const damping = isMobile ? 0.07 : 0.1; // Slightly increase damping for mobile to make it smoother
+    const maxOverscroll = isMobile ? 20 : 150; // Reduce overscroll effect on mobile
+    const overscrollEffect = isMobile ? 'none' : 'bounce'; // Disable bounce effect on mobile
+  
+    const doc: any = document && document.querySelector('#my-scrollbar');
+    
     const scrollbar = Scrollbar.init(doc, {
       damping,
-      thumbMinSize:20,
-      renderByPixels:true,
-      // alwaysShowTracks: true,
+      thumbMinSize: 20,
+      renderByPixels: true,
       continuousScrolling: true,
+      plugins: {
+        overscroll: {
+          enable: true,
+          effect: overscrollEffect, // Adjust based on device
+          damping: 0.2, // Keep overscroll smooth but subtle
+          maxOverscroll,
+          glowColor: '#222a2d', // Glow effect is still present on larger screens
+        },
+      },
     });
-
+  
     return () => {
       scrollbar.destroy();
     };
