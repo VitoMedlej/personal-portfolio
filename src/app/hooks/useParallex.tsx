@@ -3,8 +3,10 @@
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
-gsap.registerPlugin(ScrollTrigger);
+
+gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);
 
 export const useParallaxEffect = () => {
   useEffect(() => {
@@ -17,7 +19,7 @@ export const useParallaxEffect = () => {
 
     gsap.to('.floating-box', {
       y: '+=15',
-      rotate : '+=6',
+      rotate : '+=.5',
       x:'+=4',      
       duration: 3.5, // Duration of one cycle
       repeat: -1, // Repeat indefinitely

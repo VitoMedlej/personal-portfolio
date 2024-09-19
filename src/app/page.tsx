@@ -100,10 +100,10 @@ const Page = () => {
 
                 // top:0,
                 // position:'absolute',
-                transform:'rotate(205deg)',
+                transform:'rotate(5deg)',
                 px:{xs:2,md:0}}}>
               
-                <img src="https://png.pngtree.com/png-vector/20240628/ourmid/pngtree-organic-chair-made-out-of-black-concrete-by-templating-multi-size-png-image_12728646.png" alt="" className="img contain" />
+                <img src="https://ucarecdn.com/33aa3383-e822-4151-9d2b-f439380980c6/OIG21.png" alt="" className="img contain" />
               </Box>
               {/* <Box
               className='flex center auto'
@@ -132,7 +132,7 @@ const Page = () => {
            className='auto white items-center w100 flex col center'>
            <Box sx={{width:'100px',height:'100px',overflow:'hidden'}} className='rounded auto center'>
             <img src="https://ucarecdn.com/be805fa6-ecca-4d06-a2b1-d28f6001c38c/-/resize/300/"
-             alt="" className="img rounded parallax-image" />
+             alt="vito-medlej  pic" className="img rounded parallax-image" />
            </Box>
             <Typography component='h1'
             className='color2 fade-in-text'
@@ -224,7 +224,7 @@ const Page = () => {
     sx={{fontSize:'.8em',px:1}}>
 {
   `
-  I have been growing my portfolio for the last 3+ years, working on various projects.
+  I have been growing my portfolio for the past 4 years, worked on various projects. More on my github.
   `
 }
     </Typography>
@@ -251,7 +251,8 @@ const Page = () => {
             className='absolute'
             >
               <img
-              src="https://static.vecteezy.com/system/resources/previews/028/615/543/non_2x/spiral-3d-curve-line-decorative-element-free-png.png" alt="" 
+              alt='3d abstract'
+              src="https://static.vecteezy.com/system/resources/previews/028/615/543/non_2x/spiral-3d-curve-line-decorative-element-free-png.png"
               className="img contain parallex" />
             </Box>
 

@@ -37,11 +37,11 @@ const Navbar = () => {
   };
 
   const scrollToSection = (scrollbar : any, target : any) => {
-    const targetElement = document.querySelector(target);
-    if (!targetElement) return;
+    // const targetElement = document.querySelector(target);
+    // if (!targetElement) return;
   
-    const targetOffset = targetElement.offsetTop;
-    scrollbar.scrollTo(0, targetOffset, 1500); // Scroll to target over 1.5 seconds
+    // const targetOffset = targetElement.offsetTop;
+    gsap.to(window, { duration: 2, scrollTo: target });
   };
 
   useEffect(() => {
@@ -81,11 +81,11 @@ const Navbar = () => {
       router.push(href)
     }
 
-    const scrollbRef : any = useRef<any>(null);
+    // const scrollbRef : any = useRef<any>(null);
 
-    useEffect(() => {
-      scrollbRef.current = document.querySelector('#my-scrollbar');
-    }, []);
+    // useEffect(() => {
+    //   scrollbRef.current = document.querySelector('#my-scrollbar');
+    // }, []);
   
 
   return (
@@ -103,7 +103,7 @@ const Navbar = () => {
   <Box
     onClick={() => {
       closeMenu();
-      const scrollbar = Scrollbar.get(scrollbRef.current);
+      const scrollbar =null;
       scrollToSection(scrollbar, '#hero');
     }}
     sx={{ top: '16%' }}
@@ -130,7 +130,7 @@ const Navbar = () => {
   <Box
     onClick={() => {
       closeMenu();
-      const scrollbar = Scrollbar.get(scrollbRef.current);
+      const scrollbar =null;
       scrollToSection(scrollbar, '#portfolio');
     }}
     sx={{ top: '32%' }}
@@ -144,7 +144,7 @@ const Navbar = () => {
   <Box
     onClick={() => {
       closeMenu();
-      const scrollbar = Scrollbar.get(scrollbRef.current);
+      const scrollbar =null;
       scrollToSection(scrollbar, '#Skills');
     }}
     sx={{ top: '40%' }}
@@ -158,7 +158,9 @@ const Navbar = () => {
   <Box
     onClick={() => {
       closeMenu();
-      const scrollbar = Scrollbar.get(scrollbRef.current);
+
+      // Scrollbar.get(scrollbRef.current) // use it when integrating smoothScroll functionality
+      const scrollbar =null;
       scrollToSection(scrollbar, '#Services');
     }}
     sx={{ top: '48%' }}
@@ -172,7 +174,7 @@ const Navbar = () => {
   <Box
     onClick={() => {
       closeMenu();
-      const scrollbar = Scrollbar.get(scrollbRef.current);
+      const scrollbar =null;
       scrollToSection(scrollbar, '#Testimonials');
     }}
     sx={{ top: '56%' }}
@@ -186,7 +188,7 @@ const Navbar = () => {
   <Box
     onClick={() => {
       closeMenu();
-      const scrollbar = Scrollbar.get(scrollbRef.current);
+      const scrollbar =null;
       scrollToSection(scrollbar, '#Contact');
     }}
     sx={{ top: '64%' }}
@@ -281,10 +283,10 @@ border:'1px solid #489fb5'
           <img src="https://cdn-icons-png.flaticon.com/128/2012/2012152.png" alt="" className="img" />
         </Box>
       </Btn>
+      <a href='https://www.linkedin.com/in/vitomedlej/ ' target='_blank'>
         <Btn
       
-          onClick={()=>
-            ScrollToFn()}
+           
 
         className="" sx={{
           border:'1px solid black',
@@ -302,6 +304,9 @@ border:'1px solid #489fb5'
               <img src="https://cdn-icons-png.flaticon.com/128/9314/9314363.png" alt="" className="img" />
             </Box>
           </Btn>
+
+      </a>
+
 
        
 
