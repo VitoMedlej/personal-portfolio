@@ -131,7 +131,7 @@ const Page = () => {
           <Grid item xs={12} sx={{maxWidth:'lg',py:{xs:12,md:20}}}
            className='auto white items-center w100 flex col center'>
            <Box sx={{width:'100px',height:'100px',overflow:'hidden'}} className='rounded auto center'>
-            <img src="https://ucarecdn.com/be805fa6-ecca-4d06-a2b1-d28f6001c38c/-/resize/300/"
+            <img src="https://wavescode8cdn.sirv.com/1737233350805.jpg?w=300"
              alt="vito-medlej  pic" className="img rounded parallax-image" />
            </Box>
             <Typography component='h1'
