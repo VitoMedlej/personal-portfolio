@@ -8,9 +8,9 @@ import gsap from 'gsap';
 const items = [
   {
     id: 1,
-    title:'Ova Skin Care',
-    url :'https://ovaskincare.net',
-    img: 'https://ucarecdn.com/035a14e6-eac1-4cbc-9a16-7f8ba4c2a3e8/brownbeautyskincareinstagrampost31.png',
+    title:'VFXWorks Studio',
+    url :'https://www.vfxworks.studio/',
+    img: 'https://wavescode8cdn.sirv.com/White%20Beige%20New%20Summer%20Collection%20Fashion%20Instagram%20Post.png',
     sx: {
       height: { xs: '400px',sm:'400px', md: '715px' },
       gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop
@@ -20,9 +20,9 @@ const items = [
  
   {
     id: 2,
-    title:'Bee-Organic',
-    url :'https://beeorganic-lb.com/',
-    img: 'https://ucarecdn.com/22a8219e-26e4-425a-bbd9-07add9ac7106/Untitleddesign3.png',
+    title:'ShoesBullet',
+    url :'https://ShoesBullet.com/',
+    img: 'https://wavescode8cdn.sirv.com/Untitled%20design.png',
     sx: {
       height: { xs: '200px',sm:'400px', md: '350px' },
       gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop
@@ -54,9 +54,9 @@ const items = [
  
   {
     id: 5,
-    title:'Amaria Beauty',
-    url :'https://amaria.beauty',
-    img: 'https://ucarecdn.com/292b15a7-c922-44b1-8a5e-5056bd02f71c/brownminimalistnewcollectionsportwearinstagrampost.png',
+    title:'News Telegraph',
+    url :'https://www.newstelegraph.net/',
+    img: 'https://wavescode8cdn.sirv.com/White%20Beige%20New%20Summer%20Collection%20Fashion%20Instagram%20Post%20(2).png',
     sx: {
       height: { xs: '400px',sm:'400px', md: '715px' },
       gridColumn: { xs: '1 / -1', md: '1 / 2' }, // Span full width on mobile, first column on desktop

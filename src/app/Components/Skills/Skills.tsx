@@ -49,7 +49,7 @@ const Portfolio = () => {
 className='fade-in-text color3 text-center  skills-subtitle  '
 sx={{fontWeight:200,pb:4,fontSize:{xs:'.9em',sm:'.85em',md:'1em'}}}>
 
-My Expertise and technical abilities that I have acquired over the years 
+Some Expertise and technical abilities that I have acquired over the years 
           </Typography>
             </Box>
 

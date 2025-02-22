@@ -51,7 +51,7 @@ const Portfolio = () => {
 
 fontSize:{xs:'3em',sm:'3em',md:'4em'}
                  }}>
-                    {`Client's reviews`}
+                    {`Client's Reviews`}
                 </Typography>
                 <Typography
                 className='fade-in-text'
@@ -83,6 +83,9 @@ fontSize:{xs:'3em',sm:'3em',md:'4em'}
                                 justifyContent: 'center',
                                 textAlign: 'center'
                             }}>
+                                <Box sx={{width:'70px'}}>
+                                    <img src={`./google.png`} alt="" className="img" />
+                                </Box>
                                 <Rating readOnly value={5} />
 
                                   <Typography
@@ -93,7 +96,9 @@ fontSize:{xs:'3em',sm:'3em',md:'4em'}
 
                                 <Typography 
                                 className='color3'
-                                style={{  fontSize: '.9em' }}>
+                                sx={{  
+                                    textAlign:'justify',
+                                    fontSize: '.9em' }}>
                                     {i.text}
                                 </Typography>
 

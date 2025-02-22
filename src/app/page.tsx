@@ -52,17 +52,30 @@ const Page = () => {
                 <Box sx={{
                   
                   pt:{xs:'5em',sm:'10%',md:'20%',lg:'10%',xl:'0%'},
-                pb:{xs:'0em',sm:'0em',md:'0'},px:{xs:'.5em',md:'20%'},maxWidth:{md:'250px',lg:"300px"}}}>
+                pb:{xs:'0em',sm:'0em',md:'0'},px:{xs:'.5em',md:'20%'},maxWidth:{md:'450px',lg:"450px"}}}>
 
                 <Typography 
                 className='center color2 auto flex items-center   justify-center align-center'
                 sx={{
                   lineHeight:'1.35',
                   textAlign: {xs:'center',md:'left'},
-                  fontSize:{xs:'2.95em',md:'3.15em',lg:'4.15em'},fontWeight:900}}>
+                  fontSize:{xs:'2.55em',md:'2.95em',lg:'3.55em'},fontWeight:900}}>
                     MY NAME IS VITO MEDLEJ, WEB ENGINEER
                 </Typography>
+                  <Box sx={{height:'120px',mt:{md:2}, mx:{xs:'auto'}, alignItems:'center'}} className='flex center'>
 
+                <a target='_blank' href='mailto:contact@vito-medlej.com'>
+  <Btn sx={{ width: { xs: '140px', sm: 'auto' }, color: 'black' }}>
+    Contact
+    <Box sx={{ width: '30px', height: '30px' }}>
+      <img src="https://cdn-icons-png.flaticon.com/128/16015/16015161.png" alt="" className="img cover" />
+    </Box>
+  </Btn>
+</a>
+                  <Btn sx={{py:1.1,px:2,ml:{xs:2}}}>
+                    Work
+                  </Btn>
+                  </Box>
 
                 {/* <Box className='rounded bg5  absolute center flex auto items-center ' 
                 sx={{bottom:'10%',right:'50%',
@@ -131,7 +144,7 @@ const Page = () => {
           <Grid item xs={12} sx={{maxWidth:'lg',py:{xs:12,md:20}}}
            className='auto white items-center w100 flex col center'>
            <Box sx={{width:'100px',height:'100px',overflow:'hidden'}} className='rounded auto center'>
-            <img src="https://wavescode8cdn.sirv.com/1737233350805.jpg?w=300"
+            <img src="https://wavescode8cdn.sirv.com/1737233350805.jpg?w=700"
              alt="vito-medlej  pic" className="img rounded parallax-image" />
            </Box>
             <Typography component='h1'
@@ -157,7 +170,7 @@ const Page = () => {
             <Typography component='h1' className='fade-in-text text-center color2' sx={{
               lineHeight:'0.8',
             fontWeight:800,fontSize:{xs:'3.05em',md:'5em'}}}>
-             40+
+             50+
             </Typography>
             <Typography component='h1' className='fade-in-text text-center color3' 
             sx={{pt:.35,fontSize:{xs:'1.1em',md:'1.4em'},maxWidth:{xs:'500px',md:'800px'},fontWeight:300}}>
