@@ -38,7 +38,7 @@ const ProjectPage = () => {
         {project.text && project?.text?.map(line=>{
           
           
-          return     <Typography variant="body1" gutterBottom>
+          return     <Typography key={`${line}`} variant="body1" gutterBottom>
             {`${line}`}
         </Typography>
   })

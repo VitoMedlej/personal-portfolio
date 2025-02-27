@@ -7,7 +7,7 @@ import Btn from '../Components/Btn/Btn'
 import CTA from '../Components/CTA/CTA'
 import { useParallaxEffect } from '../hooks/useParallex'
 
-const page = () => {
+const Page = () => {
     useParallaxEffect();
   
     return (
@@ -46,4 +46,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
