@@ -9,7 +9,7 @@ export const testimonials = [
     {
         title: 'It exceeded all expectations.',
         name: '“(Charbel, NewsTelegraph.net)',
-        text:`After we encountered technical difficulties with our foreign provider, we contacted Vito from “OnBeirut”, who provided us with distinguished services by redesigning our news website in record time and in a professional and effective manner. Vito listens to the technical requirements and solves them effectively, and he has a distinctive taste in the design process, so he presented a website. Sophisticated and elegant at the same time, it exceeded all expectations. Our website is proud to deal with him and his company` 
+    text:`After we encountered technical difficulties with our foreign provider, we contacted Vito from “Wavescode”, who provided us with distinguished services by redesigning our news website in record time and in a professional and effective manner. Vito listens to the technical requirements and solves them effectively, and he has a distinctive taste in the design process, so he presented a website. Sophisticated and elegant at the same time, it exceeded all expectations. Our website is proud to deal with him and his company` 
     },
     {
         title: 'Deserves a 5 stars rating and more.',

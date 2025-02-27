@@ -24,7 +24,7 @@ const SMicons = ({ sx, invert, className }: { sx?: any, invert?: boolean, classN
           [
             {
               img: `https://cdn-icons-png.flaticon.com/128/3670/3670274.png`,
-              href: `https://www.instagram.com/onbeirut/`
+              href: `https://www.instagram.com/waves.code/`
             },
             {
               img: `https://cdn-icons-png.flaticon.com/128/2111/2111432.png`,
