@@ -48,7 +48,7 @@ const Footer = () => {
                       },
                       {
                         title:'About',
-                        link:'/#About',
+                        link:'/about',
                       },
                       {
                         title:'Contact',

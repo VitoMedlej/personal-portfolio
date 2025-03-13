@@ -15,8 +15,6 @@ import { useRouter } from 'next/navigation'
 import CTA from './Components/CTA/CTA'
 
 
-
-
 const Page = () => {
   
   
@@ -186,7 +184,7 @@ const Page = () => {
             <Typography component='h1' className='fade-in-text text-center color2' sx={{
               lineHeight:'0.8',
             fontWeight:800,fontSize:{xs:'3.05em',md:'5em'}}}>
-             39+
+             42+
             </Typography>
             <Typography component='h1' className='fade-in-text text-center color3' 
             sx={{pt:.35,fontSize:{xs:'1.1em',md:'1.4em'},maxWidth:{xs:'500px',md:'800px'},fontWeight:300}}>

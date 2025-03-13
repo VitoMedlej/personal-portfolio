@@ -166,7 +166,7 @@ const Navbar = () => {
     sx={{ top: '48%' }}
     className="white cursor pointer nav-menu"
   >
-    <Link className="decor-none white" href="/#About">
+    <Link className="decor-none white" href="//about">
       <Typography sx={{ fontSize: '1.2em' }}>About</Typography>
     </Link>
   </Box>

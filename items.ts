@@ -17,14 +17,16 @@ export const items = [
    
     {
       id: 2,
-      title:'ShoesBullet',
-      url :'https://ShoesBullet.com/',
+      title:'GioShoes',
+      url :'https://gioshooz.com/',
       img: 'https://wavescode8cdn.sirv.com/Untitled%20design.png',
       sx: {
         height: { xs: '200px',sm:'400px', md: '350px' },
         gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop
         gridRow: { md: '1 / 2' }, // First row on desktop
       },
+      type:'ecommerce',
+      text:[ "Gioshoes is a premium leather shoe brand in Lebanon, redefining modern footwear with minimalist elegance and authentic craftsmanship.", "Project Brief: Build a digital platform that mirrors the brand’s ethos—focusing on quality, timeless design, and an intuitive user experience.", "Challenge: Create a website that’s visually striking and functionally seamless, capable of showcasing the artisanal nature of the brand in a crowded market.", "Solution: Developed a minimalist, responsive website that puts clarity and usability first, with clean design, fast performance, and smooth navigation.", "Development Process: Leveraged modern web technologies to ensure every element enhances user engagement and supports the brand’s narrative.", "Outcome: The final product delivers a refined digital presence that elevates the brand’s identity, driving both user engagement and higher conversion rates.", "Takeaway: This project highlights how a focused, minimalist approach in design and development can create an impactful digital experience that truly reflects a brand’s essence." ]
     },
     {
       id: 3,
@@ -110,6 +112,29 @@ export const items = [
           title:'TeenTops Electronics (Web + Mobile)',
       url :'https://play.google.com/store/apps/details?id=com.teentops',
       img: 'https://ucarecdn.com/2d4f6f80-539b-492d-8e5c-03d490ba00d7/Untitleddesign11.png',
+      sx: {
+        height: { xs: '200px',sm:'400px', md: '350px' },
+        gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop
+        gridRow: { md: '5 / 6' }, // Fifth row on desktop
+      },
+    },
+
+    {
+      id: 9,
+       title:'Mirach Bags',
+      url :'https://mirach-lb.com',
+      img: 'https://wavescode8cdn.sirv.com/Untitled%20design%20(4).png',
+      sx: {
+        height: { xs: '400px',sm:'400px', md: '350px' },
+        gridColumn: { xs: '1 / -1', md: '1 / 2' }, // Full width on mobile, first column on desktop
+        gridRow: { md: '5 / 6' }, // Fifth row on desktop
+      },
+    },
+    {
+      id: 10,
+          title:'BulletLuxury',
+      url :'https://bulletluxury.vercel.app/',
+      img: 'https://img.freepik.com/free-photo/marketing-creative-collage-with-phone_23-2149379900.jpg?t=st=1741866642~exp=1741870242~hmac=ddb49bd31af6172872104fdf9af633e7cae86f056283fc38bbd03ea0fa478fc3&w=900',
       sx: {
         height: { xs: '200px',sm:'400px', md: '350px' },
         gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop

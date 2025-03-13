@@ -54,13 +54,13 @@ const YourComponent = () => {
               opacity: 0, // Hidden by default
               transform: 'translateY(40px)', // Start hidden below
             }}>
-            <Typography sx={{ color: 'black', fontWeight: 700, fontSize: {sm:'1.57em'} }}>
+            <Typography sx={{ color: 'black', fontWeight: 700, fontSize: {xs:'.9em',sm:'1em',lg:'1.57em'} }}>
              {item.title}
             </Typography>
             <Box sx={{gap:.5}} className='flex '>
             
               <a  href={`/work/${item.title}`}>
-              <Btn sx={{ gap:.25, width: { xs: '140px', sm: 'auto' }, color: 'black' }}>
+              <Btn sx={{ fontSize:{xs:'.65em',sm:'1em'}, gap:.25, width: { xs: 'auto', sm: 'auto' }, color: 'black' }}>
                 Case Study
                 <Box sx={{ width: '20px', height: '30px' }}>
                   <img src="https://cdn-icons-png.flaticon.com/128/1654/1654190.png" alt="" className="img contain" />
@@ -68,7 +68,7 @@ const YourComponent = () => {
               </Btn>
               </a>
               <a target='_blank' href={`${item.url}`}>
-              <Btn sx={{ width: { xs: '140px', sm: 'auto' }, color: 'black' }}>
+              <Btn sx={{ fontSize:{xs:'.65em',sm:'1em'}, width: { xs: '100px', sm: 'auto' }, color: 'black' }}>
                 View
                 <Box sx={{ width: '30px', height: '30px' }}>
                   <img src="https://cdn-icons-png.flaticon.com/128/16015/16015161.png" alt="" className="img contain" />
