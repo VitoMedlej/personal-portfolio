@@ -45,7 +45,7 @@ const SMicons = ({ sx, invert, className }: { sx?: any, invert?: boolean, classN
             },
             {
               img: `https://cdn-icons-png.flaticon.com/128/909/909263.png`,
-              href: `https://drive.google.com/file/d/1NBezvS6bfHfTEcNKTmzevN1OL1xrniIn/view?usp=sharing`,
+              href: `https://drive.google.com/file/d/1-N_u-VgRQlf0j7-7_NgaDXvBjzLysvSp/view?usp=sharing`,
               label: 'Resume'
             },
           ].map(link => {
