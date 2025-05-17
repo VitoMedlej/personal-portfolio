@@ -46,9 +46,14 @@ const Page = () => {
               pt:{xs:8,md:4},height:{xs:'100%',lg:'100%',xl:'700px'}}}>
 
 
-                <Box sx={{
+                <Box
+                className=' flex items-center   justify-center col align-center'
+                
+                
+                sx={{
                   
                   pt:{xs:'5em',sm:'10%',md:'20%',lg:'10%',xl:'0%'},
+                  height:{xs:'100%',md:'600px'},
                 pb:{xs:'0em',sm:'0em',md:'0'},px:{xs:'.5em',md:'20%'},maxWidth:{md:'450px',lg:"450px"}}}>
 
                 <Typography 
@@ -75,7 +80,7 @@ const Page = () => {
                   <Btn
                   onClick={()=>router.push('/work')}
                   sx={{py:1.1,px:2,ml:{xs:2}}}>
-                    Work
+                    My Work
                   </Btn>
                   </Box>
 
@@ -158,7 +163,7 @@ const Page = () => {
             sx={{fontSize:{xs:'1em',md:'1.4em'},maxWidth:{xs:'500px',md:'800px'},
             px:1
             ,fontWeight:300}}>
-              {`Im Vito, I can help you code complex websites and applications from design concept to a completed, polished and professional product. Including maintaining and updating it.`}
+              {`Im Vito, I can help you code complex software and applications from design concept to a completed, polished and professional product. Including maintaining and updating it.`}
             </Typography>
           </Grid>
         </Grid>
@@ -223,7 +228,7 @@ const Page = () => {
             <Typography component='h1'
             className='color2 fade-in-text'
              sx={{pb:{xs:2,md:4},maxWidth:'600px',fontWeight:900,fontSize:{xs:'2.5em',md:'3em'}}}>
-            Designing a Better World Today
+            Designing a Better World Today (My Work)
             </Typography>
           </Box>
              <GridProjects/>

@@ -21,7 +21,7 @@ const Page = () => {
                     {`A glimpse of the work I've been doing for the past few years.`}
                 </Typography>
                 <Typography sx={{py:.5,fontWeight:500,fontSize:'.8em'}}>
-                    {`Out of 100+ github repositories, here are my favorite projects.`}
+                    {`Below are my favorite projects. More on my Github`}
                 </Typography>
                 
                 <a target='_blank' href={`https://github.com/VitoMedlej/`}>
