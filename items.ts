@@ -17,16 +17,23 @@ export const items = [
    
     {
       id: 2,
-      title:'GioShoes',
-      url :'https://gioshooz.com/',
-      img: 'https://wavescode8cdn.sirv.com/Untitled%20design.png',
+      title:'Wavescode AI Agency',
+      url :'https://wavescode.com/',
+      img: 'https://ucarecdn.com/91ad0262-fe7d-431f-8f71-c20925f3fe4f/-/resize/900/',
       sx: {
         height: { xs: '200px',sm:'400px', md: '350px' },
         gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop
         gridRow: { md: '1 / 2' }, // First row on desktop
       },
-      type:'ecommerce',
-      text:[ "Gioshoes is a premium leather shoe brand in Lebanon, redefining modern footwear with minimalist elegance and authentic craftsmanship.", "Project Brief: Build a digital platform that mirrors the brand’s ethos—focusing on quality, timeless design, and an intuitive user experience.", "Challenge: Create a website that’s visually striking and functionally seamless, capable of showcasing the artisanal nature of the brand in a crowded market.", "Solution: Developed a minimalist, responsive website that puts clarity and usability first, with clean design, fast performance, and smooth navigation.", "Development Process: Leveraged modern web technologies to ensure every element enhances user engagement and supports the brand’s narrative.", "Outcome: The final product delivers a refined digital presence that elevates the brand’s identity, driving both user engagement and higher conversion rates.", "Takeaway: This project highlights how a focused, minimalist approach in design and development can create an impactful digital experience that truly reflects a brand’s essence." ]
+      type:'Agency Website', 
+      text:[`Wavescode is my personal agency, It's my passion project, and the place where I can express my creativity and skills.`,
+        `I started it as a way to showcase my work and connect with potential clients.`,
+        `The agency focuses on AI and exploring different technologies and tools that can help businesses grow and succeed.`,
+        `This agency is a reflection of my personal brand and values, and I am proud to be able to work with clients who share my vision. It has allowed me to learn and explore things in my free time that I am passionate about.`,
+        `As an engineer, I always looking for new challenges and opportunities to grow, and I believe that this agency is a great way to do that.`,
+        `The website was also designed and developed from scratch, I went through the process of checking every detail to perfect the "high converting website" design. Taking courses on the subject along the way.`
+        
+      ]
     },
     {
       id: 3,
@@ -51,6 +58,14 @@ export const items = [
         gridRow: { md: '3 / 4' }, // Third row on desktop
       },
       type:'Ecommerce',
+      text: [`In the heart of MERAKI lies a powerful story of resilience, passion, and the transformative power of beauty`,
+         `As someone who was trusted to build something suitable for the brand, I had to be the developer, the desginer, and the problem solver available when needed in critical times`, `
+         I had to figure out things quickly to tackle challenges I had never faced before.`,
+         `The goal was not just "develop" a website, It was to solve a problem for the owner, such as limited resources, such as insufficient paperwork and legal issues related to registration.`,
+         `With hours work and research, I was able to achieve the goals I set for myself and the client.`,
+        `This project was a challenge, but it was also a great opportunity to learn and grow.`,
+        `I had to be the one to figure out how to make it work, and I did. I was able to create a website that not only met the needs of the owner, but also exceeded their expectations.`,
+      ]
 
     },
    
@@ -79,22 +94,29 @@ export const items = [
     },
     {
       id: 6,
-      title:'Galaxi LB - Clothing Brand',
-      url :'https://galaxi-lb.com',
-      img: 'https://ucarecdn.com/f0faec0f-88e3-4742-8bdd-ff097cf3bdb4/Untitleddesign8.png',
+      title:'AI Ecommerce Template (Frontend, Backend, Dashboard, CMS)', 
+      url :'https://github.com/VitoMedlej/FullStack-Ecom-Docs',
+      img: 'https://media.licdn.com/dms/image/v2/D4D22AQErGdO4VPgYgA/feedshare-shrink_800/B4DZYWo56_HAAg-/0/1744136547138?e=2147483647&v=beta&t=iifHLuJlzeup2w6Oo5cGuxFGGNLMPDNqA41idVYTASM',
       sx: {
         height: { xs: '200px',sm:'400px', md: '350px' },
         gridColumn: { xs: '1 / -1', md: '1 / 2' }, // Full width on mobile, first column on desktop
         gridRow: { md: '4 / 5' }, // Fourth row on desktop
       },
-      type:'Online Shop',
+      type:'AI Template',
       text: [
-        `On a very tight budget, the owner needed a quick solution. Last thing a small business needs is a complex site that slows them down`,
-        `They needed a simple, clear & easy to use online store. While Shopify was ideal, the products they sold had customizable features.`
-        ,`Shopify plugins would be paid and somewhat expensive, they would add a burden on their tight budgets. A custom coded website was the most sutiable solution.`
-        ,`The design requested was very simple, in addition to a simple "select image" & "select text" options for specific types of shirts & hoodies.`
-        ,`The admins would toggle the options ON or OFF from the dashboard. Making it extremely easy to setup from the custom coded dashboard.`
-        ,`As usaul, the owner was satisfied and he apperciated the work with kind words.`
+       `During the war on Lebanon, boredom got the best of me, and made me start this incredible project: AI-powered Full-stack Ecommerce Template.`,
+       `Despite being an "expensive" project that can be sold, I decided to make it open-source and open for public use. Giving back to the dev community that gave me so much.`,
+       `The project contains 3 repos Frontend, Backend, Dashboard. Next.js & Typescript being the main tools.`,
+       'It focuses on AI, and how it can be used to improve the ecommerce experience for both customers and merchants.',
+       `core features include:`,
+        `- AI‑powered product recommendations`,
+        `- Custom chatbot (AI and non-AI) for customer support`,
+        `- Sanity CMS for content management`,
+        `- Auth0 authentication`,
+        `- Node.js REST API with rate limiting & CORS`,
+        `- VERY clean code following best practices`,
+        `The project is not complete, but it is a great starting point for anyone looking to build an ecommerce site with AI capabilities.`,
+        `I am currently working on adding more features and improving the existing ones. I hope to have a complete version of the project soon.`,
       ]
     },  
     {
@@ -142,5 +164,12 @@ export const items = [
         gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop
         gridRow: { md: '5 / 6' }, // Fifth row on desktop
       },
+      type:`Ecommerce`,
+      text: [`BulletLuxury is a luxury ecommerce platform that specializes in high-end fashion and accessories. The website is designed to provide a seamless shopping experience for customers looking for exclusive and premium products.`,
+        `The project aim was to exceed Shopify capabilities. Shopify was the first choice for the client, however, I was able to convince them to go with a custom solution that would be more flexible and scalable in the long run.`,
+        `In addition, the client complained about the limitations of Shopify, such as the lack of customization options and the high fees associated with using the platform.`,
+        ,`Thus we decided to build a custom ecommerce platform using Next.js and Tailwind CSS. This allowed us to create a unique and modern design that reflects the luxury nature of the brand.`,
+        `The website is built in a way that allows for easy integration of AI tools later on, which is what the client aims to do when the time is right.`,
+      ]
     },
   ];
