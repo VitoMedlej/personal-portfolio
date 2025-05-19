@@ -166,7 +166,7 @@ const Navbar = () => {
     sx={{ top: '48%' }}
     className="white cursor pointer nav-menu"
   >
-    <Link className="decor-none white" href="//about">
+    <Link className="decor-none white" href="/about">
       <Typography sx={{ fontSize: '1.2em' }}>About</Typography>
     </Link>
   </Box>
@@ -175,13 +175,13 @@ const Navbar = () => {
     onClick={() => {
       closeMenu();
       const scrollbar =null;
-      scrollToSection(scrollbar, '#Testimonials');
+      // scrollToSection(scrollbar, '#Testimonials');
     }}
     sx={{ top: '56%' }}
     className="white cursor pointer nav-menu"
   >
-    <Link className="decor-none white" href="/">
-      <Typography sx={{ fontSize: '1.2em' }}>Testimonials</Typography>
+    <Link className="decor-none white" href="/work">
+      <Typography sx={{ fontSize: '1.2em' }}>My Work</Typography>
     </Link>
   </Box>
 

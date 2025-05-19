@@ -19,7 +19,7 @@ export const items = [
       id: 2,
       title:'Wavescode AI Agency',
       url :'https://wavescode.com/',
-      img: 'https://ucarecdn.com/91ad0262-fe7d-431f-8f71-c20925f3fe4f/-/resize/900/',
+      img: 'https://ucarecdn.com/2f37c744-fd90-4c84-bbae-849c842218b4/-/resize/600/',
       sx: {
         height: { xs: '200px',sm:'400px', md: '350px' },
         gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop

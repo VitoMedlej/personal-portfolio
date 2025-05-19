@@ -40,7 +40,7 @@ const Page = () => {
 {
   `
  It all started when I was 9 years old, I stumbled upon Unity3d and immediately fell in love with the coding world.
- While I did not continue with game development, I found that web apps engineering is my favorite thing in the world. And I was certain, that's what I want to do for the rest of my life.
+ While I did not continue with game development, I found that web apps engineering is my favorite thing to do in my free time. And I was certain, that's what I want to do for the rest of my life.
   `
 }
     </Typography>

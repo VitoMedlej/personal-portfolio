@@ -165,6 +165,11 @@ const Page = () => {
             ,fontWeight:300}}>
               {`Im Vito, I can help you code complex software and applications from design concept to a completed, polished and professional product. Including maintaining and updating it.`}
             </Typography>
+            <Btn className='auto center' onClick={()=>router.push('/about')}
+              sx={{mt:2,px:2,py:1.1}}
+              >
+              About Me
+            </Btn>
           </Grid>
         </Grid>
 
@@ -232,7 +237,13 @@ const Page = () => {
             </Typography>
           </Box>
              <GridProjects/>
-
+              <Box className="center auto">
+                <Btn 
+                onClick={()=>router.push('/work')}
+                sx={{mt:2}}>
+                  More Projects
+                </Btn>
+              </Box>
 
              
              <Box sx={{py:4}}>

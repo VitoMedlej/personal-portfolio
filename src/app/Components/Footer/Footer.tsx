@@ -54,6 +54,10 @@ const Footer = () => {
                         title:'Contact',
                         link:'/#contact',
                       },
+                      {
+                        title:'My Work',
+                        link:'/work',
+                      },
                     ].map(link=>{
                       return <Link
                       key={link.title}
@@ -65,7 +69,7 @@ const Footer = () => {
           </Box>
                     <Box sx={{py:4}}>
                       <Typography className='color3' sx={{color:'white'}}>
-                      Vito Medlej ©2024. All rights reserved.
+                      Vito Medlej ©2025. All rights reserved.
                       </Typography>
                     </Box>
           </Container>
