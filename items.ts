@@ -40,7 +40,7 @@ export const items = [
       type:'Store',
       title:'E-Architecture',
       url :'https://earchitecture-lb.com/',
-      img: 'https://ucarecdn.com/5688f814-816f-4b88-ae60-bedabc173a9c/Untitleddesign4.png',
+      img: './pic3.png',
       sx: {
         height: { xs: '400px',sm:'400px', md: '350px' },
         gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop
@@ -124,7 +124,7 @@ export const items = [
       type:'Ecommerce Platform',
        title:'Mounet Dalia',
       url :'https://mounetdalia.com',
-      img: 'https://ucarecdn.com/5b3c8690-f96c-49df-8b37-26e521c95c2b/Untitleddesign10.png',
+      img: './pic2.png',
       sx: {
         height: { xs: '400px',sm:'400px', md: '350px' },
         gridColumn: { xs: '1 / -1', md: '1 / 2' }, // Full width on mobile, first column on desktop
@@ -135,7 +135,7 @@ export const items = [
       id: 8,
           title:'TeenTops Electronics (Web + Mobile)',
       url :'https://play.google.com/store/apps/details?id=com.teentops',
-      img: 'https://ucarecdn.com/2d4f6f80-539b-492d-8e5c-03d490ba00d7/Untitleddesign11.png',
+      img: './pic4.png',
       sx: {
         height: { xs: '200px',sm:'400px', md: '350px' },
         gridColumn: { xs: '1 / -1', md: '2 / 3' }, // Full width on mobile, second column on desktop
